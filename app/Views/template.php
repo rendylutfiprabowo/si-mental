@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="/assets/material/assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="/assets/material/assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/material/assets/img/icon-telkom.png">
     <title>
         Si Mental
     </title>
@@ -117,7 +117,7 @@
         <div class="sidenav-header">
             <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard-pro/pages/dashboards/analytics.html " target="_blank">
-                <img src="/assets/material/assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
+                <img src="/assets/material/assets/img/icon-telkom.png" class="navbar-brand-img h-100" alt="main_logo">
                 <span class="ms-1 font-weight-bold text-white">Si Mental</span>
             </a>
         </div>
@@ -198,7 +198,7 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="../../../pages/authentication/signin/basic.html">
+                    <a class="nav-link text-white " href="/logout">
                         <i class="material-icons">input</i>
                         <span class="sidenav-normal  ms-3  ps-1"> Logout </span>
                     </a>
