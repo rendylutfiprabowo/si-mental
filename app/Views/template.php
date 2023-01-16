@@ -236,7 +236,8 @@
                 </nav>
                 <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
                     <a href="javascript:;" class="nav-link text-body p-0">
-                        <div class="sidenav-toggler-inner">
+
+                        <div class="sidenav-toggler-inner" onclick="navbarMinimize(this)">
                             <i class="sidenav-toggler-line"></i>
                             <i class="sidenav-toggler-line"></i>
                             <i class="sidenav-toggler-line"></i>
@@ -251,7 +252,13 @@
                         </div>
                     </div>
                     <ul class="navbar-nav  justify-content-end">
-                        <li class="nav-item">
+                        <!-- dark mode -->
+                        <div class="nav-item  px-3">
+                            <div class="form-check form-switch ps-0 ms-auto my-auto">
+                                <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
+                            </div>
+                        </div>
+                        <li class="nav-item  px-3">
                             <a href="/assets/material/pages/authentication/signin/illustration.html" class="nav-link text-body p-0 position-relative" target="_blank">
                                 <i class="material-icons me-sm-1">
                                     account_circle
@@ -274,7 +281,7 @@
                                 </i>
                             </a>
                         </li>
-                        <li class="nav-item dropdown pe-2">
+                        <li class="nav-item dropdown px-3">
                             <a href="javascript:;" class="nav-link text-body p-0 position-relative" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="material-icons cursor-pointer">
                                     notifications
