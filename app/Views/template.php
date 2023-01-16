@@ -150,13 +150,13 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link text-white " href="/datapelanggan/caring/satubulan">
-                                                <i class="material-icons">looks_one</i>
+                                                <i class="material-icons">filter_1</i>
                                                 <span class="sidenav-normal  ms-2  ps-1"> Satu Bulan</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link text-white " href="/datapelanggan/caring/duabulan">
-                                                <i class="material-icons">looks_two</i>
+                                                <i class="material-icons">filter_2</i>
                                                 <span class="sidenav-normal  ms-2  ps-1"> Dua Bulan </span>
                                             </a>
                                         </li>
@@ -172,13 +172,13 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link text-white " href="/datapelanggan/visit/satubulan">
-                                                <i class="material-icons">looks_one</i>
+                                                <i class="material-icons">filter_1</i>
                                                 <span class="sidenav-normal  ms-2  ps-1"> Satu Bulan </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link text-white " href="/datapelanggan/visit/duabulan">
-                                                <i class="material-icons">looks_two</i>
+                                                <i class="material-icons">filter_2</i>
                                                 <span class="sidenav-normal  ms-2  ps-1"> Dua Bulan </span>
                                             </a>
                                         </li>
@@ -199,7 +199,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link text-white " href="../../../pages/authentication/signin/basic.html">
-                        <span class="sidenav-mini-icon"> L </span>
+                        <i class="material-icons">input</i>
                         <span class="sidenav-normal  ms-3  ps-1"> Logout </span>
                     </a>
                 </li>
@@ -238,9 +238,7 @@
                     <a href="javascript:;" class="nav-link text-body p-0">
 
                         <div class="sidenav-toggler-inner" onclick="navbarMinimize(this)">
-                            <i class="sidenav-toggler-line"></i>
-                            <i class="sidenav-toggler-line"></i>
-                            <i class="sidenav-toggler-line"></i>
+                            <i class="material-icons">view_headline</i>
                         </div>
                     </a>
                 </div>
