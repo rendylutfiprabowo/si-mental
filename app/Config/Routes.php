@@ -64,6 +64,7 @@ $routes->get('/documentation1', 'Home::documentation1');
 $routes->get('/documentation2', 'Home::documentation2');
 $routes->get('/documentation3', 'Home::documentation3');
 $routes->get('/tabel', 'Home::tabel');
+$routes->get('/eror', 'Home::eror');
 
 /*
  * --------------------------------------------------------------------

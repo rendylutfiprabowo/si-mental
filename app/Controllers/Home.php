@@ -43,4 +43,9 @@ class Home extends BaseController
     {
         return view('documentation/tabel');
     }
+
+    public function eror()
+    {
+        return view('eror');
+    }
 }
