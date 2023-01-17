@@ -126,7 +126,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">
+                    <a class="nav-link text-white" href="/dashboard">
                         <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">dashboard</i>
                         <span class="nav-link-text ms-2 ps-1">Dashboard</span>
                     </a>
@@ -190,7 +190,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/dataagenobc">
+                    <a class="nav-link text-white" href="/dataagenobc">
                         <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">receipt_long</i>
                         <span class="nav-link-text ms-2 ps-1">Data Agen OBC</span>
                     </a>
@@ -368,7 +368,7 @@
             </div>
         </footer>
     </div>
-    <div class="fixed-plugin">
+    <!-- <div class="fixed-plugin">
         <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
             <i class="material-icons py-2">settings</i>
         </a>
@@ -449,7 +449,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="/assets/material/assets/js/core/popper.min.js"></script>
     <script src="/assets/material/assets/js/core/bootstrap.min.js"></script>
