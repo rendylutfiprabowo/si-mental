@@ -31,6 +31,10 @@ class Pelanggan extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
+            'profil_kesepakatan' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+            ],
             'agen_pengelola' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
