@@ -41,7 +41,6 @@ class Caring extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
-
         ]);
         $this->forge->addPrimaryKey('id_caring', true);
         $this->forge->createTable('caring');
@@ -52,4 +51,3 @@ class Caring extends Migration
         $this->forge->dropTable('caring');
     }
 }
-
