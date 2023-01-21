@@ -8,25 +8,21 @@ class Datacaring extends BaseController
 {
     public function satubulan()
     {
-        if (session()->logged_in)  return view('mcaring/satubulan');
-        else return redirect()->to('login');
+        return view('mcaring/satubulan');
     }
 
     public function duabulan()
     {
-        if (session()->logged_in)  return view('mcaring/duabulan');
-        else return redirect()->to('login');
+        return view('mcaring/duabulan');
     }
 
     public function detail()
     {
-        if (session()->logged_in)  return view('mcaring/detail');
-        else return redirect()->to('login');
+        return view('mcaring/detail');
     }
 
     public function edit()
     {
-        if (session()->logged_in)  return view('mcaring/edit');
-        else return redirect()->to('login');
+        return view('mcaring/edit');
     }
 }

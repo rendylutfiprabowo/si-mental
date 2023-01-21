@@ -8,25 +8,21 @@ class Datavisit extends BaseController
 {
     public function satubulan()
     {
-        if (session()->logged_in)  return view('mvisit/satubulan');
-        else return redirect()->to('login');
+        return view('mvisit/satubulan');
     }
 
     public function duabulan()
     {
-        if (session()->logged_in)  return view('mvisit/duabulan');
-        else return redirect()->to('login');
+        return view('mvisit/duabulan');
     }
 
     public function detail()
     {
-        if (session()->logged_in)  return view('mvisit/detail');
-        else return redirect()->to('login');
+        return view('mvisit/detail');
     }
 
     public function edit()
     {
-        if (session()->logged_in)  return view('mvisit/edit');
-        else return redirect()->to('login');
+        return view('mvisit/edit');
     }
 }

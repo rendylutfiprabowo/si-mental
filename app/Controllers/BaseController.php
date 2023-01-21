@@ -27,7 +27,7 @@ abstract class BaseController extends Controller
      * @var CLIRequest|IncomingRequest
      */
     protected $request;
-    protected $session;
+
     /**
      * An array of helpers to be loaded automatically upon
      * class instantiation. These helpers will be available
@@ -42,8 +42,6 @@ abstract class BaseController extends Controller
      */
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
-        $this->helpers = array_merge($this->helpers, ['setting']);
-
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
 
@@ -51,11 +49,4 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
-    public function __construct()
-    {
-        $this->session = \Config\Services::session();
-        $this->session->start();
-    }
 }
-
-

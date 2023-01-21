@@ -8,31 +8,26 @@ class Dataagenobc extends BaseController
 {
     public function listdata()
     {
-        if (session()->logged_in)  return view('mobc/listdata');
-        else return redirect()->to('login');
+        return view('mobc/listdata');
     }
 
     public function detail()
     {
-        if (session()->logged_in)  return view('mobc/detail');
-        else return redirect()->to('login');
+        return view('mobc/detail');
     }
 
     public function tambahdata()
     {
-        if (session()->logged_in)  return view('mobc/tambahdata');
-        else return redirect()->to('login');
+        return view('mobc/tambahdata');
     }
 
     public function hapusdata()
     {
-        if (session()->logged_in)  return view('mobc/hapusdata');
-        else return redirect()->to('login');
+        return view('mobc/hapusdata');
     }
 
     public function editdata()
     {
-        if (session()->logged_in)  return view('mobc/editdata');
-        else return redirect()->to('login');
+        return view('mobc/editdata');
     }
 }

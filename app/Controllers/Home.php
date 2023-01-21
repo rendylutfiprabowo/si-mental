@@ -4,25 +4,13 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    function __construct()
-    {
-        parent::__construct();
-    }
-
     public function index()
     {
         return view('#');
     }
 
-    function logout()
-    {
-        session()->destroy();
-        return redirect()->to('login');
-    }
-
     public function login()
     {
-        if (session()->logged_in) return redirect()->to('dashboard');
         return view('login');
     }
 
