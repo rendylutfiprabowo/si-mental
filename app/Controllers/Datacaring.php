@@ -3,24 +3,43 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\DetPel;
 
 class Datacaring extends BaseController
 {
     public function satubulan()
     {
-        if (session()->logged_in)  return view('mcaring/satubulan');
+        $detailModel = new DetPel();
+        $detpel = $detailModel->findAll();
+        $data = [
+            'title' => 'Pelanggan',
+            'detpel' => $detpel
+        ];
+
+        if (session()->logged_in)  return view('mcaring/satubulan', $data);
         else return redirect()->to('login');
     }
 
     public function duabulan()
     {
-        if (session()->logged_in)  return view('mcaring/duabulan');
+        $detailModel = new DetPel();
+        $detpel = $detailModel->findAll();
+        $data = [
+            'title' => 'Pelanggan',
+            'detpel' => $detpel
+        ];
+        if (session()->logged_in)  return view('mcaring/duabulan', $data);
         else return redirect()->to('login');
     }
 
-    public function detail()
+    public function detail($id)
     {
-        if (session()->logged_in)  return view('mcaring/detail');
+        $detailModel = new DetPel();
+        $detpel = $detailModel->find($id);
+        $data = [
+            'detpel' => $detpel,
+        ];
+        if (session()->logged_in)  return view('mcaring/detail', $data);
         else return redirect()->to('login');
     }
 

@@ -22,35 +22,40 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="d-flex px-2 py-1">
-                                            <div>
-                                                <img src="/assets/material/assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                <?php
+                                foreach ($detpel as $dp) {
+                                ?>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex px-2 py-1">
+                                                <div>
+                                                    <img src="/assets/material/assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm"><?php echo $dp['agen_pengelola']; ?></h6>
+
+                                                </div>
                                             </div>
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <h6 class="mb-0 text-sm">nama_agenobc</h6>
+                                        </td>
+                                        <td>
+                                            <p class="text-xs font-weight-bold mb-0"><?php echo $dp['nama']; ?></p>
+                                        </td>
+                                        <td class="align-middle text-center text-sm">
+                                            <p class="text-xs font-weight-bold mb-0">jumlah_pelanggan</p>
 
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p class="text-xs font-weight-bold mb-0">nama_pelanggan</p>
-                                    </td>
-                                    <td class="align-middle text-center text-sm">
-                                        <p class="text-xs font-weight-bold mb-0">jumlah_pelanggan</p>
-
-                                    </td>
-                                    <td class="align-middle text-center">
-                                        <span class="text-secondary text-xs font-weight-bold">hasil_caring</span>
-                                    </td>
-                                    <td class="align-middle">
-                                        <a href="/datapelanggan/caring/detail">
-                                            <span class="badge badge-sm bg-gradient-success">Detail</span>
-                                        </a>
-                                    </td>
-                                </tr>
-
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <span class="text-secondary text-xs font-weight-bold">hasil_caring</span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <a href="/datapelanggan/caring/detail/<?= $dp['id_pelanggan'] ?>">
+                                                <span class="badge badge-sm bg-gradient-success">Detail</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                <?php
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>

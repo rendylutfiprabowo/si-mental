@@ -39,6 +39,15 @@ class Pelanggan extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
+            'produk' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
+            'alamat' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
+
 
         ]);
         $this->forge->addPrimaryKey('id_pelanggan', true);

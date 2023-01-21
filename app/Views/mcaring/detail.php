@@ -48,17 +48,18 @@
                                 account_circle
                             </i>
                         </div>
+
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Nomor Jastel Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder">xxxx</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $detpel['nomor_jastel'] ?></span><br>
                             <p class="text-sm mb-0 text-capitalize">Nama Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder">xxxx</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $detpel['nama'] ?></span><br>
                             <p class="text-sm mb-0 text-capitalize">Kontak Telepon Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder">xxxx</span>
+                            <span class="text-success text-sm font-weight-bolder"><?= $detpel['contact'] ?></span>
                             <p class="text-sm mb-0 text-capitalize">Agen Pengelola</p>
-                            <span class="text-success text-sm font-weight-bolder">xxxx</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $detpel['agen_pengelola'] ?></span><br>
                             <p class="text-sm mb-0 text-capitalize">Produk Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder">xxxx</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $detpel['produk'] ?></span><br>
                         </div>
                     </div>
 
@@ -77,7 +78,7 @@
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Alamat Lengkap Pelanggan</p>
                             <p class="pb-0 mb-0">
-                                <span class="text-success text-sm font-weight-bolder ">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
+                                <span class="text-success text-sm font-weight-bolder "><?= $detpel['alamat'] ?></span>
                             </p>
                             <p class="text-sm mb-0 text-capitalize">Status Call</p>
                             <span class="text-success text-sm font-weight-bolder">Contacted / Not Contacted</span><br>

@@ -43,7 +43,7 @@ $routes->get('/logout', 'Home::logout');
 $routes->get('/dashboard', 'Dashboard::index');
 $routes->get('/datapelanggan/caring/satubulan', 'Datacaring::satubulan');
 $routes->get('/datapelanggan/caring/duabulan', 'Datacaring::duabulan');
-$routes->get('/datapelanggan/caring/detail', 'Datacaring::detail');
+$routes->get('/datapelanggan/caring/detail/(:num)', 'Datacaring::detail/$1');
 $routes->get('/datapelanggan/caring/edit', 'Datacaring::edit');
 
 $routes->get('/datapelanggan/visit/satubulan', 'Datavisit::satubulan');
