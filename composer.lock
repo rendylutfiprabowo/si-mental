@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50ba76f7e820377a541ae11933030794",
+    "content-hash": "9173a58a83e6e623ce58bc2c01e3ed53",
     "packages": [
         {
             "name": "codeigniter4/framework",
-            "version": "dev-master",
+            "version": "v4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/framework.git",
@@ -58,7 +58,6 @@
                 "ext-sqlsrv": "If you use SQL Server",
                 "ext-xdebug": "If you use CIUnitTestCase::assertHeaderEmitted()"
             },
-            "default-branch": true,
             "type": "project",
             "autoload": {
                 "psr-4": {
@@ -80,200 +79,6 @@
                 "source": "https://github.com/codeigniter4/CodeIgniter4"
             },
             "time": "2023-01-14T11:32:47+00:00"
-        },
-        {
-            "name": "codeigniter4/settings",
-            "version": "v2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/codeigniter4/settings.git",
-                "reference": "0c3fbd5a474eeb592bef5550be2a6d2f73a8a09d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/settings/zipball/0c3fbd5a474eeb592bef5550be2a6d2f73a8a09d",
-                "reference": "0c3fbd5a474eeb592bef5550be2a6d2f73a8a09d",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.3 || ^8.0"
-            },
-            "require-dev": {
-                "codeigniter/coding-standard": "^1.1",
-                "codeigniter4/codeigniter4": "dev-develop",
-                "fakerphp/faker": "^1.9",
-                "mockery/mockery": "^1.0",
-                "nexusphp/cs-config": "^3.1",
-                "nexusphp/tachycardia": "^1.0",
-                "php-coveralls/php-coveralls": "^2.4",
-                "phpstan/phpstan": "^1.0",
-                "phpunit/phpunit": "^9.0",
-                "squizlabs/php_codesniffer": "^3.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "CodeIgniter\\Settings\\": "src"
-                },
-                "exclude-from-classmap": [
-                    "**/Database/Migrations/**"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Lonnie Ezell",
-                    "email": "lonnieje@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Settings library for CodeIgniter 4",
-            "homepage": "https://github.com/codeigniter4/settings",
-            "keywords": [
-                "Settings",
-                "codeigniter",
-                "codeigniter4"
-            ],
-            "support": {
-                "issues": "https://github.com/codeigniter4/settings/issues",
-                "source": "https://github.com/codeigniter4/settings/tree/v2.1.0"
-            },
-            "time": "2021-11-22T17:30:18+00:00"
-        },
-        {
-            "name": "codeigniter4/shield",
-            "version": "v1.0.0-beta.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/codeigniter4/shield.git",
-                "reference": "5e6d5175da45b06dbe7d1deda03458d79d45a951"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/shield/zipball/5e6d5175da45b06dbe7d1deda03458d79d45a951",
-                "reference": "5e6d5175da45b06dbe7d1deda03458d79d45a951",
-                "shasum": ""
-            },
-            "require": {
-                "codeigniter4/settings": "^2.0",
-                "php": "^7.4.3 || ^8.0"
-            },
-            "provide": {
-                "codeigniter4/authentication-implementation": "1.0"
-            },
-            "require-dev": {
-                "codeigniter4/devkit": "^1.0",
-                "codeigniter4/framework": "^4.2.3",
-                "mockery/mockery": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Helpers/auth_helper.php",
-                    "src/Helpers/email_helper.php"
-                ],
-                "psr-4": {
-                    "CodeIgniter\\Shield\\": "src"
-                },
-                "exclude-from-classmap": [
-                    "**/Database/Migrations/**"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Lonnie Ezell",
-                    "email": "lonnieje@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Authentication and Authorization for CodeIgniter 4",
-            "homepage": "https://github.com/codeigniter4/shield",
-            "keywords": [
-                "Authentication",
-                "authorization",
-                "codeigniter",
-                "codeigniter4"
-            ],
-            "support": {
-                "docs": "https://github.com/codeigniter4/shield/blob/develop/docs/index.md",
-                "forum": "https://github.com/codeigniter4/shield/discussions",
-                "issues": "https://github.com/codeigniter4/shield/issues",
-                "slack": "https://codeigniterchat.slack.com",
-                "source": "https://github.com/codeigniter4/shield"
-            },
-            "time": "2022-10-30T23:14:47+00:00"
-        },
-        {
-            "name": "kint-php/kint",
-            "version": "5.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kint-php/kint.git",
-                "reference": "b2effe979abe59caf090b89b607fb0256e467139"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kint-php/kint/zipball/b2effe979abe59caf090b89b607fb0256e467139",
-                "reference": "b2effe979abe59caf090b89b607fb0256e467139",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3",
-                "phpspec/prophecy-phpunit": "^2",
-                "phpunit/phpunit": "^9",
-                "seld/phar-utils": "^1",
-                "symfony/finder": "^4.0 || ^5.0 || ^6.0",
-                "vimeo/psalm": "^5@dev"
-            },
-            "suggest": {
-                "kint-php/kint-helpers": "Provides extra helper functions",
-                "kint-php/kint-twig": "Provides d() and s() functions in twig templates"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "init.php"
-                ],
-                "psr-4": {
-                    "Kint\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jonathan Vollebregt",
-                    "homepage": "https://github.com/jnvsor"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/kint-php/kint/graphs/contributors"
-                }
-            ],
-            "description": "Kint - debugging tool for PHP developers",
-            "homepage": "https://kint-php.github.io/kint/",
-            "keywords": [
-                "debug",
-                "kint",
-                "php"
-            ],
-            "support": {
-                "issues": "https://github.com/kint-php/kint/issues",
-                "source": "https://github.com/kint-php/kint/tree/5.0.2"
-            },
-            "time": "2023-01-02T23:46:00+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -2360,12 +2165,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "codeigniter4/framework": 20,
-        "codeigniter4/shield": 10
-    },
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.4 || ^8.0"

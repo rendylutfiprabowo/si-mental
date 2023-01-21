@@ -15,7 +15,6 @@ class Datacaring extends BaseController
             'title' => 'Pelanggan',
             'detpel' => $detpel
         ];
-
         if (session()->logged_in)  return view('mcaring/satubulan', $data);
         else return redirect()->to('login');
     }

@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class AdminModel extends Model
 {
     protected $table = "admin";
-    protected $primaryKey = "id";
+    protected $primaryKey = "username";
     protected $returnType = "object";
     protected $useTimestamps = true;
     protected $allowedFields = ['username', 'password', 'name'];

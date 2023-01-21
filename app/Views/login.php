@@ -38,21 +38,21 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form role="form" class="text-start" method="post" action="/login/process">
+                                <form role="form" class="text-start">
                                     <div class="input-group input-group-outline my-3">
-                                        <label class="form-label">Username</label>
-                                        <input type="text" name="username" class="form-control">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control">
                                     </div>
                                     <div class="input-group input-group-outline mb-3">
                                         <label class="form-label">Password</label>
-                                        <input type="password" name="password" class="form-control">
+                                        <input type="password" class="form-control">
                                     </div>
                                     <div class="form-check form-switch d-flex align-items-center mb-3">
                                         <input class="form-check-input" type="checkbox" id="rememberMe">
                                         <label class="form-check-label mb-0 ms-2" for="rememberMe">Remember me</label>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Log in</button>
+                                        <button type="button" class="btn bg-gradient-primary w-100 my-4 mb-2">Log in</button>
                                     </div>
 
                                 </form>

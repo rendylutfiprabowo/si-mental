@@ -54,10 +54,9 @@ class Dataagenobc extends BaseController
         if (session()->logged_in)  return view('mobc/hapusdata', $data);
         else return redirect()->to('login');
     }
-
-    public function editdata()
+    public function edit()
     {
-        if (session()->logged_in)  return view('mobc/editdata');
+        if (session()->logged_in)  return view('mobc/edit');
         else return redirect()->to('login');
     }
 }
