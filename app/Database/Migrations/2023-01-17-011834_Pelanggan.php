@@ -47,7 +47,30 @@ class Pelanggan extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '225',
             ],
-
+            'statuscall' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
+            'reasoncall' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
+            'penerima_telpon' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
+            'hub_ybs' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
+            'kendala_pelanggan' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
+            'hasil_caring' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
 
         ]);
         $this->forge->addPrimaryKey('id_pelanggan', true);

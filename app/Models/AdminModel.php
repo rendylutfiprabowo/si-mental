@@ -11,4 +11,14 @@ class AdminModel extends Model
     protected $returnType = "object";
     protected $useTimestamps = true;
     protected $allowedFields = ['username', 'password', 'name'];
+
+    // public function getAdmin($where = false)
+    // {
+    //     if ($where === false) {
+    //         return $this->findAll();
+    //     } else {
+    //         return $this->getWhere($where);
+    //     }
+    // }
 }
+

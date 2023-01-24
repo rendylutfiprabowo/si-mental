@@ -37,6 +37,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Dashboard::index');
 $routes->get('/login', 'Home::login');
+$routes->post('/login/process', 'Login::process');
+$routes->get('/logout', 'Home::logout');
 
 $routes->get('/dashboard', 'Dashboard::index');
 $routes->get('/datapelanggan/caring/satubulan', 'Datacaring::satubulan');
@@ -65,6 +67,10 @@ $routes->get('/documentation2', 'Home::documentation2');
 $routes->get('/documentation3', 'Home::documentation3');
 $routes->get('/tabel', 'Home::tabel');
 $routes->get('/eror', 'Home::eror');
+
+// coba-coba
+$routes->get('/datapelanggan/caring/edit/(:num)', 'Datacaring::edit/$1');
+$routes->post('/update/(:num)', 'Datacaring::update/$1');
 
 /*
  * --------------------------------------------------------------------

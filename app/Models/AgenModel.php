@@ -12,7 +12,7 @@ class AgenModel extends Model
     protected $useTimestamps = true;
     protected $allowedFields = ['nama', 'jumlah customer'];
 
-    public function getPelanggan($where = false)
+    public function getAgen($where = false)
     {
         if ($where === false) {
             return $this->findAll();

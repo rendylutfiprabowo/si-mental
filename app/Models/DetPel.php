@@ -9,8 +9,8 @@ class DetPel extends Model
     protected $table = "pelanggan";
     protected $primaryKey = "id_pelanggan";
     protected $returnType = "array";
-    protected $useTimestamps = true;
-    protected $allowedFields = ['nomor_jastel', 'contact', 'nama', 'hasil_greeting', 'profil_kesepakatan', 'agen_pengelola', 'produk', 'alamat'];
+    protected $useTimestamps = false;
+    protected $allowedFields = ['nomor_jastel', 'contact', 'nama', 'hasil_greeting', 'profil_kesepakatan', 'agen_pengelola', 'produk', 'alamat', 'statuscall', 'reasoncall', 'penerima_telpon', 'hub_ybs', 'kendala_pelanggan', 'hasil_caring'];
 
     public function getPelanggan($where = false)
     {

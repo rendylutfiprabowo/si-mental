@@ -4,7 +4,7 @@
 <div class="container-fluid py-4">
     <div class="ms-auto my-auto mt-lg-0 mt-4">
         <div class="ms-auto my-auto">
-            <a href="./new-product.html" class="btn bg-gradient-primary  mb-0" target="_blank"> <i class="material-icons">edit</i> Edit </a>
+            <a href="/datapelanggan/caring/edit/<?= $detpel['id_pelanggan'] ?>" class="btn bg-gradient-primary  mb-0" target="_blank"> <i class="material-icons">edit</i> Edit </a>
             <button type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import">
                 Import
             </button>
@@ -81,7 +81,8 @@
                                 <span class="text-success text-sm font-weight-bolder "><?= $detpel['alamat'] ?></span>
                             </p>
                             <p class="text-sm mb-0 text-capitalize">Status Call</p>
-                            <span class="text-success text-sm font-weight-bolder">Contacted / Not Contacted</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $detpel['statuscall'] ?></span><br>
+                            <!-- <span class="text-success text-sm font-weight-bolder">Contacted / Not Contacted</span><br> -->
                             <p class="text-sm mb-0 text-capitalize">Tanggal Caring</p>
                             <span class="text-success text-sm font-weight-bolder">04 - 04 - 2002</span><br>
                         </div>
@@ -100,14 +101,17 @@
                         </div>
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Reason Call</p>
-                            <span class="text-success text-sm font-weight-bolder">...dropdown....</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $detpel['reasoncall'] ?></span><br>
+                            <!-- <span class="text-success text-sm font-weight-bolder">...dropdown....</span><br> -->
                             <p class="text-sm mb-0 text-capitalize">Penerima Telepon</p>
                             <p class="pb-0 mb-0">
-                                <span class="text-success text-sm font-weight-bolder ">YBS / Bukan YBS</span>
+                                <span class="text-success text-sm font-weight-bolder "><?= $detpel['penerima_telpon'] ?></span>
+                                <!-- <span class="text-success text-sm font-weight-bolder ">YBS / Bukan YBS</span> -->
                             </p>
                             <p class="text-sm mb-0 text-capitalize">Hubungan Dengan YBS</p>
                             <p class="pb-0 mb-0">
-                                <span class="text-success text-sm font-weight-bolder ">adik / paman/ orangtua</span>
+                                <span class="text-success text-sm font-weight-bolder "><?= $detpel['hub_ybs'] ?></span>
+                                <!-- <span class="text-success text-sm font-weight-bolder ">adik / paman/ orangtua</span> -->
                             </p>
                         </div>
                     </div>
@@ -128,11 +132,11 @@
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Kendala Pelanggan</p>
                             <p class="pb-0 mb-0">
-                                <span class="text-success text-sm font-weight-bolder ">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
+                                <span class="text-success text-sm font-weight-bolder "><?= $detpel['kendala_pelanggan'] ?></span>
                             </p>
                             <p class="text-sm mb-0 text-capitalize">Hasil Caring</p>
                             <p class="pb-0 mb-0">
-                                <span class="text-success text-sm font-weight-bolder ">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
+                                <span class="text-success text-sm font-weight-bolder "><?= $detpel['hasil_caring'] ?></span>
                             </p>
                         </div>
                     </div>
@@ -140,7 +144,7 @@
                     </div>
                 </div>
             </td>
-            <td style="width: 400px;">
+            <!-- <td style="width: 400px;">
                 <div class="card">
                     <div class="card-header py-2">
                         <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
@@ -181,7 +185,7 @@
                     <div class="card-footer p-3">
                     </div>
                 </div>
-            </td>
+            </td> -->
         </tr>
     </table>
     <!-- <div class="row">
