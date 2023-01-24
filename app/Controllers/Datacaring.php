@@ -10,6 +10,7 @@ class Datacaring extends BaseController
     public function satubulan()
     {
         $detailModel = new DetPel();
+        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
         $detpel = $detailModel->findAll();
         $data = [
             'title' => 'Pelanggan',
