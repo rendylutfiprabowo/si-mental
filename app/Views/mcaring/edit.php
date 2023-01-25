@@ -1,5 +1,11 @@
 <?= $this->extend('template') ?>
 <?= $this->section('content') ?>
+
+<!-- bs 5 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+
 <table class="table">
     <tbody>
 
@@ -12,7 +18,7 @@
                             <div class="form-group mb-3">
                                 <label for="nama">Nomor Jastel Pelanggan</label>
                                 <fieldset disabled>
-                                    <input type="text" name="nomor_jastel" id="disabledTextInput" class="form-control" value="ini disabled" id=" nomor_jastel" value="<?= $detpel['nomor_jastel'] ?>">
+                                    <input type="text" name="nomor_jastel" id="disabledTextInput" class="form-control" id=" nomor_jastel" value="<?= $detpel['nomor_jastel'] ?>">
                                     <!-- <input style="margin-left: 100;" type="number" name="nomor_jastel" class="form-control" style="background-color: white;" id="nomor_jastel" value="  "> -->
                                 </fieldset>
                             </div>
