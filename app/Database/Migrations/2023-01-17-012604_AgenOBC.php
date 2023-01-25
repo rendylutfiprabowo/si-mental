@@ -25,7 +25,7 @@ class AgenOBC extends Migration
             ],
 
         ]);
-        $this->forge->addPrimaryKey('id_agen', true);
+        $this->forge->addKey('id_agen', true);
         $this->forge->createTable('agenobc');
     }
 

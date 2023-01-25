@@ -42,7 +42,7 @@ class Caring extends Migration
                 'constraint' => '255',
             ],
         ]);
-        $this->forge->addPrimaryKey('id_caring', true);
+        $this->forge->addKey('id_caring', true);
         $this->forge->createTable('caring');
     }
 

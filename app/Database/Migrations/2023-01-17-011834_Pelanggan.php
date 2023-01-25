@@ -73,7 +73,7 @@ class Pelanggan extends Migration
             ],
 
         ]);
-        $this->forge->addPrimaryKey('id_pelanggan', true);
+        $this->forge->addKey('id_pelanggan', true);
         $this->forge->createTable('pelanggan');
     }
 

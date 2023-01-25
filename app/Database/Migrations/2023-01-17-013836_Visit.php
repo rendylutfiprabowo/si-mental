@@ -43,7 +43,7 @@ class Visit extends Migration
             ],
 
         ]);
-        $this->forge->addPrimaryKey('id_visit', true);
+        $this->forge->addKey('id_visit', true);
         $this->forge->createTable('visit');
     }
 
