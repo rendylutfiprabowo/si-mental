@@ -27,7 +27,7 @@
                             <div class="form-group mb-3">
                                 <label for="nama">Nama Pelanggan</label>
                                 <fieldset disabled>
-                                    <input type="text" name="nama" id="disabledTextInput" class="form-control" value="ini disabled" id="nama" value="<?= $detpel['nama'] ?>">
+                                    <input type="text" name="nama" id="disabledTextInput" class="form-control" id="nama" value="<?= $detpel['nama'] ?>">
                                     <!-- <input type="text" name="nama" class="form-control" style="background-color: white;" id="nama" value="php"> -->
                                 </fieldset>
                             </div>
@@ -55,7 +55,7 @@
                             <div class="form-group mb-3">
                                 <label for="produk">Produk Pelanggan</label>
                                 <fieldset disabled>
-                                    <input type="text" id="disabledTextInput" name="produk" class="form-control" value="ini disable produknya" id="produk" value="<?= $detpel['produk'] ?>">
+                                    <input type="text" id="disabledTextInput" name="produk" class="form-control" id="produk" value="<?= $detpel['produk'] ?>">
                                 </fieldset>
                                 <!-- <input type="text" name="produk" class="form-control" style="background-color: white;" id="produk" value="php"> -->
                             </div>
