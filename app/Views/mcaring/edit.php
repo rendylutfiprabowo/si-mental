@@ -16,37 +16,28 @@
                     <tr>
                         <td>
                             <div class="form-group mb-3">
-                                <label for="nama">Nomor Jastel Pelanggan</label>
-                                <fieldset disabled>
-                                    <input type="text" name="nomor_jastel" id="disabledTextInput" class="form-control" id=" nomor_jastel" value="<?= $detpel['nomor_jastel'] ?>">
-                                    <!-- <input style="margin-left: 100;" type="number" name="nomor_jastel" class="form-control" style="background-color: white;" id="nomor_jastel" value="  "> -->
-                                </fieldset>
+                                <label for="nomor_jastel">Nomor Jastel Pelanggan</label>
+                                <input type="text" name="nomor_jastel" class="form-control" id="nomor_jastel" readonly value="<?= $detpel['nomor_jastel'] ?>">
                             </div>
                         </td>
                         <td>
                             <div class="form-group mb-3">
                                 <label for="nama">Nama Pelanggan</label>
-                                <fieldset disabled>
-                                    <input type="text" name="nama" id="disabledTextInput" class="form-control" id="nama" value="<?= $detpel['nama'] ?>">
-                                    <!-- <input type="text" name="nama" class="form-control" style="background-color: white;" id="nama" value="php"> -->
-                                </fieldset>
+                                <input type="text" name="nama" id="disabledTextInput" class="form-control" id="nama" readonly value="<?= $detpel['nama'] ?>">
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div class="form-group mb-3">
-                                <label for="nohp">Kontak Telepon Pelanggan</label>
+                                <label for="contact">Kontak Telepon Pelanggan</label>
                                 <input type="tel" name="contact" class="form-control" style="background-color: white;" id="contact" value="<?= $detpel['contact'] ?>">
                             </div>
                         </td>
                         <td>
                             <div class="form-group mb-3">
-                                <label for="agen">Agen Pengelola</label>
-                                <fieldset disabled>
-                                    <input type="text" id="disabledTextInput" name="agen_pengelola" class="form-control" id="agen_pengelola" value="<?= $detpel['agen_pengelola'] ?>">
-                                </fieldset>
-                                <!-- <input type="text" name="agen_pengelola" class="form-control" style="background-color: white;" id="agen_pengelola" value="php" ?> -->
+                                <label for="agen_pengelola">Agen Pengelola</label>
+                                <input type="text" id="disabledTextInput" name="agen_pengelola" class="form-control" id="agen_pengelola" readonly value="<?= $detpel['agen_pengelola'] ?>">
                             </div>
                         </td>
                     </tr>
@@ -54,20 +45,13 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="produk">Produk Pelanggan</label>
-                                <fieldset disabled>
-                                    <input type="text" id="disabledTextInput" name="produk" class="form-control" id="produk" value="<?= $detpel['produk'] ?>">
-                                </fieldset>
-                                <!-- <input type="text" name="produk" class="form-control" style="background-color: white;" id="produk" value="php"> -->
+                                <input type="text" id="disabledTextInput" name="produk" class="form-control" id="produk" readonly value="<?= $detpel['produk'] ?>">
                             </div>
                         </td>
                         <td>
                             <div class="form-group mb-3">
                                 <label for="alamat">Alamat Lengkap Pelanggan</label>
-                                <!-- <input type="textarea" name="alamat" class="form-control" style="background-color: white;" id="alamat" value="php"> -->
-                                <div class="form-floating">
-                                    <textarea style="height: 150px;" name="alamat" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"> <?= $detpel['alamat'] ?></textarea>
-                                    <!-- <label for="floatingTextarea">Bagaimana dengan pengalaman pelanggan?</label> -->
-                                </div>
+                                <textarea style="height: 150px;" name="alamat" class="form-control"> <?= $detpel['alamat'] ?></textarea>
                             </div>
                         </td>
                     </tr>
@@ -75,7 +59,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="call">Status Call</label>
-                                <select class="form-select" aria-label="Default select example">
+                                <select name="call" class="form-select" aria-label="Default select example">
                                     <option selected><?= $detpel['statuscall'] ?></option>
                                     <option value="1">Contacted</option>
                                     <option value="2">Not-Contacted</option>
@@ -85,8 +69,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="reason">Reason Call</label>
-                                <!-- <input type="text" name="reasoncall" class="form-control" style="background-color: white;" id="reasoncall" value="php"> -->
-                                <select class="form-select" aria-label="Default select example">
+                                <select name="reason" class="form-select" aria-label="Default select example">
                                     <option selected><?= $detpel['reasoncall'] ?></option>
                                     <option value="1">Setuju</option>
                                     <option value="2">Kendala</option>
@@ -100,7 +83,7 @@
                     <tr>
                         <td>
                             <div class="form-group mb-3">
-                                <label for="penerima">Penerima Telepon</label>
+                                <label for="penerima_telpon">Penerima Telepon</label>
                                 <input type="text" name="penerima_telpon" class="form-control" style="background-color: white;" id="penerima_telpon" value="<?= $detpel['penerima_telpon'] ?>" ?>
 
                             </div>
@@ -108,7 +91,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="hub">Hubungan Dengan YBS</label>
-                                <select class="form-select" aria-label="Default select example">
+                                <select name="hub" class="form-select" aria-label="Default select example">
                                     <option selected><?= $detpel['hub_ybs'] ?></option>
                                     <option value="1">Orangtua</option>
                                     <option value="2">Anak</option>
@@ -124,10 +107,8 @@
                         <td colspan="2">
                             <div class="form-group mb-3">
                                 <label for="kendala">Kendala Pelanggan</label>
-                                <!-- <input type="textarea" name="kendala_pelanggan" class="form-control" style="background-color: white;" id="kendala_pelanggan" value="php" ?> -->
-                                <div class="form-floating">
-                                    <textarea style="height: 150px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"><?= $detpel['kendala_pelanggan'] ?></textarea>
-                                    <!-- <label for="floatingTextarea">Bagaimana dengan pengalaman pelanggan?</label> -->
+                                <div>
+                                    <textarea style="height: 150px;" name="kendala" class="form-control"><?= $detpel['kendala_pelanggan'] ?></textarea>
                                 </div>
                         </td>
                     </tr>
@@ -135,13 +116,11 @@
                         <td colspan="2">
                             <div class="form-group mb-3">
                                 <label for="hasil">Hasil Caring</label>
-                                <!-- <input type="text" name="hasil_caring" class="form-control" style="background-color: white;" id="hasil_caring" value="php"> -->
-                                <div class="form-floating">
-                                    <textarea style="height: 150px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"><?= $detpel['hasil_caring'] ?></textarea>
-                                    <!-- <label for="floatingTextarea">Kenapa terlambat bayar?</label> -->
+                                <div>
+                                    <textarea style="height: 150px;" name="hasil" class="form-control"><?= $detpel['hasil_caring'] ?></textarea>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary mt-2 ms-2">Simpan Data</button>
+                            <button type="submit" class="btn btn-primary mt-2 ms-2" value="submit">Simpan Data</button>
                         </td>
                     </tr>
                 </form>
