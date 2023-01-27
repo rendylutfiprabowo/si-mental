@@ -6,7 +6,7 @@
             <div class="card my-4">
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                     <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                        <h6 class="text-white text-capitalize ps-3">Data Caring 2 Bulan</h6>
+                        <h6 class="text-white text-capitalize ps-3">Data Caring 1 Bulan</h6>
                     </div>
                 </div>
                 <div class="card-body px-0 pb-2">
@@ -18,7 +18,7 @@
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Jumlah Pelanggan</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Call</th>
-                                    <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -33,22 +33,20 @@
                                                 </div>
                                                 <div class="d-flex flex-column justify-content-center">
                                                     <h6 class="mb-0 text-sm"><?php echo $dp['agen_pengelola']; ?></h6>
-
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <p class="text-xs font-weight-bold mb-0"><?php echo $dp['nama']; ?></p>
+                                            <h6 class="mb-0 text-sm"><?php echo $dp['nama']; ?></h6>
                                         </td>
                                         <td class="align-middle text-center text-sm">
-                                            <p class="text-xs font-weight-bold mb-0">jumlah_pelanggan</p>
-
+                                            <h6 class="mb-0 text-sm">$jml_plg</h6>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <span class="text-secondary text-xs font-weight-bold"><?php echo $dp['statuscall']; ?></span>
+                                            <h6 class="mb-0 text-sm"><?php echo $dp['statuscall']; ?></h6>
                                         </td>
-                                        <td class="align-middle">
-                                            <a  href="/datapelanggan/caring/detail/<?= $dp['id_pelanggan'] ?>">
+                                        <td class="align-middle text-center">
+                                            <a href="/datapelanggan/caring/detail/<?= $dp['id_pelanggan'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-success"><i class="material-icons">info</i></span>
                                             </a>
                                         </td>

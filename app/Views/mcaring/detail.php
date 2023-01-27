@@ -137,7 +137,7 @@
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Kendala Pelanggan</p>
                             <p class="pb-0 mb-0">
-                                <span class="text-success text-sm font-weight-bolder "> <?= $detpel['kendala_pelanggan'] ?></span>
+                                <span class="text-success text-sm font-weight-bolder "><?= $detpel['kendala_pelanggan'] ?></span>
                             </p>
                             <br>
                             <p class="text-sm mb-0 text-capitalize">Hasil Caring</p>
