@@ -14,11 +14,11 @@
                         <table class="table align-items-center mb-0">
                             <thead>
                                 <tr>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Agen</th>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama Pelanggan</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Agen</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Jumlah Pelanggan</th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Hasil Caring</th>
-                                    <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Call</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -33,23 +33,21 @@
                                                 </div>
                                                 <div class="d-flex flex-column justify-content-center">
                                                     <h6 class="mb-0 text-sm"><?php echo $dp['agen_pengelola']; ?></h6>
-
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <p class="text-xs font-weight-bold mb-0"><?php echo $dp['nama']; ?></p>
+                                            <h6 class="mb-0 text-sm"><?php echo $dp['nama']; ?></h6>
                                         </td>
                                         <td class="align-middle text-center text-sm">
-                                            <p class="text-xs font-weight-bold mb-0">jumlah_pelanggan</p>
-
+                                            <h6 class="mb-0 text-sm">$jml_plg</h6>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <span class="text-secondary text-xs font-weight-bold">hasil_caring</span>
+                                            <h6 class="mb-0 text-sm"><?php echo $dp['statuscall']; ?></h6>
                                         </td>
-                                        <td class="align-middle">
+                                        <td class="align-middle text-center">
                                             <a href="/datapelanggan/caring/detail/<?= $dp['id_pelanggan'] ?>">
-                                                <span class="badge badge-sm bg-gradient-success">Detail</span>
+                                                <span style="justify-content: center;" class="badge badge-sm bg-gradient-success"><i class="material-icons">info</i></span>
                                             </a>
                                         </td>
                                     </tr>

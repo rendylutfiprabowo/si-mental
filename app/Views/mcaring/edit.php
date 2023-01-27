@@ -76,7 +76,7 @@
                             <div class="form-group mb-3">
                                 <label for="call">Status Call</label>
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>Pilih Status Call</option>
+                                    <option selected><?= $detpel['statuscall'] ?></option>
                                     <option value="1">Contacted</option>
                                     <option value="2">Not-Contacted</option>
                                 </select>
@@ -87,7 +87,7 @@
                                 <label for="reason">Reason Call</label>
                                 <!-- <input type="text" name="reasoncall" class="form-control" style="background-color: white;" id="reasoncall" value="php"> -->
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>Pilih Reason Call</option>
+                                    <option selected><?= $detpel['reasoncall'] ?></option>
                                     <option value="1">Setuju</option>
                                     <option value="2">Kendala</option>
                                     <option value="3">Lunas</option>
@@ -101,7 +101,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="penerima">Penerima Telepon</label>
-                                <input type="text" name="penerima_telpon" class="form-control" style="background-color: white;" id="penerima_telpon" value="defaultnya YBS" ?>
+                                <input type="text" name="penerima_telpon" class="form-control" style="background-color: white;" id="penerima_telpon" value="<?= $detpel['penerima_telpon'] ?>" ?>
 
                             </div>
                         </td>
@@ -109,7 +109,7 @@
                             <div class="form-group mb-3">
                                 <label for="hub">Hubungan Dengan YBS</label>
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>Pilih Hubungan Dengan Yang Bersangkutan</option>
+                                    <option selected><?= $detpel['hub_ybs'] ?></option>
                                     <option value="1">Orangtua</option>
                                     <option value="2">Anak</option>
                                     <option value="3">Teman</option>
@@ -126,7 +126,7 @@
                                 <label for="kendala">Kendala Pelanggan</label>
                                 <!-- <input type="textarea" name="kendala_pelanggan" class="form-control" style="background-color: white;" id="kendala_pelanggan" value="php" ?> -->
                                 <div class="form-floating">
-                                    <textarea style="height: 150px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea">disini isi database</textarea>
+                                    <textarea style="height: 150px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"><?= $detpel['kendala_pelanggan'] ?></textarea>
                                     <!-- <label for="floatingTextarea">Bagaimana dengan pengalaman pelanggan?</label> -->
                                 </div>
                         </td>
@@ -137,7 +137,7 @@
                                 <label for="hasil">Hasil Caring</label>
                                 <!-- <input type="text" name="hasil_caring" class="form-control" style="background-color: white;" id="hasil_caring" value="php"> -->
                                 <div class="form-floating">
-                                    <textarea style="height: 150px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea">disini isi database</textarea>
+                                    <textarea style="height: 150px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"><?= $detpel['hasil_caring'] ?></textarea>
                                     <!-- <label for="floatingTextarea">Kenapa terlambat bayar?</label> -->
                                 </div>
                             </div>
