@@ -88,7 +88,6 @@
                             </p>
                             <p class="text-sm mb-0 text-capitalize">Status Call</p>
                             <span class="text-success text-sm font-weight-bolder"> <?= $detpel['statuscall'] ?></span><br>
-                            <!-- <span class="text-success text-sm font-weight-bolder">Contacted / Not Contacted</span><br> -->
                             <p class="text-sm mb-0 text-capitalize">Tanggal Caring</p>
                             <span class="text-success text-sm font-weight-bolder">04 - 04 - 2002</span><br>
                         </div>

@@ -60,9 +60,17 @@
                             <div class="form-group mb-3">
                                 <label for="call">Status Call</label>
                                 <select name="call" class="form-select" aria-label="Default select example">
-                                    <option selected><?= $detpel['statuscall'] ?></option>
-                                    <option value="1">Contacted</option>
-                                    <option value="2">Not-Contacted</option>
+                                    <option value=""><?= $detpel['reasoncall'] ?></option>
+                                    <option value="contacted" <?php
+                                                                if ($detpel['statuscall'] == 'contacted') {
+                                                                    echo "Contacted";
+                                                                }
+                                                                ?>>Contacted</option>
+                                    <option value="notcontacted"><?php
+                                                                    if ($detpel['statuscall'] == 'notcontacted') {
+                                                                        echo "Not-Contacted";
+                                                                    }
+                                                                    ?>Not-Contacted</option>
                                 </select>
                             </div>
                         </td>
