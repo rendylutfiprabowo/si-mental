@@ -16,7 +16,6 @@
                                 <tr>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Agen</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Jumlah Pelanggan</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Call</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
                                 </tr>
@@ -38,9 +37,6 @@
                                         </td>
                                         <td>
                                             <h6 class="mb-0 text-sm"><?php echo $dp['nama']; ?></h6>
-                                        </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <h6 class="mb-0 text-sm">$jml_plg</h6>
                                         </td>
                                         <td class="align-middle text-center">
                                             <h6 class="mb-0 text-sm"><?php echo $dp['statuscall']; ?></h6>

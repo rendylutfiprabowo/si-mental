@@ -6,7 +6,7 @@
             <div class="card my-4">
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                     <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                        <h6 class="text-white text-capitalize ps-3">Data Caring 1 Bulan</h6>
+                        <h6 class="text-white text-capitalize ps-3">Data Caring 2 Bulan</h6>
                     </div>
                 </div>
                 <div class="card-body px-0 pb-2">
@@ -16,7 +16,6 @@
                                 <tr>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Agen</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Jumlah Pelanggan</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Call</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
                                 </tr>
@@ -38,9 +37,6 @@
                                         </td>
                                         <td>
                                             <h6 class="mb-0 text-sm"><?php echo $dp['nama']; ?></h6>
-                                        </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <h6 class="mb-0 text-sm">$jml_plg</h6>
                                         </td>
                                         <td class="align-middle text-center">
                                             <h6 class="mb-0 text-sm"><?php echo $dp['statuscall']; ?></h6>

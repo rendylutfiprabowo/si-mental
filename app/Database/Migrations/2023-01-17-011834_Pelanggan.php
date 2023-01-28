@@ -58,6 +58,7 @@ class Pelanggan extends Migration
             'penerima_telpon' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '225',
+                'default' => 'YBS',
             ],
             'hub_ybs' => [
                 'type'       => 'VARCHAR',

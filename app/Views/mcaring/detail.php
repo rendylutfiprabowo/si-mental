@@ -142,7 +142,7 @@
                             <br>
                             <p class="text-sm mb-0 text-capitalize">Hasil Caring</p>
                             <p class="pb-0 mb-0">
-                                <span class="text-success text-sm font-weight-bolder "> <?= $detpel['hasil_caring'] ?></span>
+                                <span class="text-success text-sm font-weight-bolder "><?= $detpel['hasil_caring'] ?></span>
                             </p>
                         </div>
                     </div>

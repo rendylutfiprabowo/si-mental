@@ -3,20 +3,35 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\DetPel;
 
 class Datavisit extends BaseController
 {
     public function satubulan()
     {
-        // return view('mvisit/satubulan');
-        if (session()->logged_in)  return view('mvisit/satubulan');
+        $detailModel = new DetPel();
+        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
+        $detpel = $detailModel->findAll();
+        $data = [
+            'title' => 'Pelanggan',
+            'detpel' => $detpel
+        ];
+        if (session()->logged_in)  return view('mvisit/satubulan', $data);
         else return redirect()->to('login');
     }
 
     public function duabulan()
     {
+
+        $detailModel = new DetPel();
+        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
+        $detpel = $detailModel->findAll();
+        $data = [
+            'title' => 'Pelanggan',
+            'detpel' => $detpel
+        ];
         // return view('mvisit/duabulan');
-        if (session()->logged_in)  return view('mvisit/duabulan');
+        if (session()->logged_in)  return view('mvisit/duabulan', $data);
         else return redirect()->to('login');
     }
 

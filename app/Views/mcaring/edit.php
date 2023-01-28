@@ -58,32 +58,23 @@
                     <tr>
                         <td>
                             <div class="form-group mb-3">
-                                <label for="call">Status Call</label>
-                                <select name="call" class="form-select" aria-label="Default select example">
-                                    <option value=""><?= $detpel['reasoncall'] ?></option>
-                                    <option value="contacted" <?php
-                                                                if ($detpel['statuscall'] == 'contacted') {
-                                                                    echo "Contacted";
-                                                                }
-                                                                ?>>Contacted</option>
-                                    <option value="notcontacted"><?php
-                                                                    if ($detpel['statuscall'] == 'notcontacted') {
-                                                                        echo "Not-Contacted";
-                                                                    }
-                                                                    ?>Not-Contacted</option>
+                                <label for="statuscall">Status Call</label>
+                                <select name="statuscall" class="form-select" aria-label="Default select example">
+                                    <option value=""><?= $detpel['statuscall'] ?></option>
+                                    <option value="Contacted">Contacted</option>
+                                    <option value="Not Contacted">Not-Contacted</option>
                                 </select>
                             </div>
                         </td>
                         <td>
                             <div class="form-group mb-3">
-                                <label for="reason">Reason Call</label>
-                                <select name="reason" class="form-select" aria-label="Default select example">
+                                <label for="reasoncall">Reason Call</label>
+                                <select name="reasoncall" class="form-select" aria-label="Default select example">
                                     <option selected><?= $detpel['reasoncall'] ?></option>
-                                    <option value="1">Setuju</option>
-                                    <option value="2">Kendala</option>
-                                    <option value="3">Lunas</option>
-                                    <option value="4">Janji bayar</option>
-                                    <option value="5"></option>
+                                    <option value="Setuju">Setuju</option>
+                                    <option value="Kendala">Kendala</option>
+                                    <option value="Lunas">Lunas</option>
+                                    <option value="Janji bayar">Janji bayar</option>
                                 </select>
                             </div>
                         </td>
@@ -98,15 +89,14 @@
                         </td>
                         <td>
                             <div class="form-group mb-3">
-                                <label for="hub">Hubungan Dengan YBS</label>
-                                <select name="hub" class="form-select" aria-label="Default select example">
+                                <label for="hub_ybs">Hubungan Dengan YBS</label>
+                                <select name="hub_ybs" class="form-select" aria-label="Default select example">
                                     <option selected><?= $detpel['hub_ybs'] ?></option>
-                                    <option value="1">Orangtua</option>
-                                    <option value="2">Anak</option>
-                                    <option value="3">Teman</option>
-                                    <option value="4">Tetangga</option>
-                                    <option value="5">Tidak Kenal</option>
-                                    <option value="6"></option>
+                                    <option value="Orangtua">Orangtua</option>
+                                    <option value="Anak">Anak</option>
+                                    <option value="Teman">Teman</option>
+                                    <option value="Tetangga">Tetangga</option>
+                                    <option value="Tidak Kenal">Tidak Kenal</option>
                                 </select>
                             </div>
                         </td>
@@ -114,18 +104,18 @@
                     <tr>
                         <td colspan="2">
                             <div class="form-group mb-3">
-                                <label for="kendala">Kendala Pelanggan</label>
+                                <label for="kendala_pelanggan">Kendala Pelanggan</label>
                                 <div>
-                                    <textarea style="height: 150px;" name="kendala" class="form-control"><?= $detpel['kendala_pelanggan'] ?></textarea>
+                                    <textarea style="height: 150px;" name="kendala_pelanggan" class="form-control"><?= $detpel['kendala_pelanggan'] ?></textarea>
                                 </div>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
                             <div class="form-group mb-3">
-                                <label for="hasil">Hasil Caring</label>
+                                <label for="hasil_caring">Hasil Caring</label>
                                 <div>
-                                    <textarea style="height: 150px;" name="hasil" class="form-control"><?= $detpel['hasil_caring'] ?></textarea>
+                                    <textarea style="height: 150px;" name="hasil_caring" class="form-control"><?= $detpel['hasil_caring'] ?></textarea>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary mt-2 ms-2" value="submit">Simpan Data</button>
