@@ -3,18 +3,18 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\DetPel;
+use App\Models\VisitModel;
 
 class Datavisit extends BaseController
 {
     public function satubulan()
     {
-        $detailModel = new DetPel();
+        $detailModel = new VisitModel();
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
-        $detpel = $detailModel->findAll();
+        $ctb = $detailModel->findAll();
         $data = [
-            'title' => 'Pelanggan',
-            'detpel' => $detpel
+            'title' => 'Visit',
+            'ctb' => $ctb
         ];
         if (session()->logged_in)  return view('mvisit/satubulan', $data);
         else return redirect()->to('login');
@@ -23,12 +23,12 @@ class Datavisit extends BaseController
     public function duabulan()
     {
 
-        $detailModel = new DetPel();
+        $detailModel = new VisitModel();
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
-        $detpel = $detailModel->findAll();
+        $ctb = $detailModel->findAll();
         $data = [
-            'title' => 'Pelanggan',
-            'detpel' => $detpel
+            'title' => 'Visit',
+            'ctb' => $ctb
         ];
         // return view('mvisit/duabulan');
         if (session()->logged_in)  return view('mvisit/duabulan', $data);
@@ -37,12 +37,12 @@ class Datavisit extends BaseController
 
     public function detail()
     {
-        $detailModel = new DetPel();
+        $detailModel = new VisitModel();
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
-        $detpel = $detailModel->findAll();
+        $ctb = $detailModel->findAll();
         $data = [
-            'title' => 'Pelanggan',
-            'detpel' => $detpel
+            'title' => 'Visit',
+            'ctb' => $ctb
         ];
         if (session()->logged_in)  return view('mvisit/detail', $data);
         else return redirect()->to('login');
@@ -50,12 +50,12 @@ class Datavisit extends BaseController
 
     public function edit()
     {
-        $detailModel = new DetPel();
+        $detailModel = new VisitModel();
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
-        $detpel = $detailModel->findAll();
+        $ctb = $detailModel->findAll();
         $data = [
-            'title' => 'Pelanggan',
-            'detpel' => $detpel
+            'title' => 'Visit',
+            'ctb' => $ctb
         ];
         if (session()->logged_in)  return view('mvisit/edit', $data);
         else return redirect()->to('login');

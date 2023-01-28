@@ -22,7 +22,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                foreach ($detpel as $dp) {
+                                foreach ($ctb as $ctbvisit) {
                                 ?>
                                     <tr>
                                         <td>
@@ -31,18 +31,18 @@
                                                     <img src="/assets/material/assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                                                 </div>
                                                 <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm"><?php echo $dp['agen_pengelola']; ?></h6>
+                                                    <h6 class="mb-0 text-sm"><?php echo $ctbvisit['agen_pengelola']; ?></h6>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <h6 class="mb-0 text-sm"><?php echo $dp['nama']; ?></h6>
+                                            <h6 class="mb-0 text-sm"><?php echo $ctbvisit['nama']; ?></h6>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <h6 class="mb-0 text-sm"><?php echo $dp['statuscall']; ?></h6>
+                                            <h6 class="mb-0 text-sm"><?php echo $ctbvisit['statuscall']; ?></h6>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <a href="/datapelanggan/visit/detail/<?= $dp['id_pelanggan'] ?>">
+                                            <a href="/datapelanggan/visit/detail/<?= $ctbvisit['id_pelanggan'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-success"><i class="material-icons">info</i></span>
                                             </a>
                                         </td>

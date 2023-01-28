@@ -11,7 +11,7 @@
 <div class="container-fluid py-4">
     <div class="ms-auto my-auto mt-lg-0 mt-4">
         <div class="ms-auto my-auto">
-            <a href="/datapelanggan/visit/edit/<?= $detpel['id_pelanggan'] ?>" class="btn bg-gradient-primary  mb-0"> <i class="material-icons">edit</i> Edit </a>
+            <a href="/datapelanggan/visit/edit/<?= $ctb['id_visit'] ?>" class="btn bg-gradient-primary  mb-0"> <i class="material-icons">edit</i> Edit </a>
             <button type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import">
                 Import
             </button>
