@@ -37,15 +37,27 @@ class Datavisit extends BaseController
 
     public function detail()
     {
-        // return view('mvisit/detail');
-        if (session()->logged_in)  return view('mvisit/detail');
+        $detailModel = new DetPel();
+        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
+        $detpel = $detailModel->findAll();
+        $data = [
+            'title' => 'Pelanggan',
+            'detpel' => $detpel
+        ];
+        if (session()->logged_in)  return view('mvisit/detail', $data);
         else return redirect()->to('login');
     }
 
     public function edit()
     {
-        // return view('mvisit/edit');
-        if (session()->logged_in)  return view('mvisit/edit');
+        $detailModel = new DetPel();
+        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
+        $detpel = $detailModel->findAll();
+        $data = [
+            'title' => 'Pelanggan',
+            'detpel' => $detpel
+        ];
+        if (session()->logged_in)  return view('mvisit/edit', $data);
         else return redirect()->to('login');
     }
 }
