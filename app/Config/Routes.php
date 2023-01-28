@@ -48,7 +48,7 @@ $routes->get('/datapelanggan/caring/edit', 'Datacaring::edit');
 
 $routes->get('/datapelanggan/visit/satubulan', 'Datavisit::satubulan');
 $routes->get('/datapelanggan/visit/duabulan', 'Datavisit::duabulan');
-$routes->get('/datapelanggan/visit/detail', 'Datavisit::detail');
+$routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
 $routes->get('/datapelanggan/visit/edit', 'Datavisit::edit');
 
 $routes->get('/dataagenobc', 'Dataagenobc::listdata');
