@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class AgenModel extends Model
 {
-    protected $table = "agenobc";
+    protected $table = "agen";
     protected $primaryKey = "id_agen";
     protected $returnType = "array";
     protected $useTimestamps = true;

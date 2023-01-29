@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class AgenOBC extends Migration
+class Agen extends Migration
 {
     public function up()
     {
@@ -26,11 +26,11 @@ class AgenOBC extends Migration
 
         ]);
         $this->forge->addKey('id_agen', true);
-        $this->forge->createTable('agenobc');
+        $this->forge->createTable('agen');
     }
 
     public function down()
     {
-        $this->forge->dropTable('agenobc');
+        $this->forge->dropTable('agen');
     }
 }

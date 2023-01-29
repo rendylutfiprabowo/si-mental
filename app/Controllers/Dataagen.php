@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\AgenModel;
 
-class Dataagenobc extends BaseController
+class Dataagen extends BaseController
 {
     public function listdata()
     {
