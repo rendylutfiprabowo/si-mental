@@ -26,6 +26,7 @@ class Datavisit extends BaseController
         $detailModel = new VisitModel();
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
         $ctb = $detailModel->findAll();
+        // dd($ctb);
         $data = [
             'title' => 'Visit',
             'ctb' => $ctb
@@ -40,6 +41,7 @@ class Datavisit extends BaseController
         $detailModel = new VisitModel();
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
         $ctb = $detailModel->findAll();
+        // dd($ctb);
         $data = [
             'title' => 'Visit',
             'ctb' => $ctb
