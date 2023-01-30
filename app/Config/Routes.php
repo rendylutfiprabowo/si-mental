@@ -71,7 +71,8 @@ $routes->get('/eror', 'Home::eror');
 
 // coba-coba
 $routes->get('/datapelanggan/caring/edit/(:num)', 'Datacaring::edit/$1');
-$routes->post('/update/(:num)', 'Datacaring::update/$1');
+$routes->post('/caring/update/(:num)', 'Datacaring::update/$1');
+$routes->post('/visit/update/(:num)', 'Datavisit::update/$1');
 
 /*
  * --------------------------------------------------------------------

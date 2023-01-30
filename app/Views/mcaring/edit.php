@@ -11,7 +11,7 @@
 
         <div class="P-4">
             <div class="row col-6 ms-3 mt-3">
-                <form action="/update/<?= $detpel['id_pelanggan'] ?>" method="POST" enctype="multipart/form-data">
+                <form action="/caring/update/<?= $detpel['id_pelanggan'] ?>" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="gambarLama">
                     <tr>
                         <td>
