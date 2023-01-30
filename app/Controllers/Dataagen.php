@@ -12,7 +12,7 @@ class Dataagen extends BaseController
         $detailModel = new AgenModel();
         $Agen = $detailModel->findAll();
         $data = [
-            'title' => 'AgenOBC',
+            'title' => 'Agen',
             'Agen' => $Agen
         ];
         if (session()->logged_in)  return view('mobc/listdata', $data);
@@ -24,7 +24,7 @@ class Dataagen extends BaseController
         $detailModel = new AgenModel();
         $Agen = $detailModel->findAll();
         $data = [
-            'title' => 'AgenOBC',
+            'title' => 'Agen',
             'Agen' => $Agen
         ];
         if (session()->logged_in)  return view('mobc/detail', $data);
@@ -36,7 +36,7 @@ class Dataagen extends BaseController
         $detailModel = new AgenModel();
         $Agen = $detailModel->findAll();
         $data = [
-            'title' => 'AgenOBC',
+            'title' => 'Agen',
             'Agen' => $Agen
         ];
         if (session()->logged_in)  return view('mobc/tambahdata', $data);
@@ -48,7 +48,7 @@ class Dataagen extends BaseController
         $detailModel = new AgenModel();
         $Agen = $detailModel->findAll();
         $data = [
-            'title' => 'AgenOBC',
+            'title' => 'Agen',
             'Agen' => $Agen
         ];
         if (session()->logged_in)  return view('mobc/hapusdata', $data);

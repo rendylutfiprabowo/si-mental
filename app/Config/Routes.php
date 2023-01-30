@@ -52,12 +52,12 @@ $routes->get('/datapelanggan/visit/duabulan', 'Datavisit::duabulan');
 $routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
 $routes->get('/datapelanggan/visit/edit', 'Datavisit::edit');
 
-$routes->get('/dataagenobc', 'Dataagenobc::listdata');
-$routes->get('/dataagenobc/detail', 'Dataagenobc::detail');
-$routes->get('/dataagenobc', 'Dataagenobc::listdata');
-$routes->get('/dataagenobc/tambahdata', 'Dataagenobc::tambahdata');
-$routes->get('/dataagenobc/hapusdata', 'Dataagenobc::hapusdata');
-$routes->get('/dataagenobc/editdata', 'Dataagenobc::editdata');
+$routes->get('/dataagen', 'Dataagen::listdata');
+$routes->get('/dataagen/detail', 'Dataagen::detail');
+$routes->get('/dataagen', 'Dataagen::listdata');
+$routes->get('/dataagen/tambahdata', 'Dataagen::tambahdata');
+$routes->get('/dataagen/hapusdata', 'Dataagen::hapusdata');
+$routes->get('/dataagen/editdata', 'Dataagen::editdata');
 
 
 

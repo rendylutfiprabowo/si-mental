@@ -190,7 +190,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/dataagenobc">
+                    <a class="nav-link text-white" href="/dataagen">
                         <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">receipt_long</i>
                         <span class="nav-link-text ms-2 ps-1">Data Agen OBC</span>
                     </a>
