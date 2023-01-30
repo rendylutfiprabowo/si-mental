@@ -41,7 +41,10 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</button>
+            <!-- <button class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</button> -->
+            <a href="<?= site_url('/datapelanggan/visit/edit/export') ?>" class="btn btn-primary">
+                <i class="fas fa-file-download"></i> Export
+            </a>
         </div>
     </div>
 
@@ -56,15 +59,97 @@
                             </i>
                         </div>
                         <div class="mt-5">
-                            <p class="text-sm mb-0 text-capitalize">Nama Agen</p>
-                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['nama_agen'] ?></span><br>
+                            <p class="text-sm mb-0 text-capitalize">Nomor Jastel Pelanggan</p>
+                            <span class="text-success text-sm font-weight-bolder"> nomor_jastel </span><br>
                             <p class="text-sm mb-0 text-capitalize">Nama Pelanggan</p>
                             <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['nama_pelanggan'] ?></span><br>
-                            <p class="text-sm mb-0 text-capitalize">Jumlah Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['jumlah_pelanggan'] ?></span>
-                            <p class="text-sm mb-0 text-capitalize">Hasil Visit</p>
-                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['hasil_visit'] ?></span><br>
+                            <p class="text-sm mb-0 text-capitalize">Kontak Telepon Pelanggan</p>
+                            <span class="text-success text-sm font-weight-bolder"> contact</span>
+                            <p class="text-sm mb-0 text-capitalize">Nama Agen</p>
+                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['nama_agen']  ?></span><br>
+                            <p class="text-sm mb-0 text-capitalize">Produk Pelanggan</p>
+                            <span class="text-success text-sm font-weight-bolder"> produk</span><br>
                         </div>
+                    </div>
+
+                    <div class="card-footer p-3">
+                    </div>
+                </div>
+            </td>
+            <td style="width: 400px;">
+                <div class="card">
+                    <div class="card-header py-2 " style="height :350px">
+                        <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
+                            <i class="material-icons text-white opacity-10">
+                                account_circle
+                            </i>
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-sm mb-0 text-capitalize">Alamat Lengkap Pelanggan</p>
+                            <p class="pb-0 mb-0">
+                                <span class="text-success text-sm font-weight-bolder "> 'alamat'</span>
+                            </p>
+                            <p class="text-sm mb-0 text-capitalize">Status Call</p>
+                            <span class="text-success text-sm font-weight-bolder">'statuscall'</span><br>
+                            <p class="text-sm mb-0 text-capitalize">Tanggal Caring</p>
+                            <span class="text-success text-sm font-weight-bolder">04 - 04 - 2002</span><br>
+                        </div>
+                    </div>
+                    <div class="card-footer p-3">
+                    </div>
+                </div>
+            </td>
+            <td style="width: 400px;">
+                <div class="card">
+                    <div class="card-header py-2" style="height :350px">
+                        <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
+                            <i class="material-icons text-white opacity-10">
+                                account_circle
+                            </i>
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-sm mb-0 text-capitalize">Reason Call</p>
+                            <span class="text-success text-sm font-weight-bolder"> reasoncall</span><br>
+                            <!-- <span class="text-success text-sm font-weight-bolder">...dropdown....</span><br> -->
+                            <p class="text-sm mb-0 text-capitalize">Penerima Telepon</p>
+                            <p class="pb-0 mb-0">
+                                <span class="text-success text-sm font-weight-bolder "> penerima_telpon</span>
+                                <!-- <span class="text-success text-sm font-weight-bolder ">YBS / Bukan YBS</span> -->
+                            </p>
+                            <p class="text-sm mb-0 text-capitalize">Hubungan Dengan YBS</p>
+                            <p class="pb-0 mb-0">
+                                <span class="text-success text-sm font-weight-bolder ">hub_ybs</span>
+                                <!-- <span class="text-success text-sm font-weight-bolder ">adik / paman/ orangtua</span> -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-3">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="row mt-5">
+            <td colspan="3" style="width: 1200px; ">
+                <div class="card">
+                    <div class="card-header py-2" style="height :230px">
+                        <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
+                            <i class="material-icons text-white opacity-10">
+                                account_circle
+                            </i>
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-sm mb-0 text-capitalize">Kendala Pelanggan</p>
+                            <p class="pb-0 mb-0">
+                                <span class="text-success text-sm font-weight-bolder ">kendala_pelanggan</span>
+                            </p>
+                            <br>
+                            <p class="text-sm mb-0 text-capitalize">Hasil Caring</p>
+                            <p class="pb-0 mb-0">
+                                <span class="text-success text-sm font-weight-bolder ">hasil_caring</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-3">
                     </div>
                 </div>
             </td>

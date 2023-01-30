@@ -35,12 +35,10 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>
-                                            <h6 class="mb-0 text-sm"><?php echo $ctbvisit['nama_pelanggan']; ?></h6>
+                                        <td >
+                                            <h6 style="margin-left: 15px;" class="mb-0 text-sm"><?php echo $ctbvisit['nama_pelanggan']; ?></h6>
                                         </td>
-                                        <td class="align-middle text-center">
-                                            <h6 class="mb-0 text-sm"><?php echo $ctbvisit['jumlah_pelanggan']; ?></h6>
-                                        </td>
+
                                         <td class="align-middle text-center">
                                             <h6 class="mb-0 text-sm"><?php echo $ctbvisit['hasil_visit']; ?></h6>
                                         </td>

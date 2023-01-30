@@ -6,7 +6,7 @@
             <div class="card my-4">
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                     <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                        <h6 class="text-white text-capitalize ps-3">Data Visit 2 Bulan</h6>
+                        <h6 class="text-white text-capitalize ps-3">Data Visit 1 Bulan</h6>
                     </div>
                 </div>
                 <div class="card-body px-0 pb-2">
@@ -14,9 +14,9 @@
                         <table class="table align-items-center mb-0">
                             <thead>
                                 <tr>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Agen</th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Call</th>
+                                    <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama CTB</th>
+                                    <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Hasil Visit</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
                                 </tr>
                             </thead>
@@ -35,12 +35,10 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>
-                                            <h6 class="mb-0 text-sm"><?php echo $ctbvisit['nama_pelanggan']; ?></h6>
+                                        <td >
+                                            <h6 style="margin-left: 15px;" class="mb-0 text-sm"><?php echo $ctbvisit['nama_pelanggan']; ?></h6>
                                         </td>
-                                        <td class="align-middle text-center">
-                                            <h6 class="mb-0 text-sm"><?php echo $ctbvisit['jumlah_pelanggan']; ?></h6>
-                                        </td>
+
                                         <td class="align-middle text-center">
                                             <h6 class="mb-0 text-sm"><?php echo $ctbvisit['hasil_visit']; ?></h6>
                                         </td>
