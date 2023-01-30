@@ -72,6 +72,9 @@ class Pelanggan extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '225',
             ],
+            'tanggal' => [
+                'type'       => 'DATE',
+            ],
 
         ]);
         $this->forge->addKey('id_pelanggan', true);
