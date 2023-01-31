@@ -50,7 +50,7 @@ $routes->get('/datapelanggan/caring/edit', 'Datacaring::edit');
 $routes->get('/datapelanggan/visit/satubulan', 'Datavisit::satubulan');
 $routes->get('/datapelanggan/visit/duabulan', 'Datavisit::duabulan');
 $routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
-$routes->get('/datapelanggan/visit/edit', 'Datavisit::edit');
+$routes->get('/datapelanggan/visit/edit/(:num)', 'Datavisit::edit/$1');
 
 $routes->get('/dataagen', 'Dataagen::listdata');
 $routes->get('/dataagen/detail', 'Dataagen::detail');

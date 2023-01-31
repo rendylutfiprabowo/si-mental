@@ -60,7 +60,7 @@
                             <div class="form-group mb-3">
                                 <label for="statuscall">Status Call</label>
                                 <select name="statuscall" class="form-select" aria-label="Default select example">
-                                    <option value=""><?= $detpel['statuscall'] ?></option>
+                                    <option selected><?= $detpel['statuscall'] ?></option>
                                     <option value="Contacted">Contacted</option>
                                     <option value="Not Contacted">Not-Contacted</option>
                                 </select>
