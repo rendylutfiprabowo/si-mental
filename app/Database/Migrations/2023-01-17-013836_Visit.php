@@ -25,19 +25,39 @@ class Visit extends Migration
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
+            'nomor_jastel' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+            ],
+            'nama' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+            ],
+            'contact' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+            ],
             'nama_agen' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'nama_pelanggan' => [
+            'tanggal_visit' => [
+                'type'       => 'DATE',
+                'constraint' => NULL,
+            ],
+            'alamat' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'jumlah_pelanggan' => [
+            'alamat_baru' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
             'hasil_visit' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+            ],
+            'ket_visit' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],

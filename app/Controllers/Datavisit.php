@@ -63,6 +63,11 @@ class Datavisit extends BaseController
         else return redirect()->to('login');
     }
 
+    public function update($id)
+    {
+        
+    }
+
     public function export()
     {
 
