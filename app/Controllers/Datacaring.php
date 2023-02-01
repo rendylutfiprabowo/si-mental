@@ -187,4 +187,36 @@ class Datacaring extends BaseController
         $writer->save('php://output');
         exit();
     }
+
+    // public function import()
+    // {
+    //     $detailModel = new DetPel();
+
+    //     $pelanggan = $detailModel->findAll();
+        
+    //     $file = $this->request->getFile('file_excel');
+    //     $extension = $file->getClientExtension();
+    //     if ($extension == 'xlsx' || $extension == 'xls'){
+    //         if($extension == 'xls'){
+    //             $reader = new \PhpOffice\PhpSpreadsheet\Reader\xls();
+    //         }else{
+    //             $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+    //         }
+    //         $spreadsheet = $reader->load($file);
+    //         $pelanggan = $spreadsheet->getActiveSheet()->toArray();
+    //         foreach ($pelanggan as $dt){
+    //             if($dt == 0){
+    //                 continue;
+    //             }
+    //             $data = [
+    //                 'nomor_jastel'=> $dt[1];
+    //                 'id_pelanggan' => 0,
+    //             ];
+    //             $this->pelanggan->insert($data);
+    //         }
+    //         return redirect()->back()->with('error', 'format sesuai');
+    //     }else{
+    //         return redirect()->back()->with('error', 'format tidak sesuai');
+    //     }
+    // }
 }
