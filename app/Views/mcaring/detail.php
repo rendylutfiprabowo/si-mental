@@ -41,8 +41,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <button class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</button> -->
-            <a href="<?= site_url('/datapelanggan/caring/edit/export') ?>" class="btn btn-primary">
+            <a href="<?= site_url('/datapelanggan/caring/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">
                 <i class="fas fa-file-download"></i> Export
             </a>
         </div>
