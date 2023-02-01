@@ -35,8 +35,8 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td >
-                                            <h6 style="margin-left: 15px;" class="mb-0 text-sm"><?php echo $ctbvisit['nama_pelanggan']; ?></h6>
+                                        <td>
+                                            <h6 style="margin-left: 15px;" class="mb-0 text-sm"><?php echo $ctbvisit['nama']; ?></h6>
                                         </td>
 
                                         <td class="align-middle text-center">

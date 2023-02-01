@@ -60,15 +60,15 @@
                         </div>
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Nomor Jastel Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder">Jalan Gotong Royong No.53 Karang Raja Prabumulih Sumatera Selatan</span>
+                            <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['nomor_jastel'] ?></span>
                             <p class="text-sm mb-0 text-capitalize">Nama Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['nama_pelanggan'] ?></span><br>
+                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['nama'] ?></span><br>
                             <p class="text-sm mb-0 text-capitalize">Kontak Telepon Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder"> contact</span>
+                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['contact'] ?></span>
                             <p class="text-sm mb-0 text-capitalize">Nama Agen</p>
                             <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['nama_agen']  ?></span><br>
                             <p class="text-sm mb-0 text-capitalize">Tanggal Visit</p>
-                            <span class="text-success text-sm font-weight-bolder">default null</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['tanggal_visit'] ?></span><br>
                         </div>
                     </div>
 
@@ -86,11 +86,11 @@
                         </div>
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Alamat Lengkap Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder "  >Jalan Gotong Royong No.53 Karang Raja Raja Raja Prabumulih Sumatera Selatan RajaRajaRaja Raja Raja</span>
+                            <span class="text-success text-sm font-weight-bolder "><?= $ctb[0]['alamat'] ?></span>
                             <p class="text-sm mb-0 text-capitalize">Alamat Baru Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder">defaultnya tidak ada</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['alamat_baru'] ?></span><br>
                             <p class="text-sm mb-0 text-capitalize">Hasil Visit</p>
-                            <span class="text-success text-sm font-weight-bolder">Hasil Visit</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['hasil_visit'] ?></span><br>
                         </div>
                     </div>
                     <div class="card-footer p-3">
@@ -107,7 +107,7 @@
                         </div>
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Keterangan Visit</p>
-                            <span class="text-success text-sm font-weight-bolder"> ket.viist</span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['ket_visit'] ?></span><br>
                         </div>
                     </div>
                     <div class="card-footer p-3">
