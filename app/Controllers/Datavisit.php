@@ -62,4 +62,14 @@ class Datavisit extends BaseController
         if (session()->logged_in)  return view('mvisit/edit', $data);
         else return redirect()->to('login');
     }
+
+    public function export()
+    {
+
+    }
+
+    public function import()
+    {
+        
+    }
 }
