@@ -11,10 +11,15 @@ class VisitSeeder extends Seeder
         $data = [
             'id_agen' => '1',
             'id_pelanggan' => '1',
+            'nomor_jastel' => '1053',
+            'contact' => '088269638116',
             'nama_agen' => 'Arman',
-            'nama_pelanggan' => 'Rendy Lutfi Prabowo',
-            'jumlah_pelanggan' => '1',
+            'nama' => 'Rendy Lutfi Prabowo',
+            'alamat' => 'Prabumulih',
+            'alamat_baru' =>'Bandarlampung',
+            // 'jumlah_pelanggan' => '1',
             'hasil_visit' => 'Berantem',
+            'ket_visit' => 'iya gitu deh'
         ];
         $this->db->table('visit')->insertBatch($data);
     }

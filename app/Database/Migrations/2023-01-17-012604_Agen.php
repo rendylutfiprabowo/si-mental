@@ -19,7 +19,7 @@ class Agen extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'jumlah_customer' => [
+            'jumlah_pelanggan' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],

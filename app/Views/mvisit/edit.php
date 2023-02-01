@@ -45,7 +45,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="produk">Tanggal Visit</label>
-                                <input type="text" id="disabledTextInput" name="tanggal_visit" class="form-control" id="tanggal_visit" readonly value="<?= $ctb[0]['tanggal_visit'] ?>">
+                                <input type="date" name="tanggal_visit" class="form-control" id="tanggal_visit" value="<?= $ctb[0]['tanggal_visit'] ?>">
                             </div>
                         </td>
                         <td>
@@ -54,10 +54,20 @@
                                 <textarea style="height: 150px;" name="alamat" class="form-control"> <?= $ctb[0]['alamat'] ?></textarea>
                             </div>
                         </td>
+                    </tr>
+                    <tr>
                         <td>
                             <div class="form-group mb-3">
                                 <label for="alamat">Alamat Baru Pelanggan</label>
                                 <textarea style="height: 150px;" name="alamat_baru" class="form-control"> <?= $ctb[0]['alamat_baru'] ?></textarea>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mb-3">
+                                <label for="hasil_caring">Keterangan Visit</label>
+                                <div>
+                                    <textarea style="height: 150px;" name="ket_visit" class="form-control"><?= $ctb[0]['ket_visit'] ?></textarea>
+                                </div>
                             </div>
                         </td>
                     </tr>
@@ -69,13 +79,7 @@
                                     <textarea style="height: 150px;" name="hasil_visit" class="form-control"><?= $ctb[0]['hasil_visit'] ?></textarea>
                                 </div>
                             </div>
-                        <td colspan="2">
-                            <div class="form-group mb-3">
-                                <label for="hasil_caring">Keterangan Visit</label>
-                                <div>
-                                    <textarea style="height: 150px;" name="ket_visit" class="form-control"><?= $ctb[0]['ket_visit'] ?></textarea>
-                                </div>
-                            </div>
+
                             <button type="submit" class="btn btn-primary mt-2 ms-2" value="submit">Simpan Data</button>
                         </td>
                     </tr>
