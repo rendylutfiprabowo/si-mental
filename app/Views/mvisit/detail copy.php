@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</button>
+            <!-- <button class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</button> -->
         </div>
     </div>
 
