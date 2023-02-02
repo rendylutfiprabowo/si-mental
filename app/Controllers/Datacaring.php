@@ -9,6 +9,8 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 class Datacaring extends BaseController
 {
+
+
     public function satubulan()
     {
         $detailModel = new DetPel();
@@ -69,6 +71,8 @@ class Datacaring extends BaseController
         $agen_pengelola  = $this->request->getPost('agen_pengelola');
         $produk   = $this->request->getPost('produk');
         $alamat   = $this->request->getPost('alamat');
+        $STO   = $this->request->getPost('STO');
+        $datel   = $this->request->getPost('datel');
         $statuscall   = $this->request->getPost('statuscall');
         $reasoncall   = $this->request->getPost('reasoncall');
         $penerima_telpon   = $this->request->getPost('penerima_telpon');
@@ -85,6 +89,8 @@ class Datacaring extends BaseController
             'agen_pengelola' => $agen_pengelola,
             'produk' => $produk,
             'alamat' => $alamat,
+            'STO' => $STO,
+            'datel' => $datel,
             'statuscall' => $statuscall,
             'reasoncall' => $reasoncall,
             'penerima_telpon' => $penerima_telpon,
@@ -123,12 +129,14 @@ class Datacaring extends BaseController
         $sheet->setCellValue('G1', 'agen pengelola');
         $sheet->setCellValue('H1', 'produk');
         $sheet->setCellValue('I1', 'alamat');
-        $sheet->setCellValue('J1', 'statuscall');
-        $sheet->setCellValue('K1', 'reasoncall');
-        $sheet->setCellValue('L1', 'penerima telpon');
-        $sheet->setCellValue('M1', 'hub ybs');
-        $sheet->setCellValue('N1', 'kendala pelanggan');
-        $sheet->setCellValue('O1', 'hasil caring');
+        $sheet->setCellValue('J1', 'STO');
+        $sheet->setCellValue('K1', 'datel');
+        $sheet->setCellValue('L1', 'statuscall');
+        $sheet->setCellValue('M1', 'reasoncall');
+        $sheet->setCellValue('N1', 'penerima telpon');
+        $sheet->setCellValue('O1', 'hub ybs');
+        $sheet->setCellValue('P1', 'kendala pelanggan');
+        $sheet->setCellValue('Q1', 'hasil caring');
 
         $column = 2;
         foreach ($pelanggan as $dt) {
@@ -141,17 +149,19 @@ class Datacaring extends BaseController
             $sheet->setCellValue('G' . $column, $dt['agen_pengelola']);
             $sheet->setCellValue('H' . $column, $dt['produk']);
             $sheet->setCellValue('I' . $column, $dt['alamat']);
-            $sheet->setCellValue('J' . $column, $dt['statuscall']);
-            $sheet->setCellValue('K' . $column, $dt['reasoncall']);
-            $sheet->setCellValue('L' . $column, $dt['penerima_telpon']);
-            $sheet->setCellValue('M' . $column, $dt['hub_ybs']);
-            $sheet->setCellValue('N' . $column, $dt['kendala_pelanggan']);
-            $sheet->setCellValue('O' . $column, $dt['hasil_caring']);
+            $sheet->setCellValue('J' . $column, $dt['STO']);
+            $sheet->setCellValue('K' . $column, $dt['datel']);
+            $sheet->setCellValue('L' . $column, $dt['statuscall']);
+            $sheet->setCellValue('M' . $column, $dt['reasoncall']);
+            $sheet->setCellValue('N' . $column, $dt['penerima_telpon']);
+            $sheet->setCellValue('O' . $column, $dt['hub_ybs']);
+            $sheet->setCellValue('P' . $column, $dt['kendala_pelanggan']);
+            $sheet->setCellValue('Q' . $column, $dt['hasil_caring']);
             $column++;
         }
 
-        $sheet->getStyle('A1:O1')->getFont()->setBold(true);
-        $sheet->getstyle('A1:O1')->getFill()
+        $sheet->getStyle('A1:Q1')->getFont()->setBold(true);
+        $sheet->getstyle('A1:Q1')->getFill()
             ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
             ->getStartColor()->setARGB('FFFFFF00');
         $styleArray = [
@@ -162,7 +172,7 @@ class Datacaring extends BaseController
                 ],
             ],
         ];
-        $sheet->getStyle('A1:O' . ($column - 1))->applyFromArray($styleArray);
+        $sheet->getStyle('A1:Q' . ($column - 1))->applyFromArray($styleArray);
 
         $sheet->getColumnDimension('A')->setAutoSize(true);
         $sheet->getColumnDimension('B')->setAutoSize(true);
@@ -179,6 +189,8 @@ class Datacaring extends BaseController
         $sheet->getColumnDimension('M')->setAutoSize(true);
         $sheet->getColumnDimension('N')->setAutoSize(true);
         $sheet->getColumnDimension('O')->setAutoSize(true);
+        $sheet->getColumnDimension('P')->setAutoSize(true);
+        $sheet->getColumnDimension('Q')->setAutoSize(true);
 
         $writer = new Xlsx($spreadsheet);
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
@@ -193,7 +205,7 @@ class Datacaring extends BaseController
     //     $detailModel = new DetPel();
 
     //     $pelanggan = $detailModel->findAll();
-        
+
     //     $file = $this->request->getFile('file_excel');
     //     $extension = $file->getClientExtension();
     //     if ($extension == 'xlsx' || $extension == 'xls'){

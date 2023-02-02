@@ -86,10 +86,14 @@
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Alamat Lengkap Pelanggan</p>
                             <span class="text-success text-sm font-weight-bolder "> <?= $detpel['alamat'] ?></span>
+                            <p class="text-sm mb-0 text-capitalize">Sentral Telepon Otomat</p>
+                            <span class="text-success text-sm font-weight-bolder "> <?= $detpel['STO'] ?></span>
+                            <p class="text-sm mb-0 text-capitalize">Daerah Witel</p>
+                            <span class="text-success text-sm font-weight-bolder "> <?= $detpel['datel'] ?></span>
                             <p class="text-sm mb-0 text-capitalize">Status Call</p>
                             <span class="text-success text-sm font-weight-bolder"> <?= $detpel['statuscall'] ?></span><br>
-                            <p class="text-sm mb-0 text-capitalize">Tanggal Caring</p>
-                            <span class="text-success text-sm font-weight-bolder">04 - 04 - 2002</span><br>
+                            <!-- <p class="text-sm mb-0 text-capitalize">Tanggal Caring</p>
+                            <span class="text-success text-sm font-weight-bolder">04 - 04 - 2002</span><br> -->
                         </div>
                     </div>
                     <div class="card-footer p-3">
@@ -129,10 +133,10 @@
                         </div>
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Kendala Pelanggan</p>
-                                <span class="text-success text-sm font-weight-bolder "><?= $detpel['kendala_pelanggan'] ?></span>
+                            <span class="text-success text-sm font-weight-bolder "><?= $detpel['kendala_pelanggan'] ?></span>
                             <br>
                             <p class="text-sm mb-0 text-capitalize">Hasil Caring</p>
-                                <span class="text-success text-sm font-weight-bolder "><?= $detpel['hasil_caring'] ?></span>
+                            <span class="text-success text-sm font-weight-bolder "><?= $detpel['hasil_caring'] ?></span>
                         </div>
                     </div>
                     <div class="card-footer p-3">

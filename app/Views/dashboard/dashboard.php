@@ -84,7 +84,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -96,12 +96,12 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">RNA</p>
-                <h4 class="mb-0">2,300</h4>
+                <h4 class="mb-0">200</h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
             </div>
             <hr class="horizontal my-0 dark">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
             </div>
             <hr class="horizontal my-0 dark">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -154,7 +154,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -171,7 +171,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@
             </div>
             <hr class="horizontal my-0 dark">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -205,7 +205,7 @@
             </div>
             <hr class="horizontal my-0 dark">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -224,7 +224,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -262,12 +262,12 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">RNA</p>
-                <h4 class="mb-0">281</h4>
+                <h4 class="mb-0">100</h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -284,7 +284,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -301,7 +301,7 @@
             </div>
             <hr class="horizontal my-0 dark">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -318,7 +318,7 @@
             </div>
             <hr class="horizontal my-0 dark">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -337,7 +337,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -354,7 +354,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -371,7 +371,7 @@
             </div>
             <hr class="horizontal my-0 dark">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -388,7 +388,7 @@
             </div>
             <hr class="horizontal my-0 dark">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -407,7 +407,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>
@@ -424,7 +424,7 @@
             </div>
             <hr class="dark horizontal my-0">
             <div class="card-footer p-3">
-              
+
             </div>
           </div>
         </div>

@@ -58,6 +58,20 @@
                     <tr>
                         <td>
                             <div class="form-group mb-3">
+                                <label for="STO">Sentral Telepon Otomat</label>
+                                <textarea style="text" name="STO" class="form-control"> <?= $detpel['STO'] ?></textarea>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mb-3">
+                                <label for="datel">Daerah Witel</label>
+                                <textarea style="text" name="datel" class="form-control"> <?= $detpel['datel'] ?></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group mb-3">
                                 <label for="statuscall">Status Call</label>
                                 <select name="statuscall" class="form-select" aria-label="Default select example">
                                     <option selected><?= $detpel['statuscall'] ?></option>
