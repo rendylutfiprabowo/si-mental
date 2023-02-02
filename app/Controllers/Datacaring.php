@@ -27,7 +27,7 @@ class Datacaring extends BaseController
     public function duabulan()
     {
         $detailModel = new DetPel();
-        $array = ['(YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal) > ' => 1];
+        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal)) > ' => '1'];
         $detpel = $detailModel->where($array)->find();
         $data = [
             'title' => 'Data Caring',

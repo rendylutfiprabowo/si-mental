@@ -79,7 +79,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">JANJI BAYAR</p>
-                <h4 class="mb-0">281</h4>
+                <h4 class="mb-0"><?= $janjibayar ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -96,7 +96,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">RNA</p>
-                <h4 class="mb-0">200</h4>
+                <h4 class="mb-0"><?= $rna ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -113,7 +113,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">KOMPLAIN</p>
-                <h4 class="mb-0 ">34k</h4>
+                <h4 class="mb-0 "><?= $komplain ?></h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -130,7 +130,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">MAU CABUT</p>
-                <h4 class="mb-0 ">+91</h4>
+                <h4 class="mb-0 "><?= $cabut ?></h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -149,7 +149,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">PDA</p>
-                <h4 class="mb-0">281</h4>
+                <h4 class="mb-0"><?= $pda ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -166,7 +166,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">CP SALAH</p>
-                <h4 class="mb-0">2,300</h4>
+                <h4 class="mb-0"><?= $pda ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -183,7 +183,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">LUNAS</p>
-                <h4 class="mb-0 ">34k</h4>
+                <h4 class="mb-0 "><?= $lunas ?></h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -200,7 +200,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">UPGRADE</p>
-                <h4 class="mb-0 ">+91</h4>
+                <h4 class="mb-0 "><?= $upgrade ?></h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -219,7 +219,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">DOWNGRADE</p>
-                <h4 class="mb-0">281</h4>
+                <h4 class="mb-0"><?= $downgrade ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -236,7 +236,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">KENDALA KEUANGAN</p>
-                <h4 class="mb-0">2,300</h4>
+                <h4 class="mb-0"><?= $kendalakeuangan ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -262,7 +262,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">RNA</p>
-                <h4 class="mb-0">100</h4>
+                <h4 class="mb-0"><?= $rna2 ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -279,7 +279,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">JANJI BAYAR</p>
-                <h4 class="mb-0">2,300</h4>
+                <h4 class="mb-0"><?= $janjibayar2 ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -296,7 +296,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">KOMPLAIN</p>
-                <h4 class="mb-0 ">34k</h4>
+                <h4 class="mb-0 "><?= $komplain2 ?></h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -313,7 +313,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">PDA</p>
-                <h4 class="mb-0 ">+91</h4>
+                <h4 class="mb-0 "><?= $pda2 ?></h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -332,7 +332,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">KENDALA KEUANGAN</p>
-                <h4 class="mb-0">281</h4>
+                <h4 class="mb-0"><?= $kendalakeuangan2 ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -348,8 +348,8 @@
                 <i class="material-icons opacity-10">leaderboard</i>
               </div>
               <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">PDA</p>
-                <h4 class="mb-0">2,300</h4>
+                <p class="text-sm mb-0 text-capitalize">ATK</p>
+                <h4 class="mb-0"><?= $atk ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -366,7 +366,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">LUNAS</p>
-                <h4 class="mb-0 ">34k</h4>
+                <h4 class="mb-0 "><?= $lunas2 ?></h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -383,7 +383,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">SUDAH BAYAR KE SALES</p>
-                <h4 class="mb-0 ">+91</h4>
+                <h4 class="mb-0 "><?= $sudahbayar ?></h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -402,7 +402,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">TIDAK MAU BAYAR</p>
-                <h4 class="mb-0">281</h4>
+                <h4 class="mb-0"><?= $tidakmaubayar ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -419,7 +419,7 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">RUTUP</p>
-                <h4 class="mb-0">2,300</h4>
+                <h4 class="mb-0"><?= $rutup ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
