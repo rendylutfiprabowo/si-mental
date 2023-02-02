@@ -51,9 +51,9 @@ class Home extends BaseController
         return view('documentation/2');
     }
 
-    public function tabel()
+    public function documentation4()
     {
-        return view('documentation/tabel');
+        return view('documentation/tabelcopy');
     }
 
     public function eror()

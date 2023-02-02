@@ -15,7 +15,7 @@ class Datavisit extends BaseController
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
         $ctb = $detailModel->findAll();
         $data = [
-            'title' => 'Visit',
+            'title' => 'Data Visit',
             'ctb' => $ctb
         ];
         if (session()->logged_in)  return view('mvisit/satubulan', $data);
@@ -30,7 +30,7 @@ class Datavisit extends BaseController
         $ctb = $detailModel->findAll();
         // dd($ctb);
         $data = [
-            'title' => 'Visit',
+            'title' => 'Data Visit',
             'ctb' => $ctb
         ];
         // return view('mvisit/duabulan');
@@ -45,7 +45,7 @@ class Datavisit extends BaseController
         $ctb = $detailModel->findAll();
         // dd($ctb);
         $data = [
-            'title' => 'Visit',
+            'title' => 'Data Visit',
             'ctb' => $ctb
         ];
         if (session()->logged_in)  return view('mvisit/detail', $data);
@@ -58,6 +58,7 @@ class Datavisit extends BaseController
             $detailModel = new VisitModel();
             $ctb = $detailModel->find($id);
             $data = [
+                'title' => 'Data Visit',
                 'ctb' => $ctb,
             ];
             return view('mvisit/edit', $data);

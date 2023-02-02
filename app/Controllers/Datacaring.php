@@ -17,7 +17,7 @@ class Datacaring extends BaseController
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
         $detpel = $detailModel->findAll();
         $data = [
-            'title' => 'Pelanggan',
+            'title' => 'Data Caring',
             'detpel' => $detpel
         ];
         if (session()->logged_in)  return view('mcaring/satubulan', $data);
@@ -30,7 +30,7 @@ class Datacaring extends BaseController
         $array = ['(YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal) > ' => 1];
         $detpel = $detailModel->where($array)->find();
         $data = [
-            'title' => 'Pelanggan',
+            'title' => 'Data Caring',
             'detpel' => $detpel
         ];
         if (session()->logged_in)  return view('mcaring/duabulan', $data);
@@ -42,6 +42,7 @@ class Datacaring extends BaseController
         $detailModel = new DetPel();
         $detpel = $detailModel->find($id);
         $data = [
+            'title' => 'Data Caring',
             'detpel' => $detpel,
         ];
         if (session()->logged_in)  return view('mcaring/detail', $data);
@@ -55,6 +56,7 @@ class Datacaring extends BaseController
             $detailModel = new DetPel();
             $detpel = $detailModel->find($id);
             $data = [
+                'title' => 'Data Caring',
                 'detpel' => $detpel,
             ];
             return view('mcaring/edit', $data);

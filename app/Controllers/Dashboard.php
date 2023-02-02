@@ -16,10 +16,10 @@ class Dashboard extends BaseController
         // // Data Caring
         // $jumlah_rna = $this->DetPel->countAllResults();
 
-        // $data = [
-        //     'jumlah_rna' => $jumlah_rna
-        // ];
-        if (session()->logged_in) return view('dashboard/dashboard');
+        $data = [
+            'title' => 'Dashboard'
+        ];
+        if (session()->logged_in) return view('dashboard/dashboard', $data);
         else return redirect()->to('login');
     }
 }
