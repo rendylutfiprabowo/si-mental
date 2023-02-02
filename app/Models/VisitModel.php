@@ -9,8 +9,8 @@ class VisitModel extends Model
     protected $table = "visit";
     protected $primaryKey = "id_visit";
     protected $returnType = "array";
-    protected $useTimestamps = true;
-    protected $allowedFields = ['nama_agen', 'nama_pelanggan', 'jumlah_pelanggan', 'hasil_visit'];
+    protected $useTimestamps = false;
+    protected $allowedFields = ['nomor_jastel', 'nama', 'contact', 'nama_agen', 'tanggal_visit', 'alamat', 'alamat_baru', 'hasil_visit', 'ket_visit'];
 
     public function getAgen($where = false)
     {
