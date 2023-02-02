@@ -7,9 +7,8 @@
     <link rel="apple-touch-icon" sizes="76x76" href="/assets/material/assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="/assets/material/assets/img/icon-telkom.png">
     <title>
-        Si Mental
+        Si Mental || <?= $title; ?>
     </title>
-
 
 
     <link rel="canonical" href="https://www.creative-tim.com/product/material-dashboard-pro" />
@@ -131,9 +130,6 @@
                         <span class="nav-link-text ms-2 ps-1">Dashboard</span>
                     </a>
                 </li>
-                <li class="nav-item mt-3">
-                    <h6 class="ps-4  ms-2 text-uppercase text-xs font-weight-bolder text-white">PAGES</h6>
-                </li>
                 <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#pagesExamples" class="nav-link text-white " aria-controls="pagesExamples" role="button" aria-expanded="false">
                         <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">people</i>
@@ -143,21 +139,21 @@
                         <ul class="nav ">
                             <li class="nav-item ">
                                 <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#profileExample">
-                                    <i class="material-icons">touch_app</i>
-                                    <span class="sidenav-normal  ms-2  ps-1"> Caring <b class="caret"></b></span>
+                                    <i class="material-icons">filter_1</i>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Satu Bulan<b class="caret"></b></span>
                                 </a>
                                 <div class="collapse " id="profileExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link text-white " href="/datapelanggan/caring/satubulan">
-                                                <i class="material-icons">filter_1</i>
-                                                <span class="sidenav-normal  ms-2  ps-1"> Satu Bulan</span>
+                                                <i class="material-icons">touch_app</i>
+                                                <span class="sidenav-normal  ms-2  ps-1">Caring</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-white " href="/datapelanggan/caring/duabulan">
-                                                <i class="material-icons">filter_2</i>
-                                                <span class="sidenav-normal  ms-2  ps-1"> Dua Bulan </span>
+                                            <a class="nav-link text-white " href="/datapelanggan/visit/satubulan">
+                                                <i class="material-icons">transfer_within_a_station</i>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Visit </span>
                                             </a>
                                         </li>
                                     </ul>
@@ -165,21 +161,21 @@
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#usersExample">
-                                    <i class="material-icons">transfer_within_a_station</i>
-                                    <span class="sidenav-normal  ms-2  ps-1"> Visit <b class="caret"></b></span>
+                                    <i class="material-icons">filter_2</i>
+                                    <span class="sidenav-normal  ms-2  ps-1">Dua bulan<b class="caret"></b></span>
                                 </a>
                                 <div class="collapse " id="usersExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link text-white " href="/datapelanggan/visit/satubulan">
-                                                <i class="material-icons">filter_1</i>
-                                                <span class="sidenav-normal  ms-2  ps-1"> Satu Bulan </span>
+                                            <a class="nav-link text-white " href="/datapelanggan/caring/duabulan">
+                                                <i class="material-icons">touch_app</i>
+                                                <span class="sidenav-normal  ms-2  ps-1">Caring </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link text-white " href="/datapelanggan/visit/duabulan">
-                                                <i class="material-icons">filter_2</i>
-                                                <span class="sidenav-normal  ms-2  ps-1"> Dua Bulan </span>
+                                                <i class="material-icons">transfer_within_a_station</i>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Visit </span>
                                             </a>
                                         </li>
                                     </ul>
@@ -192,7 +188,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="/dataagen">
                         <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">receipt_long</i>
-                        <span class="nav-link-text ms-2 ps-1">Data Agen OBC</span>
+                        <span class="nav-link-text ms-2 ps-1">Data Agen</span>
                     </a>
                 </li>
 
@@ -229,10 +225,11 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Profile Overview</li>
+                        <!-- <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li> -->
+                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page"> <?= $title; ?></li>
+
                     </ol>
-                    <h6 class="font-weight-bolder mb-0">Profile Overview</h6>
+                    <h6 class="font-weight-bolder mb-0"> <?= $title; ?></h6>
                 </nav>
                 <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
                     <a href="javascript:;" class="nav-link text-body p-0">
@@ -470,6 +467,7 @@
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
+    <script src="/assets/material/assets/js/md.js"></script>
     <script src="/assets/material/assets/js/material-dashboard.min.js?v=3.0.6"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7852fe7ecac04637","version":"2022.11.3","r":1,"token":"1b7cbb72744b40c580f8633c6b62637e","si":100}' crossorigin="anonymous"></script>
 </body>
