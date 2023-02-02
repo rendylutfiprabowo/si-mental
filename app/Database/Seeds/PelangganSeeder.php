@@ -17,6 +17,8 @@ class PelangganSeeder extends Seeder
             'agen_pengelola' => 'Arman',
             'produk' => 'Indihome',
             'alamat' => 'Prabumulih',
+            'STO' => 'palembang',
+            'datel' => 'pbl',
             'statuscall' => 'Contacted',
             'reasoncall' => 'Janji Bayar',
             'hub_ybs' => '',

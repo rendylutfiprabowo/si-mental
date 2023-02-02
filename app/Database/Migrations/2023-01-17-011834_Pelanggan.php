@@ -47,6 +47,14 @@ class Pelanggan extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '225',
             ],
+            'STO' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
+            'datel' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '225',
+            ],
             'statuscall' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '225',
