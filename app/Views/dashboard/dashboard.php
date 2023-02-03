@@ -16,7 +16,7 @@
             </div>
             <div class="card-body">
               <h6 class="mb-0 ">Jumlah Caring</h6>
-              <p class="text-sm ">Last Campaign Performance</p>
+              <p class="text-sm "><?= $jumlahdatacaring ?></p>
               <hr class="dark horizontal">
               <div class="d-flex ">
 
@@ -35,7 +35,7 @@
             </div>
             <div class="card-body">
               <h6 class="mb-0 ">Jumlah Visit</h6>
-              <p class="text-sm "> (<span class="font-weight-bolder">+15%</span>) increase in today sales. </p>
+              <p class="text-sm "><?= $jumlahdatavisit ?> </p>
               <hr class="dark horizontal">
               <div class="d-flex ">
 
@@ -79,7 +79,16 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">JANJI BAYAR</p>
-                <h4 class="mb-0"><?= $janjibayar ?></h4>
+                <h4 class="mb-0"><?php
+                                  $janjibayar = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "JANJI BAYAR") {
+                                      $janjibayar++;
+                                    } else {
+                                      $janjibayar;
+                                    }
+                                  }
+                                  ?><?= $janjibayar ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -96,7 +105,16 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">RNA</p>
-                <h4 class="mb-0"><?= $rna ?></h4>
+                <h4 class="mb-0"><?php
+                                  $rna = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "RNA") {
+                                      $rna++;
+                                    } else {
+                                      $rna;
+                                    }
+                                  }
+                                  ?><?= $rna ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -113,7 +131,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">KOMPLAIN</p>
-                <h4 class="mb-0 "><?= $komplain ?></h4>
+                <h4 class="mb-0 "><?php
+                                  $komplain = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "KOMPLAIN") {
+                                      $komplain++;
+                                    } else {
+                                      $komplain;
+                                    }
+                                  }
+                                  ?><?= $komplain ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -130,7 +158,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">MAU CABUT</p>
-                <h4 class="mb-0 "><?= $cabut ?></h4>
+                <h4 class="mb-0 "><?php
+                                  $cabut = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "CABUT") {
+                                      $cabut++;
+                                    } else {
+                                      $cabut;
+                                    }
+                                  }
+                                  ?><?= $cabut ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -149,7 +187,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">PDA</p>
-                <h4 class="mb-0"><?= $pda ?></h4>
+                <h4 class="mb-0"><?php
+                                  $pda = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "PDA") {
+                                      $pda++;
+                                    } else {
+                                      $pda;
+                                    }
+                                  }
+                                  ?><?= $pda ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -166,7 +214,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">CP SALAH</p>
-                <h4 class="mb-0"><?= $pda ?></h4>
+                <h4 class="mb-0"><?php
+                                  $cpsalah = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "CP SALAH") {
+                                      $cpsalah++;
+                                    } else {
+                                      $cpsalah;
+                                    }
+                                  }
+                                  ?><?= $cpsalah ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -183,7 +241,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">LUNAS</p>
-                <h4 class="mb-0 "><?= $lunas ?></h4>
+                <h4 class="mb-0 "><?php
+                                  $lunas = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "LUNAS") {
+                                      $lunas++;
+                                    } else {
+                                      $lunas;
+                                    }
+                                  }
+                                  ?><?= $lunas ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -200,7 +268,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">UPGRADE</p>
-                <h4 class="mb-0 "><?= $upgrade ?></h4>
+                <h4 class="mb-0 "><?php
+                                  $upgrade = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "UPGRADE") {
+                                      $upgrade++;
+                                    } else {
+                                      $upgrade;
+                                    }
+                                  }
+                                  ?><?= $upgrade ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -219,7 +297,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">DOWNGRADE</p>
-                <h4 class="mb-0"><?= $downgrade ?></h4>
+                <h4 class="mb-0"><?php
+                                  $downgrade = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "DOWNGRADE") {
+                                      $downgrade++;
+                                    } else {
+                                      $downgrade;
+                                    }
+                                  }
+                                  ?><?= $downgrade ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -236,7 +324,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">KENDALA KEUANGAN</p>
-                <h4 class="mb-0"><?= $kendalakeuangan ?></h4>
+                <h4 class="mb-0"><?php
+                                  $kendalakeuangan = 0;
+                                  foreach ($DBC as $caring) {
+                                    if ($caring['profil_kesepakatan'] == "KENDALA KEUANGAN") {
+                                      $kendalakeuangan++;
+                                    } else {
+                                      $kendalakeuangan;
+                                    }
+                                  }
+                                  ?><?= $kendalakeuangan ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -262,7 +360,16 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">RNA</p>
-                <h4 class="mb-0"><?= $rna2 ?></h4>
+                <h4 class="mb-0"><?php
+                                  $rna2 = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "RNA") {
+                                      $rna2++;
+                                    } else {
+                                      $rna2;
+                                    }
+                                  }
+                                  ?><?= $rna2 ?></h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -279,7 +386,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">JANJI BAYAR</p>
-                <h4 class="mb-0"><?= $janjibayar2 ?></h4>
+                <h4 class="mb-0"><?php
+                                  $janjibayar2 = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "JANJI BAYAR") {
+                                      $janjibayar2++;
+                                    } else {
+                                      $janjibayar2;
+                                    }
+                                  }
+                                  ?><?= $janjibayar2 ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -296,7 +413,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">KOMPLAIN</p>
-                <h4 class="mb-0 "><?= $komplain2 ?></h4>
+                <h4 class="mb-0 "><?php
+                                  $komplain2 = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "KOMPLAIN") {
+                                      $komplain2++;
+                                    } else {
+                                      $komplain2;
+                                    }
+                                  }
+                                  ?><?= $komplain2 ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -313,7 +440,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">PDA</p>
-                <h4 class="mb-0 "><?= $pda2 ?></h4>
+                <h4 class="mb-0 "><?php
+                                  $pda2 = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "PDA") {
+                                      $pda2++;
+                                    } else {
+                                      $pda2;
+                                    }
+                                  }
+                                  ?><?= $pda2 ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -332,7 +469,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">KENDALA KEUANGAN</p>
-                <h4 class="mb-0"><?= $kendalakeuangan2 ?></h4>
+                <h4 class="mb-0"><?php
+                                  $kendalakeuangan2 = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "KENDALA KEUANGAN") {
+                                      $kendalakeuangan2++;
+                                    } else {
+                                      $kendalakeuangan2;
+                                    }
+                                  }
+                                  ?><?= $kendalakeuangan2 ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -349,7 +496,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">ATK</p>
-                <h4 class="mb-0"><?= $atk ?></h4>
+                <h4 class="mb-0"><?php
+                                  $atk = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "ATK") {
+                                      $atk++;
+                                    } else {
+                                      $atk;
+                                    }
+                                  }
+                                  ?><?= $atk ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -366,7 +523,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">LUNAS</p>
-                <h4 class="mb-0 "><?= $lunas2 ?></h4>
+                <h4 class="mb-0 "><?php
+                                  $lunas2 = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "LUNAS") {
+                                      $lunas2++;
+                                    } else {
+                                      $lunas2;
+                                    }
+                                  }
+                                  ?><?= $lunas2 ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -383,7 +550,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize ">SUDAH BAYAR KE SALES</p>
-                <h4 class="mb-0 "><?= $sudahbayar ?></h4>
+                <h4 class="mb-0 "><?php
+                                  $sudahbayar = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "SUDAH BAYAR KE SALES") {
+                                      $sudahbayar++;
+                                    } else {
+                                      $sudahbayar;
+                                    }
+                                  }
+                                  ?><?= $sudahbayar ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="horizontal my-0 dark">
@@ -402,7 +579,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">TIDAK MAU BAYAR</p>
-                <h4 class="mb-0"><?= $tidakmaubayar ?></h4>
+                <h4 class="mb-0"><?php
+                                  $tidakmauayar = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "TIDAK MAU BAYAR") {
+                                      $tidakmauayar++;
+                                    } else {
+                                      $tidakmauayar;
+                                    }
+                                  }
+                                  ?><?= $tidakmauayar ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">
@@ -419,7 +606,17 @@
               </div>
               <div class="text-end pt-1">
                 <p class="text-sm mb-0 text-capitalize">RUTUP</p>
-                <h4 class="mb-0"><?= $rutup ?></h4>
+                <h4 class="mb-0"><?php
+                                  $rutup = 0;
+                                  foreach ($VBC as $visit) {
+                                    if ($visit['hasil_visit'] == "RUTUP") {
+                                      $rutup++;
+                                    } else {
+                                      $rutup;
+                                    }
+                                  }
+                                  ?><?= $rutup ?></h4>
+                </h4>
               </div>
             </div>
             <hr class="dark horizontal my-0">

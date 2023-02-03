@@ -44,7 +44,7 @@ $routes->get('/dashboard', 'Dashboard::index');
 $routes->get('/datapelanggan/caring/satubulan', 'Datacaring::satubulan');
 $routes->get('/datapelanggan/caring/duabulan', 'Datacaring::duabulan');
 $routes->get('/datapelanggan/caring/detail/(:num)', 'Datacaring::detail/$1');
-$routes->get('/datapelanggan/caring/edit/import', 'Datacaring::import');
+$routes->post('/datapelanggan/caring/edit/import', 'Datacaring::import');
 $routes->get('/datapelanggan/caring/edit/export', 'Datacaring::export');
 $routes->get('/datapelanggan/caring/edit', 'Datacaring::edit');
 

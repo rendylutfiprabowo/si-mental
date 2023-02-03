@@ -207,35 +207,39 @@ class Datacaring extends BaseController
         exit();
     }
 
-    // public function import()
-    // {
-    //     $detailModel = new DetPel();
+    public function import()
+    {
+        $detailModel = new DetPel();
 
-    //     $pelanggan = $detailModel->findAll();
+        $file = $this->request->getFile('fileexcel');
+        $file->move(ROOTPATH . 'public/uploads');
+        $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+        $spreadsheet = $reader->load(ROOTPATH . 'public/uploads/' . $file->getName());
+        $sheetData = $spreadsheet->getActiveSheet()->toArray();
+        $data = [];
+        $i = 0;
+        foreach ($sheetData as $dt) {
+            $data[$i]['nomor_jastel'] = $dt[0];
+            $data[$i]['contact'] = $dt[1];
+            $data[$i]['nama'] = $dt[3];
+            $data[$i]['hasil_greeting'] = $dt[2];
+            $data[$i]['profil_kesepakatan'] = $dt[4];
+            $data[$i]['agen_pengelola'] = $dt[4];
+            $data[$i]['produk'] = $dt[4];
+            $data[$i]['alamat'] = $dt[4];
+            $data[$i]['STO'] = $dt[4];
+            $data[$i]['datel'] = $dt[4];
+            $data[$i]['statuscall'] = $dt[4];
+            $data[$i]['tanggal'] = $dt[4];
+            $data[$i]['reasoncall'] = $dt[4];
+            $data[$i]['penerima_telpon'] = $dt[4];
+            $data[$i]['hub_ybs'] = $dt[4];
+            $data[$i]['kendala_pelanggan'] = $dt[4];
+            $data[$i]['hasil_caring'] = $dt[4];
+            $i++;
+        }
 
-    //     $file = $this->request->getFile('file_excel');
-    //     $extension = $file->getClientExtension();
-    //     if ($extension == 'xlsx' || $extension == 'xls'){
-    //         if($extension == 'xls'){
-    //             $reader = new \PhpOffice\PhpSpreadsheet\Reader\xls();
-    //         }else{
-    //             $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
-    //         }
-    //         $spreadsheet = $reader->load($file);
-    //         $pelanggan = $spreadsheet->getActiveSheet()->toArray();
-    //         foreach ($pelanggan as $dt){
-    //             if($dt == 0){
-    //                 continue;
-    //             }
-    //             $data = [
-    //                 'nomor_jastel'=> $dt[1];
-    //                 'id_pelanggan' => 0,
-    //             ];
-    //             $this->pelanggan->insert($data);
-    //         }
-    //         return redirect()->back()->with('error', 'format sesuai');
-    //     }else{
-    //         return redirect()->back()->with('error', 'format tidak sesuai');
-    //     }
-    // }
+        $detailModel->insertBatch($data);
+        return redirect()->to('/datapelanggan/caring/satubulan');
+    }
 }

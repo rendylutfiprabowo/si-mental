@@ -124,6 +124,20 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            <div class="form-group mb-3">
+                                <label for="STO">Hasil Gree</label>
+                                <textarea style="text" name="hasil_greeting" class="form-control"> <?= $detpel['hasil_greeting'] ?></textarea>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mb-3">
+                                <label for="datel">Profil Kesepakatan</label>
+                                <textarea style="text" name="profil_kesepakatan" class="form-control"> <?= $detpel['profil_kesepakatan'] ?></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
                         <td colspan="2">
                             <div class="form-group mb-3">
                                 <label for="kendala_pelanggan">Kendala Pelanggan</label>
