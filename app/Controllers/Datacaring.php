@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\DetPel;
+use App\Models\Caring1;
+use App\Models\Caring2;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
@@ -13,7 +15,7 @@ class Datacaring extends BaseController
 
     public function satubulan()
     {
-        $detailModel = new DetPel();
+        $detailModel = new Caring1();
         $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal)) > ' => '1'];
         $detpel = $detailModel->where($array)->find();
         $data = [
@@ -26,7 +28,7 @@ class Datacaring extends BaseController
 
     public function duabulan()
     {
-        $detailModel = new DetPel();
+        $detailModel = new Caring2();
         $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal)) > ' => '2'];
         $detpel = $detailModel->where($array)->find();
         $data = [
@@ -115,12 +117,9 @@ class Datacaring extends BaseController
 
     public function export()
     {
-        $detailModel = new DetPel();
+        $detailModel = new Caring1();
 
         $pelanggan = $detailModel->findAll();
-        // $db = \config\Database::connect();
-        // $builder = $db->table('pelanggan');
-        // $builder->join('');
 
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
@@ -209,7 +208,7 @@ class Datacaring extends BaseController
 
     public function import()
     {
-        $detailModel = new DetPel();
+        $detailModel = new Caring1();
 
         $file = $this->request->getFile('fileexcel');
         $file->move(ROOTPATH . 'public/uploads');
