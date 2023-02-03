@@ -44,6 +44,14 @@
                     <tr>
                         <td>
                             <div class="form-group mb-3">
+                                <label for="produk">Tanggal Caring</label>
+                                <input type="date" name="tanggal" class="form-control" id="tanggal" value="<?= $detpel['tanggal'] ?>">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group mb-3">
                                 <label for="produk">Produk Pelanggan</label>
                                 <input type="text" id="disabledTextInput" name="produk" class="form-control" id="produk" readonly value="<?= $detpel['produk'] ?>">
                             </div>

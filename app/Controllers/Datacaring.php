@@ -14,8 +14,8 @@ class Datacaring extends BaseController
     public function satubulan()
     {
         $detailModel = new DetPel();
-        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
-        $detpel = $detailModel->findAll();
+        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal)) > ' => '1'];
+        $detpel = $detailModel->find();
         $data = [
             'title' => 'Data Caring',
             'detpel' => $detpel
@@ -27,7 +27,7 @@ class Datacaring extends BaseController
     public function duabulan()
     {
         $detailModel = new DetPel();
-        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal)) > ' => '1'];
+        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal)) > ' => '2'];
         $detpel = $detailModel->where($array)->find();
         $data = [
             'title' => 'Data Caring',
@@ -76,6 +76,7 @@ class Datacaring extends BaseController
         $STO   = $this->request->getPost('STO');
         $datel   = $this->request->getPost('datel');
         $statuscall   = $this->request->getPost('statuscall');
+        $tanggal   = $this->request->getPost('tanggal');
         $reasoncall   = $this->request->getPost('reasoncall');
         $penerima_telpon   = $this->request->getPost('penerima_telpon');
         $hub_ybs   = $this->request->getPost('hub_ybs');
@@ -94,6 +95,7 @@ class Datacaring extends BaseController
             'STO' => $STO,
             'datel' => $datel,
             'statuscall' => $statuscall,
+            'tanggal' => $tanggal,
             'reasoncall' => $reasoncall,
             'penerima_telpon' => $penerima_telpon,
             'hub_ybs' => $hub_ybs,
@@ -134,11 +136,12 @@ class Datacaring extends BaseController
         $sheet->setCellValue('J1', 'STO');
         $sheet->setCellValue('K1', 'datel');
         $sheet->setCellValue('L1', 'statuscall');
-        $sheet->setCellValue('M1', 'reasoncall');
-        $sheet->setCellValue('N1', 'penerima telpon');
-        $sheet->setCellValue('O1', 'hub ybs');
-        $sheet->setCellValue('P1', 'kendala pelanggan');
-        $sheet->setCellValue('Q1', 'hasil caring');
+        $sheet->setCellValue('M1', 'tanggal');
+        $sheet->setCellValue('N1', 'reasoncall');
+        $sheet->setCellValue('O1', 'penerima telpon');
+        $sheet->setCellValue('P1', 'hub ybs');
+        $sheet->setCellValue('Q1', 'kendala pelanggan');
+        $sheet->setCellValue('R1', 'hasil caring');
 
         $column = 2;
         foreach ($pelanggan as $dt) {
@@ -154,16 +157,17 @@ class Datacaring extends BaseController
             $sheet->setCellValue('J' . $column, $dt['STO']);
             $sheet->setCellValue('K' . $column, $dt['datel']);
             $sheet->setCellValue('L' . $column, $dt['statuscall']);
-            $sheet->setCellValue('M' . $column, $dt['reasoncall']);
-            $sheet->setCellValue('N' . $column, $dt['penerima_telpon']);
-            $sheet->setCellValue('O' . $column, $dt['hub_ybs']);
-            $sheet->setCellValue('P' . $column, $dt['kendala_pelanggan']);
-            $sheet->setCellValue('Q' . $column, $dt['hasil_caring']);
+            $sheet->setCellValue('M' . $column, $dt['tanggal']);
+            $sheet->setCellValue('N' . $column, $dt['reasoncall']);
+            $sheet->setCellValue('O' . $column, $dt['penerima_telpon']);
+            $sheet->setCellValue('P' . $column, $dt['hub_ybs']);
+            $sheet->setCellValue('Q' . $column, $dt['kendala_pelanggan']);
+            $sheet->setCellValue('R' . $column, $dt['hasil_caring']);
             $column++;
         }
 
-        $sheet->getStyle('A1:Q1')->getFont()->setBold(true);
-        $sheet->getstyle('A1:Q1')->getFill()
+        $sheet->getStyle('A1:R1')->getFont()->setBold(true);
+        $sheet->getstyle('A1:R1')->getFill()
             ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
             ->getStartColor()->setARGB('FFFFFF00');
         $styleArray = [
@@ -174,7 +178,7 @@ class Datacaring extends BaseController
                 ],
             ],
         ];
-        $sheet->getStyle('A1:Q' . ($column - 1))->applyFromArray($styleArray);
+        $sheet->getStyle('A1:R' . ($column - 1))->applyFromArray($styleArray);
 
         $sheet->getColumnDimension('A')->setAutoSize(true);
         $sheet->getColumnDimension('B')->setAutoSize(true);
@@ -193,6 +197,7 @@ class Datacaring extends BaseController
         $sheet->getColumnDimension('O')->setAutoSize(true);
         $sheet->getColumnDimension('P')->setAutoSize(true);
         $sheet->getColumnDimension('Q')->setAutoSize(true);
+        $sheet->getColumnDimension('R')->setAutoSize(true);
 
         $writer = new Xlsx($spreadsheet);
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
