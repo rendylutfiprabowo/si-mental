@@ -221,21 +221,21 @@ class Datacaring extends BaseController
         foreach ($sheetData as $dt) {
             $data[$i]['nomor_jastel'] = $dt[0];
             $data[$i]['contact'] = $dt[1];
-            $data[$i]['nama'] = $dt[3];
-            $data[$i]['hasil_greeting'] = $dt[2];
+            $data[$i]['nama'] = $dt[2];
+            $data[$i]['hasil_greeting'] = $dt[3];
             $data[$i]['profil_kesepakatan'] = $dt[4];
-            $data[$i]['agen_pengelola'] = $dt[4];
-            $data[$i]['produk'] = $dt[4];
-            $data[$i]['alamat'] = $dt[4];
-            $data[$i]['STO'] = $dt[4];
-            $data[$i]['datel'] = $dt[4];
-            $data[$i]['statuscall'] = $dt[4];
-            $data[$i]['tanggal'] = $dt[4];
-            $data[$i]['reasoncall'] = $dt[4];
-            $data[$i]['penerima_telpon'] = $dt[4];
-            $data[$i]['hub_ybs'] = $dt[4];
-            $data[$i]['kendala_pelanggan'] = $dt[4];
-            $data[$i]['hasil_caring'] = $dt[4];
+            $data[$i]['agen_pengelola'] = $dt[5];
+            $data[$i]['produk'] = $dt[6];
+            $data[$i]['alamat'] = $dt[7];
+            $data[$i]['STO'] = $dt[8];
+            $data[$i]['datel'] = $dt[9];
+            $data[$i]['statuscall'] = $dt[10];
+            $data[$i]['tanggal'] = $dt[11];
+            $data[$i]['reasoncall'] = $dt[12];
+            $data[$i]['penerima_telpon'] = $dt[13];
+            $data[$i]['hub_ybs'] = $dt[14];
+            $data[$i]['kendala_pelanggan'] = $dt[15];
+            $data[$i]['hasil_caring'] = $dt[16];
             $i++;
         }
 
