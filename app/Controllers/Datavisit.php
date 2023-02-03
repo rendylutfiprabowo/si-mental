@@ -74,6 +74,8 @@ class Datavisit extends BaseController
         $tanggal_visit   = $this->request->getPost('tanggal_visit');
         $alamat  = $this->request->getPost('alamat');
         $alamat_baru   = $this->request->getPost('alamat_baru');
+        $STO   = $this->request->getPost('STO');
+        $datel   = $this->request->getPost('datel');
         $hasil_visit   = $this->request->getPost('hasil_visit');
         $ket_visit   = $this->request->getPost('ket_visit');
 
@@ -85,6 +87,8 @@ class Datavisit extends BaseController
             'tanggal_visit' => $tanggal_visit,
             'alamat' => $alamat,
             'alamat_baru' => $alamat_baru,
+            'STO' => $STO,
+            'datel' => $datel,
             'hasil_visit' => $hasil_visit,
             'ket_visit' => $ket_visit,
 
@@ -114,8 +118,10 @@ class Datavisit extends BaseController
         $sheet->setCellValue('F1', 'Tanggal Visit');
         $sheet->setCellValue('G1', 'Alamat Pelanggan');
         $sheet->setCellValue('H1', 'Alamat Baru Pelanggan');
-        $sheet->setCellValue('I1', 'Hasil Visit');
-        $sheet->setCellValue('J1', 'Keterangan Visit');
+        $sheet->setCellValue('I1', 'STO');
+        $sheet->setCellValue('J1', 'datel');
+        $sheet->setCellValue('K1', 'Hasil Visit');
+        $sheet->setCellValue('L1', 'Keterangan Visit');
 
         $column = 2;
         foreach ($visit as $dt) {
@@ -127,13 +133,15 @@ class Datavisit extends BaseController
             $sheet->setCellValue('F' . $column, $dt['tanggal_visit']);
             $sheet->setCellValue('G' . $column, $dt['alamat']);
             $sheet->setCellValue('H' . $column, $dt['alamat_baru']);
-            $sheet->setCellValue('I' . $column, $dt['hasil_visit']);
-            $sheet->setCellValue('J' . $column, $dt['ket_visit']);
+            $sheet->setCellValue('I' . $column, $dt['STO']);
+            $sheet->setCellValue('J' . $column, $dt['datel']);
+            $sheet->setCellValue('K' . $column, $dt['hasil_visit']);
+            $sheet->setCellValue('L' . $column, $dt['ket_visit']);
             $column++;
         }
 
-        $sheet->getStyle('A1:J1')->getFont()->setBold(true);
-        $sheet->getStyle('A1:J1')->getFill()
+        $sheet->getStyle('A1:L1')->getFont()->setBold(true);
+        $sheet->getStyle('A1:L1')->getFill()
             ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
             ->getStartColor()->setARGB('FFFFFF00');
         $styleArray = [
@@ -144,7 +152,7 @@ class Datavisit extends BaseController
                 ],
             ],
         ];
-        $sheet->getStyle('A1:J' . ($column - 1))->applyFromArray($styleArray);
+        $sheet->getStyle('A1:L' . ($column - 1))->applyFromArray($styleArray);
 
         $sheet->getColumnDimension('A')->setAutoSize(true);
         $sheet->getColumnDimension('B')->setAutoSize(true);
@@ -156,6 +164,8 @@ class Datavisit extends BaseController
         $sheet->getColumnDimension('H')->setAutoSize(true);
         $sheet->getColumnDimension('I')->setAutoSize(true);
         $sheet->getColumnDimension('J')->setAutoSize(true);
+        $sheet->getColumnDimension('K')->setAutoSize(true);
+        $sheet->getColumnDimension('L')->setAutoSize(true);
 
         $writer = new Xlsx($spreadsheet);
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
@@ -167,6 +177,5 @@ class Datavisit extends BaseController
 
     public function import()
     {
-        
     }
 }

@@ -53,6 +53,14 @@ class Visit extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
+            'STO' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+            ],
+            'datel' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+            ],
             'hasil_visit' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',

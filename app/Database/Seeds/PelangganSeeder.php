@@ -20,6 +20,7 @@ class PelangganSeeder extends Seeder
             'STO' => 'palembang',
             'datel' => 'pbl',
             'statuscall' => 'Contacted',
+            'tanggal' => 'Contacted',
             'reasoncall' => 'Janji Bayar',
             'hub_ybs' => '',
             'kendala_pelanggan' => 'Lupa Bayar',

@@ -17,7 +17,8 @@ class VisitSeeder extends Seeder
             'nama' => 'Rendy Lutfi Prabowo',
             'alamat' => 'Prabumulih',
             'alamat_baru' =>'Bandarlampung',
-            // 'jumlah_pelanggan' => '1',
+            'STO' => 'Bandarlampung',
+            'datel' => 'Bandarlampung',
             'hasil_visit' => 'Berantem',
             'ket_visit' => 'iya gitu deh'
         ];
