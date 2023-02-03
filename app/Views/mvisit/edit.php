@@ -72,6 +72,20 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            <div class="form-group mb-3">
+                                <label for="STO">Sentral Telepon Otomat</label>
+                                <textarea style="text" name="STO" class="form-control"> <?= $ctb['STO'] ?></textarea>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mb-3">
+                                <label for="datel">Daerah Witel</label>
+                                <textarea style="text" name="datel" class="form-control"> <?= $ctb['datel'] ?></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
                         <td colspan="2">
                             <div class="form-group mb-3">
                                 <label for="hasil_caring">Hasil Visit</label>

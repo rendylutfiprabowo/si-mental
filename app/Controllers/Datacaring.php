@@ -15,7 +15,7 @@ class Datacaring extends BaseController
     {
         $detailModel = new DetPel();
         $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal)) > ' => '1'];
-        $detpel = $detailModel->find();
+        $detpel = $detailModel->where($array)->find();
         $data = [
             'title' => 'Data Caring',
             'detpel' => $detpel

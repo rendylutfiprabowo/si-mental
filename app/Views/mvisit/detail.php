@@ -89,6 +89,10 @@
                             <span class="text-success text-sm font-weight-bolder "><?= $ctb[0]['alamat'] ?></span>
                             <p class="text-sm mb-0 text-capitalize">Alamat Baru Pelanggan</p>
                             <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['alamat_baru'] ?></span><br>
+                            <p class="text-sm mb-0 text-capitalize">Sentral Telepon Otomat</p>
+                            <span class="text-success text-sm font-weight-bolder "> <?= $ctb[0]['STO'] ?></span>
+                            <p class="text-sm mb-0 text-capitalize">Daerah Witel</p>
+                            <span class="text-success text-sm font-weight-bolder "> <?= $ctb[0]['datel'] ?></span>
                             <p class="text-sm mb-0 text-capitalize">Hasil Visit</p>
                             <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['hasil_visit'] ?></span><br>
                         </div>

@@ -12,8 +12,8 @@ class Datavisit extends BaseController
     public function satubulan()
     {
         $detailModel = new VisitModel();
-        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
-        $ctb = $detailModel->findAll();
+        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal_visit) * 12) + MONTH(tanggal_visit)) > ' => '1'];
+        $ctb = $detailModel->where($array)->find();
         $data = [
             'title' => 'Data Visit',
             'ctb' => $ctb
@@ -26,8 +26,8 @@ class Datavisit extends BaseController
     {
 
         $detailModel = new VisitModel();
-        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
-        $ctb = $detailModel->findAll();
+        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal_visit) * 12) + MONTH(tanggal_visit)) > ' => '2'];
+        $ctb = $detailModel->where($array)->find();
         // dd($ctb);
         $data = [
             'title' => 'Data Visit',
