@@ -25,7 +25,7 @@
                         <div class="modal-body">
                             <p>Cari File Kamu</p>
                             <div class="input-group input-group-dynamic mb-3">
-                                <form method="post" action="/datapelanggan/caring/edit/import" enctype="multipart/form-data">
+                                <form method="post" action="/datapelanggan/caring2/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
                                     </div>
