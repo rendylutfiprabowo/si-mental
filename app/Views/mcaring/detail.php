@@ -115,5 +115,7 @@
                     </td>
                 </tr>
             </table>
-
-            <?= $this->endSection() ?>
+        </div>
+    </div>
+</div>
+<?= $this->endSection() ?>
