@@ -8,7 +8,7 @@ use App\Models\Visit2;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-class Datavisit extends BaseController
+class Datavisit2 extends BaseController
 {
 
     public function duabulan()

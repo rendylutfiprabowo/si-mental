@@ -8,7 +8,7 @@ use App\Models\Caring2;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-class Datacaring extends BaseController
+class datacaring2 extends BaseController
 {
 
     public function duabulan()
