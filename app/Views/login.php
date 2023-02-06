@@ -47,10 +47,7 @@
                                         <label class="form-label">Password</label>
                                         <input type="password" name="password" class="form-control">
                                     </div>
-                                    <div class="form-check form-switch d-flex align-items-center mb-3">
-                                        <input class="form-check-input" type="checkbox" id="rememberMe">
-                                        <label class="form-check-label mb-0 ms-2" for="rememberMe">Remember me</label>
-                                    </div>
+                                    
                                     <div class="text-center">
                                         <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Log in</button>
                                     </div>
