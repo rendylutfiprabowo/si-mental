@@ -9,20 +9,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body>
-        <form method="post" action="/datapelanggan/caring/edit/import" enctype="multipart/form-data">
-            <div class="form-group">
-                <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
+    <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
+        <div class="ms-auto my-auto">
+            <button style="margin-right: 8px;" type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import">
+                Import
+            </button>
+            <div class="modal fade" id="import" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog mt-lg-10">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Import CSV</h5>
+                            <i class="material-icons ms-3">file_upload</i>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Cari File Kamu</p>
+                            <div class="input-group input-group-dynamic mb-3">
+                                <form method="post" action="/datapelanggan/caring/edit/import" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn bg-gradient-secondary " data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn bg-gradient-primary ">Upload</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <button class="btn btn-primary" type="submit">Import</button>
-            </div>
-        </form>
-    </body>
-
-    <a href="<?= site_url('/datapelanggan/caring/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">
-        <i class="fas fa-file-download"></i> Export
-    </a>
+            <a href="<?= site_url('/datapelanggan/caring/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-12">
@@ -41,6 +60,7 @@
                                     <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Call</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -68,6 +88,7 @@
                                             <a href="/datapelanggan/caring/detail/<?= $dp['id_pelanggan'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-success"><i class="material-icons">info</i></span>
                                             </a>
+                                            <span style="justify-content: center;" class="badge badge-sm bg-gradient-success"><i class="material-icons">delete</i></span>
                                         </td>
                                     </tr>
                                 <?php
