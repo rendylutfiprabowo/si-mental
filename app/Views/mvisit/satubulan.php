@@ -87,7 +87,7 @@
                                             <a href="/datapelanggan/visit/detail/<?= $ctbvisit['id_visit'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">info</i></span>
                                             </a>
-                                            <a href="">
+                                            <a href="/datapelanggan/visit/delete/<?= $ctbvisit['id_visit'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
                                             </a>
                                         </td>

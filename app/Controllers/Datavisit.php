@@ -87,6 +87,15 @@ class Datavisit extends BaseController
             return $this->detail($id);
         }
     }
+
+    public function delete($id)
+    {
+        $satuVisit = new Visit1();
+        $satuVisit->delete($id);
+
+        return redirect()->to('/datapelanggan/visit/satubulan');
+    }
+
     public function export()
     {
         $detailModel = new Visit1();
