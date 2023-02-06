@@ -4,28 +4,31 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\VisitModel;
-use App\Models\Visit1;
+use App\Models\Visit2;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 class Datavisit extends BaseController
 {
-    public function satubulan()
+
+    public function duabulan()
     {
-        $detailModel = new Visit1();
-        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal_visit) * 12) + MONTH(tanggal_visit)) > ' => '1'];
+        $detailModel = new Visit2();
+        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal_visit) * 12) + MONTH(tanggal_visit)) > ' => '2'];
         $ctb = $detailModel->where($array)->find();
+        // dd($ctb);
         $data = [
             'title' => 'Data Visit',
             'ctb' => $ctb
         ];
-        if (session()->logged_in)  return view('mvisit/satubulan', $data);
+        // return view('mvisit/duabulan');
+        if (session()->logged_in)  return view('mvisit/duabulan', $data);
         else return redirect()->to('login');
     }
 
     public function detail()
     {
-        $detailModel = new Visit1();
+        $detailModel = new Visit2();
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
         $ctb = $detailModel->findAll();
         // dd($ctb);
@@ -40,7 +43,7 @@ class Datavisit extends BaseController
     public function edit($id)
     {
         if (session()->logged_in) {
-            $detailModel = new Visit1();
+            $detailModel = new Visit2();
             $ctb = $detailModel->find($id);
             $data = [
                 'title' => 'Data Visit',
@@ -78,7 +81,7 @@ class Datavisit extends BaseController
             'ket_visit' => $ket_visit,
 
         ];
-        $userModel = new Visit1();
+        $userModel = new Visit2();
 
         $result =  $userModel->update($id, $data);
         if ($result) {
@@ -87,9 +90,10 @@ class Datavisit extends BaseController
             return $this->detail($id);
         }
     }
+
     public function export()
     {
-        $detailModel = new Visit1();
+        $detailModel = new Visit2();
 
         $visit = $detailModel->findAll();
 
@@ -162,7 +166,7 @@ class Datavisit extends BaseController
 
     public function import()
     {
-        $detailModel = new Visit1();
+        $detailModel = new Visit2();
 
         $file = $this->request->getFile('fileexcel');
         $file->move(ROOTPATH . 'public/uploads');
@@ -192,6 +196,6 @@ class Datavisit extends BaseController
         }
 
         $detailModel->insertBatch($data);
-        return redirect()->to('/datapelanggan/visit/satubulan');
+        return redirect()->to('/datapelanggan/visit/duabulan');
     }
 }

@@ -7,14 +7,14 @@ use CodeIgniter\Model;
 class Visit2 extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'visit2s';
+    protected $table            = 'visit2';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nomor_jastel', 'nama', 'contact', 'nama_agen', 'tanggal_visit', 'alamat', 'alamat_baru', 'STO', 'datel', 'hasil_visit', 'ket_visit'];
 
     // Dates
     protected $useTimestamps = false;

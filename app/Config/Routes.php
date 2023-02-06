@@ -51,7 +51,7 @@ $routes->get('/datapelanggan/caring/edit', 'Datacaring::edit');
 $routes->get('/datapelanggan/visit/satubulan', 'Datavisit::satubulan');
 $routes->get('/datapelanggan/visit/duabulan', 'Datavisit::duabulan');
 $routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
-$routes->get('/datapelanggan/visit/edit/import', 'Datavisit::import');
+$routes->post('/datapelanggan/visit/edit/import', 'Datavisit::import');
 $routes->get('/datapelanggan/visit/edit/export', 'Datavisit::export');
 $routes->get('/datapelanggan/visit/edit', 'Datavisit::edit');
 

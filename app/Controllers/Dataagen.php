@@ -54,9 +54,32 @@ class Dataagen extends BaseController
         if (session()->logged_in)  return view('mobc/hapusdata', $data);
         else return redirect()->to('login');
     }
+
     public function edit()
     {
         if (session()->logged_in)  return view('mobc/edit');
         else return redirect()->to('login');
+    }
+
+    public function update($id)
+    {
+        $nama   = $this->request->getPost('nama');
+        $jumlah_pelanggan   = $this->request->getPost('jumlah_pelanggan');
+        $performance  = $this->request->getPost('performance');
+
+        $data = [
+            'nama' => $nama,
+            'jumlah_pelanggan' => $jumlah_pelanggan,
+            'performance' => $performance,
+
+        ];
+        $userModel = new AgenModel();
+
+        $result =  $userModel->update($id, $data);
+        if ($result) {
+            return $this->detail($id);
+        } else {
+            return $this->detail($id);
+        }
     }
 }

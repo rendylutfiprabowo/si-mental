@@ -4,30 +4,29 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\DetPel;
-use App\Models\Caring1;
+use App\Models\Caring2;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 class Datacaring extends BaseController
 {
 
-
-    public function satubulan()
+    public function duabulan()
     {
-        $detailModel = new Caring1();
-        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal)) > ' => '1'];
+        $detailModel = new Caring2();
+        $array = ['((YEAR(now()) * 12) + MONTH(now()) - (YEAR(tanggal) * 12) + MONTH(tanggal)) > ' => '2'];
         $detpel = $detailModel->where($array)->find();
         $data = [
             'title' => 'Data Caring',
             'detpel' => $detpel
         ];
-        if (session()->logged_in)  return view('mcaring/satubulan', $data);
+        if (session()->logged_in)  return view('mcaring/duabulan', $data);
         else return redirect()->to('login');
     }
 
     public function detail($id)
     {
-        $detailModel = new Caring1();
+        $detailModel = new Caring2();
         $detpel = $detailModel->find($id);
         $data = [
             'title' => 'Data Caring',
@@ -41,7 +40,7 @@ class Datacaring extends BaseController
     {
 
         if (session()->logged_in) {
-            $detailModel = new Caring1();
+            $detailModel = new Caring2();
             $detpel = $detailModel->find($id);
             $data = [
                 'title' => 'Data Caring',
@@ -91,7 +90,7 @@ class Datacaring extends BaseController
             'hasil_caring' => $hasil_caring,
 
         ];
-        $userModel = new Caring1();
+        $userModel = new Caring2();
 
         $result =  $userModel->update($id, $data);
         if ($result) {
@@ -103,7 +102,7 @@ class Datacaring extends BaseController
 
     public function export()
     {
-        $detailModel = new Caring1();
+        $detailModel = new Caring2();
 
         $pelanggan = $detailModel->findAll();
 
@@ -191,10 +190,10 @@ class Datacaring extends BaseController
         $writer->save('php://output');
         exit();
     }
-
+   
     public function import()
     {
-        $detailModel = new Caring1();
+        $detailModel = new Caring2();
 
         $file = $this->request->getFile('fileexcel');
         $file->move(ROOTPATH . 'public/uploads');
@@ -230,6 +229,6 @@ class Datacaring extends BaseController
         }
 
         $detailModel->insertBatch($data);
-        return redirect()->to('/datapelanggan/caring/satubulan');
+        return redirect()->to('/datapelanggan/caring/duabulan');
     }
 }

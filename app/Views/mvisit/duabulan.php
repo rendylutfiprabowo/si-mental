@@ -1,6 +1,28 @@
 <?= $this->extend('template') ?>
 <?= $this->section('content') ?>
 <div class="container-fluid py-4">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <form method="post" action="/datapelanggan/visit/edit/import" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Import</button>
+            </div>
+        </form>
+    </body>
+
+    <a href="<?= site_url('/datapelanggan/visit/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">
+        <i class="fas fa-file-download"></i> Export
+    </a>
+    
     <div class="row">
         <div class="col-12">
             <div class="card my-4">

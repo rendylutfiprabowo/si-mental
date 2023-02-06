@@ -10,7 +10,7 @@ class AgenModel extends Model
     protected $primaryKey = "id_agen";
     protected $returnType = "array";
     protected $useTimestamps = true;
-    protected $allowedFields = ['nama', 'jumlah customer'];
+    protected $allowedFields = ['nama', 'jumlah_pelanggan', 'performance'];
 
     public function getAgen($where = false)
     {
