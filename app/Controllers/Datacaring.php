@@ -101,6 +101,14 @@ class Datacaring extends BaseController
         }
     }
 
+    public function delete($id)
+    {
+        $satuModel = new Caring1();
+        $satuModel->delete($id);
+
+        return redirect()->to('/datapelanggan/caring/satubulan');
+    }
+
     public function export()
     {
         $detailModel = new Caring1();
