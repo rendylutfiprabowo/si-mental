@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <a href="<?= site_url('/datapelanggan/caring/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
+            <a href="<?= site_url('/datapelanggan/caring2/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
         </div>
     </div>
 
@@ -84,10 +84,10 @@
                                             <h6 class="mb-0 text-sm"><?php echo $dp['statuscall']; ?></h6>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <a href="/datapelanggan/caring/detail/<?= $dp['id_pelanggan'] ?>">
+                                            <a href="/datapelanggan/caring2/detail/<?= $dp['id_pelanggan'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">info</i></span>
                                             </a>
-                                            <a href="/datapelanggan/caring/delete/<?= $dp['id_pelanggan'] ?>">
+                                            <a href="/datapelanggan/caring2/delete/<?= $dp['id_pelanggan'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
                                             </a>
                                         </td>

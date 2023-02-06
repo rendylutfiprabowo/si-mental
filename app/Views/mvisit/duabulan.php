@@ -24,7 +24,7 @@
                         <div class="modal-body">
                             <p>Cari File Kamu</p>
                             <div class="input-group input-group-dynamic mb-3">
-                                <form method="post" action="/datapelanggan/visit/edit/import" enctype="multipart/form-data">
+                                <form method="post" action="/datapelanggan/visit2/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
                                     </div>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <a href="<?= site_url('/datapelanggan/visit/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
+            <a href="<?= site_url('/datapelanggan/visit2/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
         </div>
     </div>
 
@@ -84,10 +84,10 @@
                                             <h6 class="mb-0 text-sm"><?php echo $ctbvisit['hasil_visit']; ?></h6>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <a href="/datapelanggan/visit/detail/<?= $ctbvisit['id_visit'] ?>">
+                                            <a href="/datapelanggan/visit2/detail/<?= $ctbvisit['id_visit'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">info</i></span>
                                             </a>
-                                            <a href="/datapelanggan/visit/delete/<?= $ctbvisit['id_visit'] ?>">
+                                            <a href="/datapelanggan/visit2/delete/<?= $ctbvisit['id_visit'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
                                             </a>
                                         </td>

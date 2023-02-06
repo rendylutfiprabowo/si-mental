@@ -42,22 +42,36 @@ $routes->get('/logout', 'Home::logout');
 
 $routes->get('/dashboard', 'Dashboard::index');
 $routes->get('/datapelanggan/caring/satubulan', 'Datacaring::satubulan');
-$routes->get('/datapelanggan/caring/duabulan', 'Datacaring2::duabulan');
 $routes->get('/datapelanggan/caring/detail/(:num)', 'Datacaring::detail/$1');
 $routes->get('/datapelanggan/caring/delete/(:num)', 'Datacaring::delete/$1');
 $routes->post('/datapelanggan/caring/edit/import', 'Datacaring::import');
-$routes->post('/datapelanggan/caring2/edit/import', 'datacaring2::import');
 $routes->get('/datapelanggan/caring/edit/export', 'Datacaring::export');
 $routes->get('/datapelanggan/caring/edit', 'Datacaring::edit');
 
+$routes->get('/datapelanggan/caring/duabulan', 'Datacaring2::duabulan');
+$routes->get('/datapelanggan/caring2/detail/(:num)', 'datacaring2::detail/$1');
+$routes->get('/datapelanggan/caring2/delete/(:num)', 'datacaring2::delete/$1');
+$routes->post('/datapelanggan/caring2/edit/import', 'datacaring2::import');
+$routes->get('/datapelanggan/caring2/edit/export', 'datacaring2::export');
+$routes->get('/datapelanggan/caring2/edit', 'datacaring2::edit');
+
+
 $routes->get('/datapelanggan/visit/satubulan', 'Datavisit::satubulan');
-$routes->get('/datapelanggan/visit/duabulan', 'Datavisit2::duabulan');
+
 $routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
 $routes->get('/datapelanggan/visit/delete/(:num)', 'Datavisit::delete/$1');
 $routes->post('/datapelanggan/visit/edit/import', 'Datavisit::import');
 $routes->post('/datapelanggan/visit2/edit/import', 'Datavisit2::import');
 $routes->get('/datapelanggan/visit/edit/export', 'Datavisit::export');
+$routes->get('/datapelanggan/visit2/edit/export', 'Datavisit2::export');
 $routes->get('/datapelanggan/visit/edit', 'Datavisit::edit');
+
+$routes->get('/datapelanggan/visit/duabulan', 'Datavisit2::duabulan');
+$routes->get('/datapelanggan/visit2/detail/(:num)', 'datavisit2::detail/$1');
+$routes->get('/datapelanggan/visit2/delete/(:num)', 'datavisit2::delete/$1');
+$routes->post('/datapelanggan/visit2/edit/import', 'datavisit2::import');
+$routes->get('/datapelanggan/visit2/edit/export', 'datavisit2::export');
+$routes->get('/datapelanggan/visit2/edit', 'datavisit2::edit');
 
 $routes->get('/dataagen', 'Dataagen::listdata');
 $routes->get('/dataagen/detail', 'Dataagen::detail');
