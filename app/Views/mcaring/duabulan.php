@@ -87,6 +87,9 @@
                                             <a href="/datapelanggan/caring/detail/<?= $dp['id_pelanggan'] ?>">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-success"><i class="material-icons">info</i></span>
                                             </a>
+                                            <a href="">
+                                                <span style="justify-content: center;" class="badge badge-sm bg-gradient-success"><i class="material-icons">delete</i></span>
+                                            </a>
                                         </td>
                                     </tr>
                                 <?php
