@@ -42,14 +42,14 @@ $routes->get('/logout', 'Home::logout');
 
 $routes->get('/dashboard', 'Dashboard::index');
 $routes->get('/datapelanggan/caring/satubulan', 'Datacaring::satubulan');
-$routes->get('/datapelanggan/caring/duabulan', 'Datacaring::duabulan');
+$routes->get('/datapelanggan/caring/duabulan', 'Datacaring2::duabulan');
 $routes->get('/datapelanggan/caring/detail/(:num)', 'Datacaring::detail/$1');
 $routes->post('/datapelanggan/caring/edit/import', 'Datacaring::import');
 $routes->get('/datapelanggan/caring/edit/export', 'Datacaring::export');
 $routes->get('/datapelanggan/caring/edit', 'Datacaring::edit');
 
 $routes->get('/datapelanggan/visit/satubulan', 'Datavisit::satubulan');
-$routes->get('/datapelanggan/visit/duabulan', 'Datavisit::duabulan');
+$routes->get('/datapelanggan/visit/duabulan', 'Datavisit2::duabulan');
 $routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
 $routes->post('/datapelanggan/visit/edit/import', 'Datavisit::import');
 $routes->get('/datapelanggan/visit/edit/export', 'Datavisit::export');

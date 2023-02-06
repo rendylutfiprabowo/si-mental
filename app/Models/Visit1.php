@@ -8,13 +8,13 @@ class Visit1 extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'visit1';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_visit';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nomor_jastel', 'nama', 'contact', 'nama_agen', 'tanggal_visit', 'alamat', 'alamat_baru', 'STO', 'datel', 'hasil_visit', 'ket_visit'];
+    protected $allowedFields    = ['id_agen', 'id_pelanggan', 'nomor_jastel', 'nama', 'contact', 'nama_agen', 'tanggal_visit', 'alamat', 'alamat_baru', 'STO', 'datel', 'hasil_visit', 'ket_visit'];
 
     // Dates
     protected $useTimestamps = false;
