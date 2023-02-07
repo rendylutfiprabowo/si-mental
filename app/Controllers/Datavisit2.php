@@ -36,7 +36,7 @@ class Datavisit2 extends BaseController
             'title' => 'Data Visit',
             'ctb' => $ctb
         ];
-        if (session()->logged_in)  return view('mvisit/detail', $data);
+        if (session()->logged_in)  return view('mvisit/detail2', $data);
         else return redirect()->to('login');
     }
 
@@ -49,7 +49,7 @@ class Datavisit2 extends BaseController
                 'title' => 'Data Visit',
                 'ctb' => $ctb,
             ];
-            return view('mvisit/edit', $data);
+            return view('mvisit/edit2', $data);
         } else return redirect()->to('login');
     }
 

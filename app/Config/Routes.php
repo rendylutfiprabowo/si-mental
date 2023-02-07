@@ -63,15 +63,18 @@ $routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
 $routes->get('/datapelanggan/visit/delete/(:num)', 'Datavisit::delete/$1');
 $routes->post('/datapelanggan/visit/edit/import', 'Datavisit::import');
 $routes->get('/datapelanggan/visit/edit/export', 'Datavisit::export');
-$routes->get('/datapelanggan/visit/edit', 'Datavisit::edit');
+$routes->get('/datapelanggan/visit/edit/(:num)', 'Datavisit::edit/$1');
 $routes->post('/visit/update/(:num)', 'Datavisit::update/$1');
 
+
 $routes->get('/datapelanggan/visit/duabulan', 'Datavisit2::duabulan');
-$routes->get('/datapelanggan/visit2/detail/(:num)', 'datavisit2::detail/$1');
-$routes->get('/datapelanggan/visit2/delete/(:num)', 'datavisit2::delete/$1');
-$routes->post('/datapelanggan/visit2/edit/import', 'datavisit2::import');
-$routes->get('/datapelanggan/visit2/edit/export', 'datavisit2::export');
-$routes->get('/datapelanggan/visit2/edit', 'datavisit2::edit');
+$routes->get('/datapelanggan/visit2/detail/(:num)', 'Datavisit2::detail/$1');
+$routes->get('/datapelanggan/visit2/delete/(:num)', 'Datavisit2::delete/$1');
+$routes->post('/datapelanggan/visit2/edit/import', 'Datavisit2::import');
+$routes->get('/datapelanggan/visit2/edit/export', 'Datavisit2::export');
+$routes->get('/datapelanggan/visit2/edit/(:num)', 'Datavisit2::edit/$1');
+$routes->post('/visit2/update/(:num)', 'Datavisit2::update/$1');
+
 
 $routes->get('/dataagen', 'Dataagen::listdata');
 $routes->get('/dataagen/detail', 'Dataagen::detail');
@@ -92,7 +95,7 @@ $routes->get('/eror', 'Home::eror');
 
 // coba-coba
 
-$routes->get('/datapelanggan/visit/edit/(:num)', 'Datavisit::edit/$1');
+
 
 /*
  * --------------------------------------------------------------------
