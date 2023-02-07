@@ -16,7 +16,7 @@
             </div>
             <div class="card-body">
               <h6 class="mb-0 ">Jumlah Caring</h6>
-              <p class="text-sm "><?= $jumlahdatacaring ?></p>
+              <p class="text-sm "><?= $jumlahdatacaring?></p>
               <hr class="dark horizontal">
               <div class="d-flex ">
 

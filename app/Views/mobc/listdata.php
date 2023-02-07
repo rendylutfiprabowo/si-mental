@@ -4,13 +4,13 @@
 
 <div class="container-fluid py-4 ">
 
-    <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
+    <!-- <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
         <div class="ms-auto my-auto">
             <button type="button" class="btn btn-outline-primary  mb-0">
                 <i style="margin-right:8px;" class="material-icons ml-0">add_box</i>Tambah Agen
             </button>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="ms-auto my-auto mt-lg-0 ">
@@ -60,9 +60,9 @@
                                             </div>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <a href="#">
+                                            <!-- <a href="#">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">edit</i></span>
-                                            </a>
+                                            </a> -->
                                             <a href="#">
                                                 <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
                                             </a>
