@@ -1,6 +1,5 @@
 <?= $this->extend('template') ?>
 <?= $this->section('content') ?>
-
 <link rel="stylesheet" href="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js">
 <link rel="stylesheet" href="//cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
 
@@ -55,11 +54,8 @@
                         <h6 class="text-white text-capitalize ps-3">DATA CARING 1 BULAN</h6>
                     </div>
                 </div>
-
                 <div class="card-body px-0 ">
                     <div class="card-header m-0">
-
-
                         <div class="table-responsive p-0">
                             <table id="example1" class="table table-hover align-items-center mb-0">
                                 <thead class="thead-light">

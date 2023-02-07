@@ -1,6 +1,7 @@
 <?= $this->extend('template') ?>
 <?= $this->section('content') ?>
-
+<link rel="stylesheet" href="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js">
+<link rel="stylesheet" href="//cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
 <div class="container-fluid py-4">
 
     <head>
@@ -52,61 +53,63 @@
                         <h6 class=" text-white text-capitalize ps-3">DATA CARING 2 BULAN</h6>
                     </div>
                 </div>
-                <div class="card-body px-0 pb-2">
-                    <div class="card-header">
-                        <div class="input-group input-group-outline">
-                            <label class="form-label">Search here</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="table-responsive p-0">
-                        <table class="table align-items-center mb-0">
-                            <thead>
-                                <tr>
-                                    <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Agen</th>
-                                    <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Call</th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                foreach ($detpel as $dp) {
-                                ?>
+                <div class="card-body px-0 ">
+                    <div class="card-header m-0">
+                        <div class="table-responsive p-0">
+                            <table id="example1" class="table table-hover align-items-center mb-0">
+                                <thead class="thead-light">
                                     <tr>
-                                        <td>
-                                            <div class="d-flex px-2 py-1">
-                                                <div>
-                                                    <img src="/assets/material/assets/img/user.png" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                                                </div>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm"><?php echo $dp['agen_pengelola']; ?></h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <h6 class="mb-0 text-sm"><?php echo $dp['nama']; ?></h6>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <h6 class="mb-0 text-sm"><?php echo $dp['statuscall']; ?></h6>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <a href="/datapelanggan/caring2/detail/<?= $dp['id_pelanggan'] ?>">
-                                                <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">info</i></span>
-                                            </a>
-                                            <a href="/datapelanggan/caring2/delete/<?= $dp['id_pelanggan'] ?>">
-                                                <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
-                                            </a>
-                                        </td>
+                                        <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Agen</th>
+                                        <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
+                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Call</th>
+                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
                                     </tr>
-                                <?php
-                                }
-                                ?>
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    foreach ($detpel as $dp) {
+                                    ?>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-2 py-1">
+                                                    <div>
+                                                        <img src="/assets/material/assets/img/user.png" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm"><?php echo $dp['agen_pengelola']; ?></h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h6 class="mb-0 text-sm"><?php echo $dp['nama']; ?></h6>
+                                            </td>
+                                            <td class="align-middle text-center">
+                                                <h6 class="mb-0 text-sm"><?php echo $dp['statuscall']; ?></h6>
+                                            </td>
+                                            <td class="align-middle text-center">
+                                                <a href="/datapelanggan/caring2/detail/<?= $dp['id_pelanggan'] ?>">
+                                                    <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">info</i></span>
+                                                </a>
+                                                <a href="/datapelanggan/caring2/delete/<?= $dp['id_pelanggan'] ?>">
+                                                    <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                    }
+                                    ?>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <?= $this->endSection() ?>
+        <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#example1').DataTable({});
+            });
+        </script>
+        <?= $this->endSection() ?>
