@@ -54,7 +54,7 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex">
-                                                    <span class="me-2 text-xs font-weight-bold">40%</span>
+                                                    <span class="me-2 text-xs font-weight-bold"><?php echo $obc['performance']; ?></span>
                                                     <div>
                                                         <div class="progress">
                                                             <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>

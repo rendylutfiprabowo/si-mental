@@ -96,6 +96,15 @@ class Datavisit extends BaseController
         return redirect()->to('/datapelanggan/visit/satubulan');
     }
 
+    public function clearall()
+    {
+        $satuModel = new Visit1();
+        $satuModel->truncate();
+
+        return redirect()->to('/datapelanggan/visit/satubulan');
+    }
+    
+
     public function export()
     {
         $detailModel = new Visit1();
@@ -163,7 +172,7 @@ class Datavisit extends BaseController
 
         $writer = new Xlsx($spreadsheet);
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        header('Content-Disposition: attachment;filename=visit.xls');
+        header('Content-Disposition: attachment;filename=visit.Xlsx');
         header('Cache-Control: max-age=0');
         $writer->save('php://output');
         exit();
