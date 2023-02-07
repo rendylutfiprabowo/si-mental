@@ -3,8 +3,10 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\DetPel;
-use App\Models\VisitModel;
+use App\Models\Caring1;
+use App\Models\Caring2;
+use App\Models\Visit1;
+use App\Models\Visit2;
 
 class Dashboard extends BaseController
 {
@@ -14,25 +16,49 @@ class Dashboard extends BaseController
     }
     public function index()
     {
+        //DATA HASIL CARING 1 BULAN
+        $caring1 = new Caring1();
 
-        $caring = new DetPel();
-        $visit = new VisitModel();
+        //DATA HASIL CARING 2 BULAN
+        $caring2 = new Caring2();
 
-        //data hasil caring
-        $jumlahdatacaring = $caring->countAllResults();
-        $DBC = $caring->findAll();
+        //DATA HASIL VISIT 1 BULAN
+        $visit1 = new Visit1();
 
-        //data hasil visit
-        $jumlahdatavisit = $visit->countAllResults();
-        $VBC = $visit->findAll();
+        //DATA HASIL VISIT 2 BULAN
+        $visit2 = new Visit2();
+
+        //DATA HASIL CARING 1 BULAN
+        $jumlahdatacaring = $caring1->countAllResults();
+        $DBC = $caring1->findAll();
+
+        //DATA HASIL CARING 2 BULAN
+        $jumlahdatacaring = $caring2->countAllResults();
+        $DBC = $caring2->findAll();
+
+        //DATA HASIL VISIT 1 BULAN
+        $jumlahdatavisit = $visit1->countAllResults();
+        $VBC = $visit1->findAll();
+
+        //DATA HASIL VISIT 2 BULAN
+        $jumlahdatavisit = $visit2->countAllResults();
+        $VBC = $visit2->findAll();
 
         $data = [
-            //data hasil caring
+            //DATA HASIL CARING 1 BULAN
             'title' => 'Dashboard',
             'jumlahdatacaring' => $jumlahdatacaring,
             'DBC' => $DBC,
 
-            //data hasil visit
+            //DATA HASIL CARING 2 BULAN
+            'jumlahdatacaring' => $jumlahdatacaring,
+            'DBC' => $DBC,
+
+            //DATA HASIL CARING 1 BULAN
+            'jumlahdatavisit' => $jumlahdatavisit,
+            'VBC' => $VBC,
+
+            //DATA HASIL CARING 2 BULAN
             'jumlahdatavisit' => $jumlahdatavisit,
             'VBC' => $VBC,
 
