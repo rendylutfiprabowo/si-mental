@@ -20,4 +20,9 @@ class Caring1 extends Model
             return $this->getWhere($where);
         }
     }
+
+    public function pencarian($kunci)
+    {
+        return $this->table('caring1')->like('nama', $kunci);
+    }
 }

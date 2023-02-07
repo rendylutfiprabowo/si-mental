@@ -240,4 +240,26 @@ class Datacaring extends BaseController
         $detailModel->insertBatch($data);
         return redirect()->to('/datapelanggan/caring/satubulan');
     }
+
+    public function index()
+    {
+        $pager = \Config\Services::pager();
+        $model = new Caring1();
+        $kunci = $this->request->getVar('cari');
+
+        if ($kunci) {
+            $query = $model->pencarian($kunci);
+            $jumlah = "Pencarian dengan nama <B>$kunci</B> ditemukan " . $query->affectedRows() . " Data";
+        } else {
+            $query = $model;
+            $jumlah = "";
+        }
+
+        $data['caring1'] = $query->paginate(10);
+        $data['pager'] = $model->pager;
+        $data['page'] = $this->request->getVar('page') ? $this->request->getVar('page') : 1;
+        $data['jumlah'] = $jumlah;
+
+        echo view('mcaring/satubulan', $data);
+    }
 }
