@@ -32,7 +32,7 @@ class Datacaring2 extends BaseController
             'title' => 'Data Caring',
             'detpel' => $detpel,
         ];
-        if (session()->logged_in)  return view('mcaring/detail', $data);
+        if (session()->logged_in)  return view('mcaring/detail2', $data);
         else return redirect()->to('login');
     }
 
@@ -46,7 +46,7 @@ class Datacaring2 extends BaseController
                 'title' => 'Data Caring',
                 'detpel' => $detpel,
             ];
-            return view('mcaring/edit', $data);
+            return view('mcaring/edit2', $data);
         } else return redirect()->to('login');
     }
 

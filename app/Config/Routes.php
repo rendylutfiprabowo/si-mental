@@ -46,7 +46,7 @@ $routes->get('/datapelanggan/caring/detail/(:num)', 'Datacaring::detail/$1');
 $routes->get('/datapelanggan/caring/delete/(:num)', 'Datacaring::delete/$1');
 $routes->post('/datapelanggan/caring/edit/import', 'Datacaring::import');
 $routes->get('/datapelanggan/caring/edit/export', 'Datacaring::export');
-$routes->get('/datapelanggan/caring/edit', 'Datacaring::edit');
+$routes->get('/datapelanggan/caring/edit/(:num)', 'Datacaring::edit/$1');
 $routes->post('/caring/update/(:num)', 'Datacaring::update/$1');
 
 $routes->get('/datapelanggan/caring/duabulan', 'Datacaring2::duabulan');
@@ -54,7 +54,9 @@ $routes->get('/datapelanggan/caring2/detail/(:num)', 'Datacaring2::detail/$1');
 $routes->get('/datapelanggan/caring2/delete/(:num)', 'Datacaring2::delete/$1');
 $routes->post('/datapelanggan/caring2/edit/import', 'Datacaring2::import');
 $routes->get('/datapelanggan/caring2/edit/export', 'Datacaring2::export');
-$routes->get('/datapelanggan/caring2/edit', 'Datacaring2::edit');
+$routes->get('/datapelanggan/caring2/edit/(:num)', 'Datacaring2::edit/$1');
+$routes->post('/caring2/update/(:num)', 'Datacaring2::update/$1');
+
 
 $routes->get('/datapelanggan/visit/satubulan', 'Datavisit::satubulan');
 $routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
@@ -89,7 +91,7 @@ $routes->get('/tabel', 'Home::tabel');
 $routes->get('/eror', 'Home::eror');
 
 // coba-coba
-$routes->get('/datapelanggan/caring/edit/(:num)', 'Datacaring::edit/$1');
+
 $routes->get('/datapelanggan/visit/edit/(:num)', 'Datavisit::edit/$1');
 
 /*
