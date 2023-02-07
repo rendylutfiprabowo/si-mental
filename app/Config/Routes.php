@@ -84,7 +84,7 @@ $routes->get('/dataagen', 'Dataagen::listdata');
 $routes->get('/dataagen/detail', 'Dataagen::detail');
 $routes->get('/dataagen', 'Dataagen::listdata');
 $routes->get('/dataagen/tambahdata', 'Dataagen::tambahdata');
-$routes->get('/dataagen/hapusdata', 'Dataagen::hapusdata');
+$routes->get('/dataagen/hapusdata/(:num)', 'Dataagen::delete/$1');
 $routes->get('/dataagen/editdata', 'Dataagen::editdata');
 
 

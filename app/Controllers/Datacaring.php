@@ -7,6 +7,7 @@ use App\Models\DetPel;
 use App\Models\Caring1;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+use PhpOffice\PhpSpreadsheet\Reader\Xls;
 
 class Datacaring extends BaseController
 {
@@ -240,6 +241,4 @@ class Datacaring extends BaseController
         $detailModel->insertBatch($data);
         return redirect()->to('/datapelanggan/caring/satubulan');
     }
-
-    
 }

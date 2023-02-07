@@ -16,7 +16,7 @@
             </div>
             <div class="card-body">
               <h6 class="mb-0 ">Jumlah Caring</h6>
-              <p class="text-sm "><?= $jumlahdatacaring?></p>
+              <p class="text-sm "><?= $jumlahdatacaring ?></p>
               <hr class="dark horizontal">
               <div class="d-flex ">
 
@@ -362,7 +362,7 @@
                 <p class="text-sm mb-0 text-capitalize">JANJI BAYAR</p>
                 <h4 class="mb-0"><?php
                                   $janjibayar = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "JANJI BAYAR") {
                                       $janjibayar++;
                                     } else {
@@ -388,7 +388,7 @@
                 <p class="text-sm mb-0 text-capitalize">RNA</p>
                 <h4 class="mb-0"><?php
                                   $rna = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "RNA") {
                                       $rna++;
                                     } else {
@@ -414,7 +414,7 @@
                 <p class="text-sm mb-0 text-capitalize ">KOMPLAIN</p>
                 <h4 class="mb-0 "><?php
                                   $komplain = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "KOMPLAIN") {
                                       $komplain++;
                                     } else {
@@ -441,7 +441,7 @@
                 <p class="text-sm mb-0 text-capitalize ">MAU CABUT</p>
                 <h4 class="mb-0 "><?php
                                   $cabut = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "CABUT") {
                                       $cabut++;
                                     } else {
@@ -470,7 +470,7 @@
                 <p class="text-sm mb-0 text-capitalize">PDA</p>
                 <h4 class="mb-0"><?php
                                   $pda = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "PDA") {
                                       $pda++;
                                     } else {
@@ -497,7 +497,7 @@
                 <p class="text-sm mb-0 text-capitalize">CP SALAH</p>
                 <h4 class="mb-0"><?php
                                   $cpsalah = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "CP SALAH") {
                                       $cpsalah++;
                                     } else {
@@ -524,7 +524,7 @@
                 <p class="text-sm mb-0 text-capitalize ">LUNAS</p>
                 <h4 class="mb-0 "><?php
                                   $lunas = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "LUNAS") {
                                       $lunas++;
                                     } else {
@@ -551,7 +551,7 @@
                 <p class="text-sm mb-0 text-capitalize ">UPGRADE</p>
                 <h4 class="mb-0 "><?php
                                   $upgrade = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "UPGRADE") {
                                       $upgrade++;
                                     } else {
@@ -580,7 +580,7 @@
                 <p class="text-sm mb-0 text-capitalize">DOWNGRADE</p>
                 <h4 class="mb-0"><?php
                                   $downgrade = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "DOWNGRADE") {
                                       $downgrade++;
                                     } else {
@@ -607,7 +607,7 @@
                 <p class="text-sm mb-0 text-capitalize">KENDALA KEUANGAN</p>
                 <h4 class="mb-0"><?php
                                   $kendalakeuangan = 0;
-                                  foreach ($DBC as $caring2) {
+                                  foreach ($DBC2 as $caring2) {
                                     if ($caring2['profil_kesepakatan'] == "KENDALA KEUANGAN") {
                                       $kendalakeuangan++;
                                     } else {
@@ -928,7 +928,7 @@
           <p class="text-sm mb-0 text-capitalize">RNA</p>
           <h4 class="mb-0"><?php
                             $rna2 = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "RNA") {
                                 $rna2++;
                               } else {
@@ -954,7 +954,7 @@
           <p class="text-sm mb-0 text-capitalize">JANJI BAYAR</p>
           <h4 class="mb-0"><?php
                             $janjibayar2 = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "JANJI BAYAR") {
                                 $janjibayar2++;
                               } else {
@@ -981,7 +981,7 @@
           <p class="text-sm mb-0 text-capitalize ">KOMPLAIN</p>
           <h4 class="mb-0 "><?php
                             $komplain2 = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "KOMPLAIN") {
                                 $komplain2++;
                               } else {
@@ -1008,7 +1008,7 @@
           <p class="text-sm mb-0 text-capitalize ">PDA</p>
           <h4 class="mb-0 "><?php
                             $pda2 = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "PDA") {
                                 $pda2++;
                               } else {
@@ -1037,7 +1037,7 @@
           <p class="text-sm mb-0 text-capitalize">KENDALA KEUANGAN</p>
           <h4 class="mb-0"><?php
                             $kendalakeuangan2 = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "KENDALA KEUANGAN") {
                                 $kendalakeuangan2++;
                               } else {
@@ -1064,7 +1064,7 @@
           <p class="text-sm mb-0 text-capitalize">ATK</p>
           <h4 class="mb-0"><?php
                             $atk = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "ATK") {
                                 $atk++;
                               } else {
@@ -1091,7 +1091,7 @@
           <p class="text-sm mb-0 text-capitalize ">LUNAS</p>
           <h4 class="mb-0 "><?php
                             $lunas2 = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "LUNAS") {
                                 $lunas2++;
                               } else {
@@ -1118,7 +1118,7 @@
           <p class="text-sm mb-0 text-capitalize ">SUDAH BAYAR KE SALES</p>
           <h4 class="mb-0 "><?php
                             $sudahbayar = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "SUDAH BAYAR KE SALES") {
                                 $sudahbayar++;
                               } else {
@@ -1147,7 +1147,7 @@
           <p class="text-sm mb-0 text-capitalize">TIDAK MAU BAYAR</p>
           <h4 class="mb-0"><?php
                             $tidakmauayar = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "TIDAK MAU BAYAR") {
                                 $tidakmauayar++;
                               } else {
@@ -1174,7 +1174,7 @@
           <p class="text-sm mb-0 text-capitalize">RUTUP</p>
           <h4 class="mb-0"><?php
                             $rutup = 0;
-                            foreach ($VBC as $visit2) {
+                            foreach ($VBC2 as $visit2) {
                               if ($visit2['hasil_visit'] == "RUTUP") {
                                 $rutup++;
                               } else {
