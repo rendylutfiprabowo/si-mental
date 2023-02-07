@@ -39,8 +39,8 @@
                     </div>
                 </div>
             </div>
-            <a style="margin-right: 8px;"  href="<?= site_url('/datapelanggan/caring/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
-            <a href="#"  class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Clear Data</a>
+            <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/caring/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
+            <a href="#" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Clear Data</a>
         </div>
     </div>
 
@@ -52,16 +52,23 @@
                         <h6 class="text-white text-capitalize ps-3">DATA CARING 1 BULAN</h6>
                     </div>
                 </div>
+
                 <div class="card-body px-0 pb-2">
+                    <div class="card-header">
+                        <div class="input-group input-group-outline">
+                            <label class="form-label">Search here</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
                     <div class="table-responsive p-0">
                         <table class="table align-items-center mb-0">
-                            <thead>
+
+                            <thead class="thead-light">
                                 <tr>
-                                    <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Agen</th>
+                                    <th class="thead-light text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Agen</th>
                                     <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Call</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
-
                                 </tr>
                             </thead>
                             <tbody>

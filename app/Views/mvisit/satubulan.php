@@ -39,7 +39,7 @@
                 </div>
             </div>
             <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/visit/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
-            <a   href="#" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Clear Data</a>
+            <a href="#" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Clear Data</a>
         </div>
     </div>
 
@@ -52,6 +52,12 @@
                     </div>
                 </div>
                 <div class="card-body px-0 pb-2">
+                <div class="card-header">
+                        <div class="input-group input-group-outline">
+                            <label class="form-label">Search here</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
                     <div class="table-responsive p-0">
                         <table class="table align-items-center mb-0">
                             <thead>
