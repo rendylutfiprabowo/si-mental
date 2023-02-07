@@ -70,8 +70,8 @@ class Datavisit2 extends BaseController
         $data = [
             'nomor_jastel' => $nomor_jastel,
             'nama' => $nama,
-            'contact ' => $contact,
-            'nama_agen ' => $nama_agen,
+            'contact' => $contact,
+            'nama_agen' => $nama_agen,
             'tanggal_visit' => $tanggal_visit,
             'alamat' => $alamat,
             'alamat_baru' => $alamat_baru,
