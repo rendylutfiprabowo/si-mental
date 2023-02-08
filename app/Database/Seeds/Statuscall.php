@@ -13,7 +13,7 @@ class Statuscall extends Seeder
                 'statuscall' => 'CONTACTED',
             ],
             [
-                'statuscall' => 'NOT-CONTACTED',
+                'statuscall' => 'NOT CONTACTED',
             ],
 
 
