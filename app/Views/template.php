@@ -277,7 +277,7 @@
                             <script>
                                 document.write(new Date().getFullYear())
                             </script> by
-                            <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">PKL PT TELKOM WITEL LAMPUNG</a>
+                            <a class="font-weight-bold" target="_blank">PKL PT TELKOM WITEL LAMPUNG</a>
 
                         </div>
                     </div>
