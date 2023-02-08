@@ -48,15 +48,15 @@
                                 <input type="date" name="tanggal" class="form-control" id="tanggal" value="<?= $detpel['tanggal'] ?>">
                             </div>
                         </td>
-                    </tr>
-                    <tr>
                         <td>
                             <div class="form-group mb-3">
                                 <label for="produk">Produk Pelanggan</label>
                                 <input type="text" id="disabledTextInput" name="produk" class="form-control" id="produk" readonly value="<?= $detpel['produk'] ?>">
                             </div>
                         </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
                             <div class="form-group mb-3">
                                 <label for="alamat">Alamat Lengkap Pelanggan</label>
                                 <textarea style="height: 150px;" name="alamat" class="form-control"> <?= $detpel['alamat'] ?></textarea>
@@ -67,25 +67,25 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="STO">Sentral Telepon Otomat</label>
-                                <textarea style="text" name="STO" class="form-control"> <?= $detpel['STO'] ?></textarea>
+                                <input type="text" id="disabledTextInput" name="STO" class="form-control" id="STO" readonly value="<?= $detpel['STO'] ?>">
                             </div>
                         </td>
                         <td>
                             <div class="form-group mb-3">
                                 <label for="datel">Daerah Witel</label>
-                                <textarea style="text" name="datel" class="form-control"> <?= $detpel['datel'] ?></textarea>
+                                <input type="text" id="disabledTextInput" name="datel" class="form-control" id="datel" readonly value="<?= $detpel['datel'] ?>">
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div class="form-group mb-3">
-                                <label for="statuscall">Status Call</label>
+                                <label for="reasoncall">Status Call</label>
                                 <select name="statuscall" class="form-select" aria-label="Default select example">
                                     <option value="<?= $detpel['statuscall'] ?>" selected><?= $detpel['statuscall'] ?></option>
-                                    <?php foreach ($dropdown as $dd) : ?>
-                                        <?php if ($dd['statuscall'] != $detpel['statuscall']) : ?>
-                                            <option value="<?= $dd['statuscall']; ?>"><?= $dd['statuscall']; ?></option>
+                                    <?php foreach ($statuscall as $statuscall) : ?>
+                                        <?php if ($statuscall['statuscall'] != $detpel['statuscall']) : ?>
+                                            <option value="<?= $statuscall['statuscall']; ?>"><?= $statuscall['statuscall']; ?></option>
                                         <?php endif; ?>
                                     <?php endforeach; ?>
                                 </select>
@@ -95,11 +95,12 @@
                             <div class="form-group mb-3">
                                 <label for="reasoncall">Reason Call</label>
                                 <select name="reasoncall" class="form-select" aria-label="Default select example">
-                                    <option selected><?= $detpel['reasoncall'] ?></option>
-                                    <option value="Setuju">Setuju</option>
-                                    <option value="Kendala">Kendala</option>
-                                    <option value="Lunas">Lunas</option>
-                                    <option value="Janji bayar">Janji bayar</option>
+                                    <option value="<?= $detpel['reasoncall'] ?>" selected><?= $detpel['reasoncall'] ?></option>
+                                    <?php foreach ($reasoncall as $reasoncall) : ?>
+                                        <?php if ($reasoncall['reasoncall'] != $detpel['reasoncall']) : ?>
+                                            <option value="<?= $reasoncall['reasoncall']; ?>"><?= $reasoncall['reasoncall']; ?></option>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
                                 </select>
                             </div>
                         </td>
@@ -116,12 +117,12 @@
                             <div class="form-group mb-3">
                                 <label for="hub_ybs">Hubungan Dengan YBS</label>
                                 <select name="hub_ybs" class="form-select" aria-label="Default select example">
-                                    <option selected><?= $detpel['hub_ybs'] ?></option>
-                                    <option value="Orangtua">Orangtua</option>
-                                    <option value="Anak">Anak</option>
-                                    <option value="Teman">Teman</option>
-                                    <option value="Tetangga">Tetangga</option>
-                                    <option value="Tidak Kenal">Tidak Kenal</option>
+                                    <option value="<?= $detpel['hub_ybs'] ?>" selected><?= $detpel['hub_ybs'] ?></option>
+                                    <?php foreach ($hub_ybs as $hub_ybs) : ?>
+                                        <?php if ($hub_ybs['hub_ybs'] != $detpel['hub_ybs']) : ?>
+                                            <option value="<?= $hub_ybs['hub_ybs']; ?>"><?= $hub_ybs['hub_ybs']; ?></option>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
                                 </select>
                             </div>
                         </td>

@@ -5,7 +5,10 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\DetPel;
 use App\Models\Caring1;
-use App\Models\DropdownModel;
+use App\Models\HubYbs;
+use App\Models\Profilkesepakatan;
+use App\Models\Reasoncall;
+use App\Models\Statuscall;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use PhpOffice\PhpSpreadsheet\Reader\Xls;
@@ -43,13 +46,21 @@ class Datacaring extends BaseController
     {
 
         if (session()->logged_in) {
-            $dropdown = new DropdownModel();
+            $statuscall = new Statuscall();
+            $reasoncall = new Reasoncall();
+            $profilkesepakatan = new Profilkesepakatan();
+            $hub_ybs = new HubYbs();
+            // $dropdown = new DropdownModel();
             $detailModel = new Caring1();
             $detpel = $detailModel->find($id);
             $data = [
                 'title' => 'Data Caring',
                 'detpel' => $detpel,
-                'dropdown' => $dropdown->findAll()
+                // 'dropdown' => $dropdown->findAll(),
+                'statuscall'=> $statuscall->findAll(),
+                'reasoncall'=> $reasoncall->findAll(),
+                'profil_kesepakatan'=> $profilkesepakatan->findAll(),
+                'hub_ybs'=> $hub_ybs->findAll(),
             ];
             // dd($data);
             return view('mcaring/edit', $data);

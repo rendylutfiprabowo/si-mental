@@ -4,10 +4,10 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class DropdownModel extends Model
+class Profilkesepakatan extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'dropdown';
+    protected $table            = 'profilkesepakatan';
     // protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
@@ -39,9 +39,4 @@ class DropdownModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
-
-    public function statusCall(){
-        
-    }
-
 }
