@@ -4,13 +4,13 @@
 
 <div class="container-fluid py-4 ">
 
-    <!-- <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
+    <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
         <div class="ms-auto my-auto">
             <button type="button" class="btn btn-outline-primary  mb-0">
                 <i style="margin-right:8px;" class="material-icons ml-0">add_box</i>Tambah Agen
             </button>
         </div>
-    </div> -->
+    </div>
 
 
     <div class="ms-auto my-auto mt-lg-0 ">
@@ -35,19 +35,23 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex px-2">
-                                                <div>
-                                                    <img src="/assets/material/assets/img/user.png" class="avatar avatar-sm rounded-circle me-2" alt="spotify">
-                                                </div>
-                                                <div class="my-auto">
-                                                    <h6 class="mb-0 text-sm">Asana</h6>
+                                    <?php
+                                    foreach ($Agen as $obc) {
+                                    ?>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-2">
+                                                    <div>
+                                                        <img src="/assets/material/assets/img/user.png" class="avatar avatar-sm rounded-circle me-2" alt="spotify">
+                                                    </div>
+                                                    <div class="my-auto">
+                                                        <h6 class="mb-0 text-sm"><?php echo $obc['nama']; ?></h6>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="align-middle text-center text-sm">
-                                            <h6 class="mb-0 text-sm"><?= count($jlnpelanggan); ?></h6>
+                                            <h6 class="mb-0 text-sm">$jml_plg</h6>
                                         </td>
                                         <td>
                                             <div class="d-flex">
@@ -69,6 +73,7 @@
                                         </td>
                                     </tr>
                                 </tbody>
+
                             </table>
                         </div>
                     </div>

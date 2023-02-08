@@ -43,18 +43,6 @@ class Dataagen extends BaseController
         else return redirect()->to('login');
     }
 
-    public function hapusdata()
-    {
-        $detailModel = new AgenModel();
-        $Agen = $detailModel->findAll();
-        $data = [
-            'title' => 'Data Agen',
-            'Agen' => $Agen
-        ];
-        if (session()->logged_in)  return view('mobc/hapusdata', $data);
-        else return redirect()->to('login');
-    }
-
     public function edit()
     {
         if (session()->logged_in)  return view('mobc/edit');
@@ -81,5 +69,15 @@ class Dataagen extends BaseController
         } else {
             return $this->detail($id);
         }
+    }
+
+    public function delete($id)
+    {
+        if (!session()->logged_in) return redirect()->to('login');
+
+        $satuModel = new AgenModel();
+        $satuModel->delete($id);
+
+        return $this->listdata();
     }
 }

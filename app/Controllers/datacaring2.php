@@ -108,6 +108,14 @@ class Datacaring2 extends BaseController
         return redirect()->to('/datapelanggan/caring/duabulan');
     }
 
+    public function clearall()
+    {
+        $satuModel = new Caring2();
+        $satuModel->truncate();
+
+        return redirect()->to('/datapelanggan/caring/duabulan');
+    }
+
     public function export()
     {
         $detailModel = new Caring2();
@@ -193,7 +201,7 @@ class Datacaring2 extends BaseController
 
         $writer = new Xlsx($spreadsheet);
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        header('Content-Disposition: attachment;filename=pelanggan.xls');
+        header('Content-Disposition: attachment;filename=pelanggan.Xlsx');
         header('Cache-Control: max-age=0');
         $writer->save('php://output');
         exit();

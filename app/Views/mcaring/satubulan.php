@@ -29,7 +29,7 @@
                             <div class="input-group input-group-dynamic mb-3">
                                 <form method="post" action="/datapelanggan/caring/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
+                                        <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .Xlsx" /></p>
                                     </div>
                             </div>
                             <div class="modal-footer">
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/caring/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
-            <a href="#" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Clear Data</a>
+            <a href="/datapelanggan/caring/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Clear Data</a>
         </div>
     </div>
 

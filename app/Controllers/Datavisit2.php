@@ -99,6 +99,14 @@ class Datavisit2 extends BaseController
         return redirect()->to('/datapelanggan/visit/duabulan');
     }
 
+    public function clearall()
+    {
+        $satuModel = new Visit2();
+        $satuModel->truncate();
+
+        return redirect()->to('/datapelanggan/visit/duabulan');
+    }
+
     public function export()
     {
         $detailModel = new Visit2();

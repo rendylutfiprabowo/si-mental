@@ -34,7 +34,7 @@ class Dashboard extends BaseController
 
         //DATA HASIL CARING 2 BULAN
         $jumlahdatacaring = $caring2->countAllResults();
-        $DBC = $caring2->findAll();
+        $DBC2 = $caring2->findAll();
 
         //DATA HASIL VISIT 1 BULAN
         $jumlahdatavisit = $visit1->countAllResults();
@@ -42,7 +42,7 @@ class Dashboard extends BaseController
 
         //DATA HASIL VISIT 2 BULAN
         $jumlahdatavisit = $visit2->countAllResults();
-        $VBC = $visit2->findAll();
+        $VBC2 = $visit2->findAll();
 
         $data = [
             //DATA HASIL CARING 1 BULAN
@@ -52,7 +52,7 @@ class Dashboard extends BaseController
 
             //DATA HASIL CARING 2 BULAN
             'jumlahdatacaring' => $jumlahdatacaring,
-            'DBC' => $DBC,
+            'DBC2' => $DBC2,
 
             //DATA HASIL CARING 1 BULAN
             'jumlahdatavisit' => $jumlahdatavisit,
@@ -60,7 +60,7 @@ class Dashboard extends BaseController
 
             //DATA HASIL CARING 2 BULAN
             'jumlahdatavisit' => $jumlahdatavisit,
-            'VBC' => $VBC,
+            'VBC2' => $VBC2,
 
         ];
         if (session()->logged_in) return view('dashboard/dashboard', $data);

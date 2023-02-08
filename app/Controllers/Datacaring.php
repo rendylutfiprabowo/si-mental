@@ -8,6 +8,7 @@ use App\Models\Caring1;
 use App\Models\DropdownModel;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+use PhpOffice\PhpSpreadsheet\Reader\Xls;
 
 class Datacaring extends BaseController
 {
@@ -113,6 +114,14 @@ class Datacaring extends BaseController
         return redirect()->to('/datapelanggan/caring/satubulan');
     }
 
+    public function clearall()
+    {
+        $satuModel = new Caring1();
+        $satuModel->truncate();
+
+        return redirect()->to('/datapelanggan/caring/satubulan');
+    }
+
     public function export()
     {
         $detailModel = new Caring1();
@@ -198,7 +207,7 @@ class Datacaring extends BaseController
 
         $writer = new Xlsx($spreadsheet);
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        header('Content-Disposition: attachment;filename=pelanggan.xls');
+        header('Content-Disposition: attachment;filename=pelanggan.Xlsx');
         header('Cache-Control: max-age=0');
         $writer->save('php://output');
         exit();
@@ -244,14 +253,7 @@ class Datacaring extends BaseController
         $detailModel->insertBatch($data);
         return redirect()->to('/datapelanggan/caring/satubulan');
     }
-
-    public function cleardata()
-    {
-        $db      = \Config\Database::connect();
-        $builder = $db->table('caring1');
-
-        $builder->emptyTable('caring1');
-
-        return redirect()->to('/datapelanggan/caring/satubulan');
-    }
+<<<<<<< HEAD
+=======
+>>>>>>> b9835892582271add4ee4280504de114b15e6a38
 }
