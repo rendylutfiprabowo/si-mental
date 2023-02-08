@@ -253,7 +253,4 @@ class Datacaring extends BaseController
         $detailModel->insertBatch($data);
         return redirect()->to('/datapelanggan/caring/satubulan');
     }
-<<<<<<< HEAD
-=======
->>>>>>> b9835892582271add4ee4280504de114b15e6a38
 }
