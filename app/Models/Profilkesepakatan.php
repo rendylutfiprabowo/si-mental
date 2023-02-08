@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Profilkesepakatan extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'profilkesepakatan';
+    protected $table            = 'profil_kesepakatan';
     // protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;

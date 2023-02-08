@@ -137,7 +137,15 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="datel">Profil Kesepakatan</label>
-                                <textarea style="text" name="profil_kesepakatan" class="form-control"> <?= $detpel['profil_kesepakatan'] ?></textarea>
+                                <select name="profil_kesepakatan" class="form-select" aria-label="Default select example">
+                                    <option value="<?= $detpel['profil_kesepakatan'] ?>" selected><?= $detpel['profil_kesepakatan'] ?></option>
+                                    <?php foreach ($profil_kesepakatan as $pk) : ?>
+                                        <?php if ($pk['profil_kesepakatan'] != $detpel['profil_kesepakatan']) : ?>
+                                            <option value="<?= $pk['profil_kesepakatan']; ?>"><?= $pk['profil_kesepakatan']; ?></option>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                </select>
+                                
                             </div>
                         </td>
                     </tr>

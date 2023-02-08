@@ -10,61 +10,61 @@ class Profilkesepakatan extends Seeder
     {
         $data = [
             [
-                'profilkesepakatan' => 'BUKAN YBS'
+                'profil_kesepakatan' => 'BUKAN YBS'
             ],
             [
-                'profilkesepakatan' => 'BUSY'
+                'profil_kesepakatan' => 'BUSY'
             ],
             [
-                'profilkesepakatan' => 'DOWNGRADE'
+                'profil_kesepakatan' => 'DOWNGRADE'
             ],
             [
-                'profilkesepakatan' => 'KOMPLAIN'
+                'profil_kesepakatan' => 'KOMPLAIN'
             ],
             [
-                'profilkesepakatan' => 'CP SALAH'
+                'profil_kesepakatan' => 'CP SALAH'
             ],
             [
-                'profilkesepakatan' => 'SALAH SAMBUNG'
+                'profil_kesepakatan' => 'SALAH SAMBUNG'
             ],
             [
-                'profilkesepakatan' => 'RNA'
+                'profil_kesepakatan' => 'RNA'
             ],
             [
-                'profilkesepakatan' => 'LUNAS'
+                'profil_kesepakatan' => 'LUNAS'
             ],
             [
-                'profilkesepakatan' => 'PDA'
+                'profil_kesepakatan' => 'PDA'
             ],
             [
-                'profilkesepakatan' => 'KENDALA KEUANGAN'
+                'profil_kesepakatan' => 'KENDALA KEUANGAN'
             ],
             [
-                'profilkesepakatan' => 'JANJI BAYAR'
+                'profil_kesepakatan' => 'JANJI BAYAR'
             ],
             [
-                'profilkesepakatan' => 'KELUAR KOTA'
+                'profil_kesepakatan' => 'KELUAR KOTA'
             ],
             [
-                'profilkesepakatan' => 'TUNDA BAYAR'
+                'profil_kesepakatan' => 'TUNDA BAYAR'
             ],
             [
-                'profilkesepakatan' => 'UPGRADE'
+                'profil_kesepakatan' => 'UPGRADE'
             ],
             [
-                'profilkesepakatan' => 'MINTA CABUT'
+                'profil_kesepakatan' => 'MINTA CABUT'
             ],
             [
-                'profilkesepakatan' => 'CABUT'
+                'profil_kesepakatan' => 'CABUT'
             ],
             [
-                'profilkesepakatan' => 'ISOLIR APS'
+                'profil_kesepakatan' => 'ISOLIR APS'
             ],
             [
-                'profilkesepakatan' => 'MINTA PINDAH'
+                'profil_kesepakatan' => 'MINTA PINDAH'
             ],
 
         ];
-        $this->db->table('profilkesepakatan')->insertBatch($data);
+        $this->db->table('profil_kesepakatan')->insertBatch($data);
     }
 }
