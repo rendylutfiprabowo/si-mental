@@ -10,7 +10,7 @@
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
               <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
                 <div class="chart">
-                  <h1 style="text-align: center;"><?= $jumlahdatacaring1 ?></h1 style="align-items: center;">
+                  <h1 style="text-align: center;"><?= $sumJumlahDataCaring ?></h1 style="align-items: center;">
                 </div>
               </div>
             </div>
@@ -26,7 +26,7 @@
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
               <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
                 <div class="chart">
-                  <h1 style="text-align: center;"><?= $jumlahdatavisit ?></h1 style="align-items: center;">
+                  <h1 style="text-align: center;"><?= $sumjumlahvisit ?></h1 style="align-items: center;">
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
               <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
                 <div class="chart">
-                <h1 style="text-align: center;">JMLH AGEN</h1 style="align-items: center;">
+                  <h1 style="text-align: center;"><?= $dataagen  ?></h1 style="align-items: center;">
                 </div>
               </div>
             </div>

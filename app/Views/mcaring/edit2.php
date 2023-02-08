@@ -59,7 +59,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="alamat">Alamat Lengkap Pelanggan</label>
-                                <textarea style="height: 150px;" name="alamat" class="form-control"> <?= $detpel['alamat'] ?></textarea>
+                                <textarea style="height: 150px;" name="alamat" class="form-control"><?= $detpel['alamat'] ?></textarea>
                             </div>
                         </td>
                     </tr>
@@ -67,13 +67,13 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="STO">Sentral Telepon Otomat</label>
-                                <textarea style="text" name="STO" class="form-control"> <?= $detpel['STO'] ?></textarea>
+                                <textarea style="text" name="STO" class="form-control"><?= $detpel['STO'] ?></textarea>
                             </div>
                         </td>
                         <td>
                             <div class="form-group mb-3">
                                 <label for="datel">Daerah Witel</label>
-                                <textarea style="text" name="datel" class="form-control"> <?= $detpel['datel'] ?></textarea>
+                                <textarea style="text" name="datel" class="form-control"><?= $detpel['datel'] ?></textarea>
                             </div>
                         </td>
                     </tr>
@@ -127,13 +127,13 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="STO">Hasil Gree</label>
-                                <textarea style="text" name="hasil_greeting" class="form-control"> <?= $detpel['hasil_greeting'] ?></textarea>
+                                <textarea style="text" name="hasil_greeting" class="form-control"><?= $detpel['hasil_greeting'] ?></textarea>
                             </div>
                         </td>
                         <td>
                             <div class="form-group mb-3">
                                 <label for="datel">Profil Kesepakatan</label>
-                                <textarea style="text" name="profil_kesepakatan" class="form-control"> <?= $detpel['profil_kesepakatan'] ?></textarea>
+                                <textarea style="text" name="profil_kesepakatan" class="form-control"><?= $detpel['profil_kesepakatan'] ?></textarea>
                             </div>
                         </td>
                     </tr>

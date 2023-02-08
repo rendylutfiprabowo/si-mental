@@ -25,15 +25,15 @@
                                 </div>
                                 <div class="mt-5">
                                     <p class="text-sm mb-0 text-capitalize">Nomor Jastel Pelanggan</p>
-                                    <span class="text-success text-sm font-weight-bolder"> <?= $detpel['nomor_jastel'] ?></span><br>
+                                    <span class="text-success text-sm font-weight-bolder"><?= $detpel['nomor_jastel'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Nama Pelanggan</p>
-                                    <span class="text-success text-sm font-weight-bolder"> <?= $detpel['nama'] ?></span><br>
+                                    <span class="text-success text-sm font-weight-bolder"><?= $detpel['nama'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Kontak Telepon Pelanggan</p>
-                                    <span class="text-success text-sm font-weight-bolder"> <?= $detpel['contact'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder"><?= $detpel['contact'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Agen Pengelola</p>
-                                    <span class="text-success text-sm font-weight-bolder"> <?= $detpel['agen_pengelola'] ?></span><br>
+                                    <span class="text-success text-sm font-weight-bolder"><?= $detpel['agen_pengelola'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Produk Pelanggan</p>
-                                    <span class="text-success text-sm font-weight-bolder"> <?= $detpel['produk'] ?></span><br>
+                                    <span class="text-success text-sm font-weight-bolder"><?= $detpel['produk'] ?></span><br>
                                 </div>
                             </div>
 
@@ -51,13 +51,13 @@
                                 </div>
                                 <div class="mt-5">
                                     <p class="text-sm mb-0 text-capitalize">Alamat Lengkap Pelanggan</p>
-                                    <span class="text-success text-sm font-weight-bolder "> <?= $detpel['alamat'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder "><?= $detpel['alamat'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Sentral Telepon Otomat</p>
-                                    <span class="text-success text-sm font-weight-bolder "> <?= $detpel['STO'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder "><?= $detpel['STO'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Daerah Witel</p>
-                                    <span class="text-success text-sm font-weight-bolder "> <?= $detpel['datel'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder "><?= $detpel['datel'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Status Call</p>
-                                    <span class="text-success text-sm font-weight-bolder"> <?= $detpel['statuscall'] ?></span><br>
+                                    <span class="text-success text-sm font-weight-bolder"><?= $detpel['statuscall'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Tanggal Caring</p>
                                     <span class="text-success text-sm font-weight-bolder"><?= $detpel['tanggal'] ?></span><br>
                                 </div>
@@ -76,15 +76,15 @@
                                 </div>
                                 <div class="mt-5">
                                     <p class="text-sm mb-0 text-capitalize">Reason Call</p>
-                                    <span class="text-success text-sm font-weight-bolder"> <?= $detpel['reasoncall'] ?></span><br>
+                                    <span class="text-success text-sm font-weight-bolder"><?= $detpel['reasoncall'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Penerima Telepon</p>
-                                    <span class="text-success text-sm font-weight-bolder "> <?= $detpel['penerima_telpon'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder "><?= $detpel['penerima_telpon'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Hubungan Dengan YBS</p>
-                                    <span class="text-success text-sm font-weight-bolder "> <?= $detpel['hub_ybs'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder "><?= $detpel['hub_ybs'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Hasil Gree</p>
-                                    <span class="text-success text-sm font-weight-bolder "> <?= $detpel['hasil_greeting'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder "><?= $detpel['hasil_greeting'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Profil Kesepakatan</p>
-                                    <span class="text-success text-sm font-weight-bolder "> <?= $detpel['profil_kesepakatan'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder "><?= $detpel['profil_kesepakatan'] ?></span>
                                 </div>
                             </div>
                             <div class="card-footer p-3">

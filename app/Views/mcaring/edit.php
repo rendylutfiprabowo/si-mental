@@ -59,7 +59,7 @@
                         <td colspan="2">
                             <div class="form-group mb-3">
                                 <label for="alamat">Alamat Lengkap Pelanggan</label>
-                                <textarea style="height: 150px;" name="alamat" class="form-control"> <?= $detpel['alamat'] ?></textarea>
+                                <textarea style="height: 150px;" name="alamat" class="form-control"><?= $detpel['alamat'] ?></textarea>
                             </div>
                         </td>
                     </tr>
@@ -131,7 +131,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="STO">Hasil Gree</label>
-                                <textarea style="text" name="hasil_greeting" class="form-control"> <?= $detpel['hasil_greeting'] ?></textarea>
+                                <textarea style="text" name="hasil_greeting" class="form-control"><?= $detpel['hasil_greeting'] ?></textarea>
                             </div>
                         </td>
                         <td>
