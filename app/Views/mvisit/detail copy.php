@@ -57,13 +57,13 @@
                         </div>
                         <div class="mt-5">
                             <p class="text-sm mb-0 text-capitalize">Nama Agen</p>
-                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['nama_agen'] ?></span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['nama_agen'] ?></span><br>
                             <p class="text-sm mb-0 text-capitalize">Nama Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['nama_pelanggan'] ?></span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['nama_pelanggan'] ?></span><br>
                             <p class="text-sm mb-0 text-capitalize">Jumlah Pelanggan</p>
-                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['jumlah_pelanggan'] ?></span>
+                            <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['jumlah_pelanggan'] ?></span>
                             <p class="text-sm mb-0 text-capitalize">Hasil Visit</p>
-                            <span class="text-success text-sm font-weight-bolder"> <?= $ctb[0]['hasil_visit'] ?></span><br>
+                            <span class="text-success text-sm font-weight-bolder"><?= $ctb[0]['hasil_visit'] ?></span><br>
                         </div>
                     </div>
                 </div>

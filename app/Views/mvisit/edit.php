@@ -51,7 +51,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="alamat">Alamat Lengkap Pelanggan</label>
-                                <textarea style="height: 150px;" name="alamat" class="form-control"> <?= $ctb['alamat'] ?></textarea>
+                                <textarea style="height: 150px;" name="alamat" class="form-control"><?= $ctb['alamat'] ?></textarea>
                             </div>
                         </td>
                     </tr>
@@ -59,7 +59,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="alamat">Alamat Baru Pelanggan</label>
-                                <textarea style="height: 150px;" name="alamat_baru" class="form-control"> <?= $ctb['alamat_baru'] ?></textarea>
+                                <textarea style="height: 150px;" name="alamat_baru" class="form-control"><?= $ctb['alamat_baru'] ?></textarea>
                             </div>
                         </td>
                         <td>
@@ -75,13 +75,13 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="STO">Sentral Telepon Otomat</label>
-                                <textarea style="text" name="STO" class="form-control"> <?= $ctb['STO'] ?></textarea>
+                                <textarea style="text" name="STO" class="form-control"><?= $ctb['STO'] ?></textarea>
                             </div>
                         </td>
                         <td>
                             <div class="form-group mb-3">
                                 <label for="datel">Daerah Witel</label>
-                                <textarea style="text" name="datel" class="form-control"> <?= $ctb['datel'] ?></textarea>
+                                <textarea style="text" name="datel" class="form-control"><?= $ctb['datel'] ?></textarea>
                             </div>
                         </td>
                     </tr>

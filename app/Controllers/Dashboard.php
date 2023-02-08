@@ -7,6 +7,7 @@ use App\Models\Caring1;
 use App\Models\Caring2;
 use App\Models\Visit1;
 use App\Models\Visit2;
+use App\Models\AgenModel;
 
 class Dashboard extends BaseController
 {
@@ -28,39 +29,62 @@ class Dashboard extends BaseController
         //DATA HASIL VISIT 2 BULAN
         $visit2 = new Visit2();
 
+        //DATA AGEN
+        $agen = new AgenModel();
+
         //DATA HASIL CARING 1 BULAN
-        $jumlahdatacaring1 = $caring1->countAllResults();
+        $jumlahdatacaring = $caring1->countAllResults();
         $DBC = $caring1->findAll();
 
         //DATA HASIL CARING 2 BULAN
-        $jumlahdatacaring = $caring2->countAllResults();
+        $jumlahdatacaring2 = $caring2->countAllResults();
         $DBC2 = $caring2->findAll();
 
         //DATA HASIL VISIT 1 BULAN
-        $jumlahdatavisit1 = $visit1->countAllResults();
+        $jumlahdatavisit = $visit1->countAllResults();
         $VBC = $visit1->findAll();
 
         //DATA HASIL VISIT 2 BULAN
-        $jumlahdatavisit = $visit2->countAllResults();
+        $jumlahdatavisit2 = $visit2->countAllResults();
         $VBC2 = $visit2->findAll();
+
+        //DATA AGEN
+        $dataagen = $agen->countAllResults();
+        $obc = $agen->findAll();
+
+        //JUMLAH HASIL CARING
+        $sumJumlahDataCaring = $jumlahdatacaring + $jumlahdatacaring2;
+
+        //JUMLAH HASIL VISIT
+        $sumjumlahvisit = $jumlahdatavisit + $jumlahdatavisit2;
 
         $data = [
             //DATA HASIL CARING 1 BULAN
             'title' => 'Dashboard',
-            'jumlahdatacaring1' => $jumlahdatacaring1,
+            'jumlahdatacaring' => $jumlahdatacaring,
             'DBC' => $DBC,
 
             //DATA HASIL CARING 2 BULAN
-            'jumlahdatacaring' => $jumlahdatacaring,
+            'jumlahdatacaring2' => $jumlahdatacaring2,
             'DBC2' => $DBC2,
 
-            //DATA HASIL CARING 1 BULAN
+            //JUMLAH HASIL CARING
+            'sumJumlahDataCaring' => $sumJumlahDataCaring,
+
+            //JUMLAH HASIL VISIT
+            'sumjumlahvisit' => $sumjumlahvisit,
+
+            //DATA HASIL VISIT 1 BULAN
             'jumlahdatavisit' => $jumlahdatavisit,
             'VBC' => $VBC,
 
-            //DATA HASIL CARING 2 BULAN
-            'jumlahdatavisit' => $jumlahdatavisit,
+            //DATA HASIL VISIT 2 BULAN
+            'jumlahdatavisit2' => $jumlahdatavisit2,
             'VBC2' => $VBC2,
+
+            //DATA AGEN
+            'dataagen' => $dataagen,
+            'obc' => $obc,
 
         ];
         if (session()->logged_in) return view('dashboard/dashboard', $data);
