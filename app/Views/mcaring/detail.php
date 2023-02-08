@@ -29,7 +29,7 @@
                                     <p class="text-sm mb-0 text-capitalize">Nama Pelanggan</p>
                                     <span class="text-success text-sm font-weight-bolder"> <?= $detpel['nama'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Kontak Telepon Pelanggan</p>
-                                    <span class="text-success text-sm font-weight-bolder"> <?= $detpel['contact'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder">0<?= $detpel['contact'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Agen Pengelola</p>
                                     <span class="text-success text-sm font-weight-bolder"> <?= $detpel['agen_pengelola'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Produk Pelanggan</p>

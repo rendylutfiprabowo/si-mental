@@ -31,7 +31,7 @@
                         <td>
                             <div class="form-group mb-3">
                                 <label for="contact">Kontak Telepon Pelanggan</label>
-                                <input type="tel" name="contact" class="form-control" style="background-color: white;" id="contact" value="<?= $detpel['contact'] ?>">
+                                <input type="tel" name="contact" class="form-control" style="background-color: white;" id="contact" value="0<?= $detpel['contact'] ?>">
                             </div>
                         </td>
                         <td>
