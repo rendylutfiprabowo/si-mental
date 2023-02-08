@@ -47,7 +47,7 @@
                                             </div>
                                         </td>
                                         <td class="align-middle text-center text-sm">
-                                            <h6 class="mb-0 text-sm">$jml_plg</h6>
+                                            <h6 class="mb-0 text-sm"><?= count($jlnpelanggan); ?></h6>
                                         </td>
                                         <td>
                                             <div class="d-flex">

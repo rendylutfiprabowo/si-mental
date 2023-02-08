@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\DetPel;
 use App\Models\Caring1;
+use App\Models\DropdownModel;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
@@ -41,12 +42,15 @@ class Datacaring extends BaseController
     {
 
         if (session()->logged_in) {
+            $dropdown = new DropdownModel();
             $detailModel = new Caring1();
             $detpel = $detailModel->find($id);
             $data = [
                 'title' => 'Data Caring',
                 'detpel' => $detpel,
+                'dropdown' => $dropdown->findAll()
             ];
+            // dd($data);
             return view('mcaring/edit', $data);
         } else return redirect()->to('login');
     }
@@ -241,5 +245,13 @@ class Datacaring extends BaseController
         return redirect()->to('/datapelanggan/caring/satubulan');
     }
 
-    
+    public function cleardata()
+    {
+        $db      = \Config\Database::connect();
+        $builder = $db->table('caring1');
+
+        $builder->emptyTable('caring1');
+
+        return redirect()->to('/datapelanggan/caring/satubulan');
+    }
 }

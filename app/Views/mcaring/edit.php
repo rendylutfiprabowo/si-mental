@@ -82,9 +82,12 @@
                             <div class="form-group mb-3">
                                 <label for="statuscall">Status Call</label>
                                 <select name="statuscall" class="form-select" aria-label="Default select example">
-                                    <option selected><?= $detpel['statuscall'] ?></option>
-                                    <option value="Contacted">Contacted</option>
-                                    <option value="Not Contacted">Not-Contacted</option>
+                                    <option value="<?= $detpel['statuscall'] ?>" selected><?= $detpel['statuscall'] ?></option>
+                                    <?php foreach ($dropdown as $dd) : ?>
+                                        <?php if ($dd['statuscall'] != $detpel['statuscall']) : ?>
+                                            <option value="<?= $dd['statuscall']; ?>"><?= $dd['statuscall']; ?></option>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
                                 </select>
                             </div>
                         </td>
