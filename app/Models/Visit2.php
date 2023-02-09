@@ -16,6 +16,16 @@ class Visit2 extends Model
     protected $protectFields    = true;
     protected $allowedFields    = ['id_agen', 'id_pelanggan', 'nomor_jastel', 'nama', 'contact', 'nama_agen', 'tanggal_visit', 'alamat', 'alamat_baru', 'STO', 'datel', 'hasil_visit', 'ket_visit'];
 
+
+    public function getHvisit(){
+        $builder = $this->db->table("visit2");
+        // $builder->selectCount("nomor_jastel","Jumlah Customer");
+        $builder->select("hasil_visit");
+        $builder->selectCount("nomor_jastel", "total");
+        $builder->groupBy("hasil_visit");
+        $data = $builder->get()->getResult();
+        return $data;
+    }
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';

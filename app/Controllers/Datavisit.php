@@ -42,9 +42,11 @@ class Datavisit extends BaseController
         if (session()->logged_in) {
             $detailModel = new Visit1();
             $ctb = $detailModel->find($id);
+            $hvisit = $detailModel->getHvisit();
             $data = [
                 'title' => 'Data Visit',
                 'ctb' => $ctb,
+                'hvisit' => $hvisit,
             ];
             return view('mvisit/edit', $data);
         } else return redirect()->to('login');

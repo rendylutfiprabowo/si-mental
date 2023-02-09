@@ -42,9 +42,11 @@ class Datacaring2 extends BaseController
         if (session()->logged_in) {
             $detailModel = new Caring2();
             $detpel = $detailModel->find($id);
+            $Reascall2 = $detailModel->getReascall();
             $data = [
                 'title' => 'Data Caring',
                 'detpel' => $detpel,
+                'Reascall2' => $Reascall2,
             ];
             return view('mcaring/edit2', $data);
         } else return redirect()->to('login');

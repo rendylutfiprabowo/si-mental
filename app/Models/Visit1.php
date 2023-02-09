@@ -39,4 +39,14 @@ class Visit1 extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getHvisit(){
+        $builder = $this->db->table("visit1");
+        // $builder->selectCount("nomor_jastel","Jumlah Customer");
+        $builder->select("hasil_visit");
+        $builder->selectCount("nomor_jastel", "total");
+        $builder->groupBy("hasil_visit");
+        $data = $builder->get()->getResult();
+        return $data;
+    }
 }

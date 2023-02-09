@@ -1,5 +1,13 @@
 <?= $this->extend('template') ?>
 <?= $this->section('content') ?>
+
+<style>
+  .box {
+    position: absolute;
+    left: 50%;
+  }
+</style>
+
 <div class="container-fluid py-4">
   <div class="row">
     <div class="col-lg-12 position-relative z-index-2">
@@ -57,7 +65,6 @@
         </div>
       </div>
 
-
       <div class="row">
         <div class="col-12">
           <div class="card my-4">
@@ -79,20 +86,20 @@
                 </div>
                 <tbody>
                   <?php
-                  // foreach ($detpel as $dp) {
+                  foreach ($profk as $pk1) {
                   ?>
-                  <tr>
-                    <td style="margin: 10px;">
-                      <h6 class="mb-0 text-sm">profil kesepakatan</h6>
-                    </td>
-                    <td>
-                      <span class="badge badge-sm bg-gradient-warning">
-                        <h6>rumus</h6>
-                      </span>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td>
+                        <h6 class="mb-0 text-sm"><?= $pk1->profil_kesepakatan; ?></h6>
+                      </td>
+                      <td>
+                        <span style="text-align: center; vertical-align:middle;" class="badge badge-sm bg-gradient-warning">
+                          <h6 ><?= $pk1->total ?></h6>
+                        </span>
+                      </td>
+                    </tr>
                   <?php
-                  // }
+                  }
                   ?>
                 </tbody>
                 </table>
@@ -121,20 +128,20 @@
                 </div>
                 <tbody>
                   <?php
-                  // foreach ($detpel as $dp) {
+                  foreach ($profk2 as $pk2) {
                   ?>
-                  <tr>
-                    <td style="margin: 10px;">
-                      <h6 class="mb-0 text-sm">profil kesepakatan</h6>
-                    </td>
-                    <td>
-                      <span class="badge badge-sm bg-gradient-warning">
-                        <h6>rumus</h6>
-                      </span>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td>
+                        <h6 class="mb-0 text-sm"><?= $pk2->profil_kesepakatan ?></h6>
+                      </td>
+                      <td>
+                        <span class="badge badge-sm bg-gradient-warning">
+                          <h6><?= $pk2->total ?></h6>
+                        </span>
+                      </td>
+                    </tr>
                   <?php
-                  // }
+                  }
                   ?>
                 </tbody>
                 </table>
@@ -163,20 +170,20 @@
                 </div>
                 <tbody>
                   <?php
-                  // foreach ($detpel as $dp) {
+                  foreach ($hvisit as $hvs1) {
                   ?>
-                  <tr>
-                    <td style="margin: 10px;">
-                      <h6 class="mb-0 text-sm">profil kesepakatan</h6>
-                    </td>
-                    <td>
-                      <span class="badge badge-sm bg-gradient-warning">
-                        <h6>rumus</h6>
-                      </span>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td>
+                        <h6 class="mb-0 text-sm"><?= $hvs1->hasil_visit ?></h6>
+                      </td>
+                      <td>
+                        <span class="badge badge-sm bg-gradient-warning">
+                          <h6><?= $hvs1->total ?></h6>
+                        </span>
+                      </td>
+                    </tr>
                   <?php
-                  // }
+                  }
                   ?>
                 </tbody>
                 </table>
@@ -188,7 +195,7 @@
           <div class="card my-4">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
               <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3">KALKULASI DATA HASIL VISIT 1 BULAN</h6>
+                <h6 class="text-white text-capitalize ps-3">KALKULASI DATA HASIL VISIT 2 BULAN</h6>
               </div>
             </div>
             <div class="card-body px-0 ">
@@ -204,20 +211,20 @@
                 </div>
                 <tbody>
                   <?php
-                  // foreach ($detpel as $dp) {
+                  foreach ($hvisit2 as $hvs2) {
                   ?>
-                  <tr>
-                    <td style="margin: 10px;">
-                      <h6 class="mb-0 text-sm">profil kesepakatan</h6>
-                    </td>
-                    <td>
-                      <span class="badge badge-sm bg-gradient-warning">
-                        <h6>rumus</h6>
-                      </span>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td>
+                        <h6 class="mb-0 text-sm"><?= $hvs2->hasil_visit ?></h6>
+                      </td>
+                      <td>
+                        <span class="badge badge-sm bg-gradient-warning">
+                          <h6><?= $hvs2->total ?></h6>
+                        </span>
+                      </td>
+                    </tr>
                   <?php
-                  // }
+                  }
                   ?>
                 </tbody>
                 </table>

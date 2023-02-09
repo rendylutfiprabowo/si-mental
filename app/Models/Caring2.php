@@ -20,4 +20,24 @@ class Caring2 extends Model
             return $this->getWhere($where);
         }
     }
+
+    public function getProfk(){
+        $builder = $this->db->table("caring2");
+        // $builder->selectCount("nomor_jastel","Jumlah Customer");
+        $builder->select("profil_kesepakatan");
+        $builder->selectCount("nomor_jastel", "total");
+        $builder->groupBy("profil_kesepakatan");
+        $data = $builder->get()->getResult();
+        return $data;
+    }
+
+    public function getReascall(){
+        $builder = $this->db->table("caring2");
+        // $builder->selectCount("nomor_jastel","Jumlah Customer");
+        $builder->select("reasoncall");
+        $builder->selectCount("nomor_jastel", "total");
+        $builder->groupBy("reasoncall");
+        $data = $builder->get()->getResult();
+        return $data;
+    }
 }

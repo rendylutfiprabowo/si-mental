@@ -93,10 +93,9 @@
                                 <label for="reasoncall">Reason Call</label>
                                 <select name="reasoncall" class="form-select" aria-label="Default select example">
                                     <option selected><?= $detpel['reasoncall'] ?></option>
-                                    <option value="Setuju">Setuju</option>
-                                    <option value="Kendala">Kendala</option>
-                                    <option value="Lunas">Lunas</option>
-                                    <option value="Janji bayar">Janji bayar</option>
+                                    <?php foreach ($Reascall2 as $rsc2) : ?>
+                                            <option value="<?= $rsc2->reasoncall ?>"><?= $rsc2->reasoncall ?></option>
+                                    <?php endforeach; ?>
                                 </select>
                             </div>
                         </td>

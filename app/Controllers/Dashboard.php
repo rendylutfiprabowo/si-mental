@@ -58,6 +58,11 @@ class Dashboard extends BaseController
         //JUMLAH HASIL VISIT
         $sumjumlahvisit = $jumlahdatavisit + $jumlahdatavisit2;
 
+
+        $profk = $caring1->getProfk();
+        $profk2 = $caring2->getProfk();
+        $hvisit = $visit1->getHvisit();
+        $hvisit2 = $visit2->getHvisit();
         $data = [
             //DATA HASIL CARING 1 BULAN
             'title' => 'Dashboard',
@@ -85,6 +90,11 @@ class Dashboard extends BaseController
             //DATA AGEN
             'dataagen' => $dataagen,
             'obc' => $obc,
+
+            'profk' => $profk,
+            'profk2' => $profk2,
+            'hvisit' => $hvisit,
+            'hvisit2' => $hvisit2,
 
         ];
         if (session()->logged_in) return view('dashboard/dashboard', $data);

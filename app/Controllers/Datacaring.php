@@ -47,10 +47,11 @@ class Datacaring extends BaseController
 
         if (session()->logged_in) {
             $statuscall = new Statuscall();
-            $reasoncall = new Reasoncall();
+            $reasoncall = new Caring1();
             $profilkesepakatan = new Profilkesepakatan();
             $hub_ybs = new HubYbs();
             // $dropdown = new DropdownModel();
+            $Reascall = $reasoncall->getReascall();
             $detailModel = new Caring1();
             $detpel = $detailModel->find($id);
             $data = [
@@ -61,6 +62,7 @@ class Datacaring extends BaseController
                 'reasoncall'=> $reasoncall->findAll(),
                 'profil_kesepakatan'=> $profilkesepakatan->findAll(),
                 'hub_ybs'=> $hub_ybs->findAll(),
+                'Reascall' => $Reascall,
             ];
             // dd($data);
             return view('mcaring/edit', $data);

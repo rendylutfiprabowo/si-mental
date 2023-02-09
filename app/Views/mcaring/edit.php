@@ -96,10 +96,8 @@
                                 <label for="reasoncall">Reason Call</label>
                                 <select name="reasoncall" class="form-select" aria-label="Default select example">
                                     <option value="<?= $detpel['reasoncall'] ?>" selected><?= $detpel['reasoncall'] ?></option>
-                                    <?php foreach ($reasoncall as $reasoncall) : ?>
-                                        <?php if ($reasoncall['reasoncall'] != $detpel['reasoncall']) : ?>
-                                            <option value="<?= $reasoncall['reasoncall']; ?>"><?= $reasoncall['reasoncall']; ?></option>
-                                        <?php endif; ?>
+                                    <?php foreach ($Reascall as $rsc1) : ?>
+                                            <option value="<?= $rsc1->reasoncall ?>"><?= $rsc1->reasoncall ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
