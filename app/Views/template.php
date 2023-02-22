@@ -259,7 +259,7 @@
                                     <i class="sidenav-toggler-line"></i>
                                 </div>
                             </a>
-                        </li>                        
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -285,280 +285,266 @@
             </div>
         </footer>
         </div>
+    </main>
 
 
-        <script src="/assets/material/assets/js/core/popper.min.js"></script>
-        <script src="/assets/material/assets/js/core/bootstrap.min.js"></script>
-        <script src="/assets/material/assets/js/plugins/perfect-scrollbar.min.js"></script>
-        <script src="/assets/material/assets/js/plugins/smooth-scrollbar.min.js"></script>
-        <script src="/assets/material/assets/js/plugins/chartjs.min.js"></script>
-        <script src="/assets/material/assets/js/plugins/dragula/dragula.min.js"></script>
-        <script src="/assets/material/assets/js/plugins/jkanban/jkanban.js"></script>
 
-        <script>
-            var ctx = document.getElementById("chart-bars").getContext("2d");
+    <script src="/assets/material/assets/js/core/popper.min.js"></script>
+    <script src="/assets/material/assets/js/core/bootstrap.min.js"></script>
+    <script src="/assets/material/assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="/assets/material/assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="/assets/material/assets/js/plugins/chartjs.min.js"></script>
+    <script src="/assets/material/assets/js/plugins/dragula/dragula.min.js"></script>
+    <script src="/assets/material/assets/js/plugins/jkanban/jkanban.js"></script>
+    <!-- chart  -->
+    <script>
+        var ctx1 = document.getElementById("chart-line").getContext("2d");
+        var ctx2 = document.getElementById("chart-pie").getContext("2d");
+        var ctx3 = document.getElementById("chart-bar").getContext("2d");
 
-            new Chart(ctx, {
-                type: "bar",
-                data: {
-                    labels: ["M", "T", "W", "T", "F", "S", "S"],
-                    datasets: [{
-                        label: "Sales",
-                        tension: 0.4,
-                        borderWidth: 0,
-                        borderRadius: 4,
-                        borderSkipped: false,
-                        backgroundColor: "rgba(255, 255, 255, .8)",
-                        data: [50, 20, 10, 22, 50, 10, 40],
-                        maxBarThickness: 6
-                    }, ],
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            display: false,
-                        }
-                    },
-                    interaction: {
-                        intersect: false,
-                        mode: 'index',
-                    },
-                    scales: {
-                        y: {
-                            grid: {
-                                drawBorder: false,
-                                display: true,
-                                drawOnChartArea: true,
-                                drawTicks: false,
-                                borderDash: [5, 5],
-                                color: 'rgba(255, 255, 255, .2)'
-                            },
-                            ticks: {
-                                suggestedMin: 0,
-                                suggestedMax: 500,
-                                beginAtZero: true,
-                                padding: 10,
-                                font: {
-                                    size: 14,
-                                    weight: 300,
-                                    family: "Roboto",
-                                    style: 'normal',
-                                    lineHeight: 2
-                                },
-                                color: "#fff"
-                            },
-                        },
-                        x: {
-                            grid: {
-                                drawBorder: false,
-                                display: true,
-                                drawOnChartArea: true,
-                                drawTicks: false,
-                                borderDash: [5, 5],
-                                color: 'rgba(255, 255, 255, .2)'
-                            },
-                            ticks: {
-                                display: true,
-                                color: '#f8f9fa',
-                                padding: 10,
-                                font: {
-                                    size: 14,
-                                    weight: 300,
-                                    family: "Roboto",
-                                    style: 'normal',
-                                    lineHeight: 2
-                                },
-                            }
-                        },
-                    },
-                },
-            });
-
-
-            var ctx2 = document.getElementById("chart-line").getContext("2d");
-
-            new Chart(ctx2, {
-                type: "line",
-                data: {
-                    labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                    datasets: [{
-                        label: "Mobile apps",
+        // Line chart
+        new Chart(ctx1, {
+            type: "line",
+            data: {
+                labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                        label: "Facebook Ads",
                         tension: 0,
-                        borderWidth: 0,
                         pointRadius: 5,
-                        pointBackgroundColor: "rgba(255, 255, 255, .8)",
+                        pointBackgroundColor: "#e91e63",
                         pointBorderColor: "transparent",
-                        borderColor: "rgba(255, 255, 255, .8)",
-                        borderColor: "rgba(255, 255, 255, .8)",
+                        borderColor: "#e91e63",
                         borderWidth: 4,
                         backgroundColor: "transparent",
                         fill: true,
-                        data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
+                        data: [50, 100, 200, 190, 400, 350, 500, 450, 700],
                         maxBarThickness: 6
-
-                    }],
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            display: false,
-                        }
                     },
-                    interaction: {
-                        intersect: false,
-                        mode: 'index',
-                    },
-                    scales: {
-                        y: {
-                            grid: {
-                                drawBorder: false,
-                                display: true,
-                                drawOnChartArea: true,
-                                drawTicks: false,
-                                borderDash: [5, 5],
-                                color: 'rgba(255, 255, 255, .2)'
-                            },
-                            ticks: {
-                                display: true,
-                                color: '#f8f9fa',
-                                padding: 10,
-                                font: {
-                                    size: 14,
-                                    weight: 300,
-                                    family: "Roboto",
-                                    style: 'normal',
-                                    lineHeight: 2
-                                },
-                            }
-                        },
-                        x: {
-                            grid: {
-                                drawBorder: false,
-                                display: false,
-                                drawOnChartArea: false,
-                                drawTicks: false,
-                                borderDash: [5, 5]
-                            },
-                            ticks: {
-                                display: true,
-                                color: '#f8f9fa',
-                                padding: 10,
-                                font: {
-                                    size: 14,
-                                    weight: 300,
-                                    family: "Roboto",
-                                    style: 'normal',
-                                    lineHeight: 2
-                                },
-                            }
-                        },
-                    },
-                },
-            });
-
-            var ctx3 = document.getElementById("chart-line-tasks").getContext("2d");
-
-            new Chart(ctx3, {
-                type: "line",
-                data: {
-                    labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                    datasets: [{
-                        label: "Mobile apps",
+                    {
+                        label: "Google Ads",
                         tension: 0,
                         borderWidth: 0,
                         pointRadius: 5,
-                        pointBackgroundColor: "rgba(255, 255, 255, .8)",
+                        pointBackgroundColor: "#3A416F",
                         pointBorderColor: "transparent",
-                        borderColor: "rgba(255, 255, 255, .8)",
+                        borderColor: "#3A416F",
                         borderWidth: 4,
                         backgroundColor: "transparent",
                         fill: true,
-                        data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+                        data: [10, 30, 40, 120, 150, 220, 280, 250, 280],
                         maxBarThickness: 6
-
-                    }],
+                    }
+                ],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
                 },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
+                interaction: {
+                    intersect: false,
+                    mode: 'index',
+                },
+                scales: {
+                    y: {
+                        grid: {
+                            drawBorder: false,
+                            display: true,
+                            drawOnChartArea: true,
+                            drawTicks: false,
+                            borderDash: [5, 5],
+                            color: '#c1c4ce5c'
+                        },
+                        ticks: {
+                            display: true,
+                            padding: 10,
+                            color: '#9ca2b7',
+                            font: {
+                                size: 14,
+                                weight: 300,
+                                family: "Roboto",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
+                        }
+                    },
+                    x: {
+                        grid: {
+                            drawBorder: false,
+                            display: true,
+                            drawOnChartArea: true,
+                            drawTicks: true,
+                            borderDash: [5, 5],
+                            color: '#c1c4ce5c'
+                        },
+                        ticks: {
+                            display: true,
+                            color: '#9ca2b7',
+                            padding: 10,
+                            font: {
+                                size: 14,
+                                weight: 300,
+                                family: "Roboto",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
+                        }
+                    },
+                },
+            },
+        });
+
+
+        // Pie chart
+        new Chart(ctx2, {
+            type: "pie",
+            data: {
+                labels: [],
+                datasets: [{
+                    label: "Stats",
+                    weight: 9,
+                    cutout: 0,
+                    tension: 0.9,
+                    pointRadius: 2,
+                    borderWidth: 1,
+                    backgroundColor: ['#17c1e8', '#e91e63', '#3A416F', '#a8b8d8'],
+                    data: [15, 20, 12, 60],
+                    fill: false
+                }],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                interaction: {
+                    intersect: false,
+                    mode: 'index',
+                },
+                scales: {
+                    y: {
+                        grid: {
+                            drawBorder: false,
+                            display: false,
+                            drawOnChartArea: false,
+                            drawTicks: false,
+                            color: '#c1c4ce5c'
+                        },
+                        ticks: {
+                            display: false
+                        }
+                    },
+                    x: {
+                        grid: {
+                            drawBorder: false,
+                            display: false,
+                            drawOnChartArea: false,
+                            drawTicks: false,
+                            color: '#c1c4ce5c'
+                        },
+                        ticks: {
                             display: false,
                         }
                     },
-                    interaction: {
-                        intersect: false,
-                        mode: 'index',
-                    },
-                    scales: {
-                        y: {
-                            grid: {
-                                drawBorder: false,
-                                display: true,
-                                drawOnChartArea: true,
-                                drawTicks: false,
-                                borderDash: [5, 5],
-                                color: 'rgba(255, 255, 255, .2)'
-                            },
-                            ticks: {
-                                display: true,
-                                padding: 10,
-                                color: '#f8f9fa',
-                                font: {
-                                    size: 14,
-                                    weight: 300,
-                                    family: "Roboto",
-                                    style: 'normal',
-                                    lineHeight: 2
-                                },
-                            }
-                        },
-                        x: {
-                            grid: {
-                                drawBorder: false,
-                                display: false,
-                                drawOnChartArea: false,
-                                drawTicks: false,
-                                borderDash: [5, 5]
-                            },
-                            ticks: {
-                                display: true,
-                                color: '#f8f9fa',
-                                padding: 10,
-                                font: {
-                                    size: 14,
-                                    weight: 300,
-                                    family: "Roboto",
-                                    style: 'normal',
-                                    lineHeight: 2
-                                },
-                            }
-                        },
-                    },
                 },
-            });
+            },
+        });
+
+        // Bar chart
         
-        </script>
-        <script>
-            var win = navigator.platform.indexOf('Win') > -1;
-            if (win && document.querySelector('#sidenav-scrollbar')) {
-                var options = {
-                    damping: '0.5'
-                }
-                Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        new Chart(ctx3, {
+            type: "bar",
+            data: {
+                labels: [],
+                datasets: [{
+                    label: "Hasil Caring",
+                    weight: 5,
+                    borderWidth: 0,
+                    borderRadius: 4,
+                    backgroundColor: '#3A416F',
+                    data: [],
+                    fill: false
+                }],
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                scales: {
+                    y: {
+                        grid: {
+                            drawBorder: false,
+                            display: true,
+                            drawOnChartArea: true,
+                            drawTicks: false,
+                            borderDash: [5, 5],
+                            color: '#c1c4ce5c'
+                        },
+                        ticks: {
+                            display: true,
+                            padding: 10,
+                            color: '#c1c4ce5c',
+                            font: {
+                                size: 14,
+                                weight: 300,
+                                family: "Roboto",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
+                        }
+                    },
+                    x: {
+                        grid: {
+                            drawBorder: false,
+                            display: false,
+                            drawOnChartArea: true,
+                            drawTicks: true,
+                            color: '#9ca2b7'
+                        },
+                        ticks: {
+                            display: true,
+                            color: '#9ca2b7',
+                            padding: 10,
+                            font: {
+                                size: 14,
+                                weight: 300,
+                                family: "Roboto",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
+                        }
+                    },
+                },
+            },
+        });
+    </script>
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
             }
-        </script>
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
 
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-        <script src="/assets/material/assets/js/md.js"></script>
-        <script src="/assets/material/assets/js/material-dashboard.min.js?v=3.0.6"></script>
-        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7852fe7ecac04637","version":"2022.11.3","r":1,"token":"1b7cbb72744b40c580f8633c6b62637e","si":100}' crossorigin="anonymous"></script>
-        </main>
+    <script src="/assets/material/assets/js/md.js"></script>
+    <script src="/assets/material/assets/js/material-dashboard.min.js?v=3.0.6"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7852fe7ecac04637","version":"2022.11.3","r":1,"token":"1b7cbb72744b40c580f8633c6b62637e","si":100}' crossorigin="anonymous"></script>
+    </main>
 </body>
 
 </html>

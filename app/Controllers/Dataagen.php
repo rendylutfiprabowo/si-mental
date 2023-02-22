@@ -4,16 +4,26 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\AgenModel;
+use App\Models\Caring1;
 
 class Dataagen extends BaseController
 {
     public function listdata()
     {
         $detailModel = new AgenModel();
-        $Agen = $detailModel->findAll();
+        $tes = new Caring1();
+        $hitung = $tes->getCount();
+        $agen1 = $tes->getCount2();  
+        $contacted = $tes->getcontacted();
+        $seluruh = $tes->countAll();
+        // $Agen = $tes->findAll();
         $data = [
             'title' => 'Data Agen',
-            'Agen' => $Agen
+            
+            'agen1' => $agen1,
+            'hitung' => $hitung,
+            'contacted' => $contacted,
+            'seluruh' => $seluruh
         ];
         if (session()->logged_in)  return view('mobc/listdata', $data);
         else return redirect()->to('login');
@@ -43,41 +53,20 @@ class Dataagen extends BaseController
         else return redirect()->to('login');
     }
 
+    public function hapusdata()
+    {
+        $detailModel = new AgenModel();
+        $Agen = $detailModel->findAll();
+        $data = [
+            'title' => 'Data Agen',
+            'Agen' => $Agen
+        ];
+        if (session()->logged_in)  return view('mobc/hapusdata', $data);
+        else return redirect()->to('login');
+    }
     public function edit()
     {
         if (session()->logged_in)  return view('mobc/edit');
         else return redirect()->to('login');
-    }
-
-    public function update($id)
-    {
-        $nama   = $this->request->getPost('nama');
-        $jumlah_pelanggan   = $this->request->getPost('jumlah_pelanggan');
-        $performance  = $this->request->getPost('performance');
-
-        $data = [
-            'nama' => $nama,
-            'jumlah_pelanggan' => $jumlah_pelanggan,
-            'performance' => $performance,
-
-        ];
-        $userModel = new AgenModel();
-
-        $result =  $userModel->update($id, $data);
-        if ($result) {
-            return $this->detail($id);
-        } else {
-            return $this->detail($id);
-        }
-    }
-
-    public function delete($id)
-    {
-        if (!session()->logged_in) return redirect()->to('login');
-
-        $satuModel = new AgenModel();
-        $satuModel->delete($id);
-
-        return $this->listdata();
     }
 }

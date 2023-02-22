@@ -41,5 +41,38 @@ class Caring1 extends Model
         return $data;
     }
 
+    public function getCount(){
+        $builder = $this->db->table("caring1");
+        // $builder->selectCount("nomor_jastel","Jumlah Customer");
+        $builder->select("statuscall");
+        $builder->selectCount("nomor_jastel", "total");
+        $builder->groupBy("statuscall");
+        $data = $builder->get()->getResult();
+        return $data;
+    }
+
+    public function getCount2(){
+        $builder = $this->db->table("caring1");
+        // $builder->selectCount("nomor_jastel","Jumlah Customer");
+        $builder->select("agen_pengelola");
+        $builder->selectCount("nomor_jastel", "total");
+        $builder->groupBy("agen_pengelola");
+        $data = $builder->get()->getResult();
+        return $data;
+    }
+
+    public function getcontacted(){
+        $builder = $this->db->table("caring1");
+        // $builder->selectCount("nomor_jastel","Jumlah Customer");
+        $builder->select("agen_pengelola");
+        $builder->selectCount("nomor_jastel", "total");
+        $builder->selectCount("statuscall", "contacted");
+        $builder->where("statuscall","contacted");
+        $builder->orwhere("statuscall","not contacted");
+        $builder->groupBy("agen_pengelola");
+        $data = $builder->get()->getResult();
+        return $data;
+    }
+
     
 }

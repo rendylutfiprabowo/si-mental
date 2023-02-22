@@ -7,28 +7,28 @@
     <link rel="apple-touch-icon" sizes="76x76" href="/assets/material/assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="/assets/material/assets/img/favicon.png">
     <title>
-        Material Dashboard 2 by Creative Tim
+        Material Dashboard 2 PRO by Creative Tim
     </title>
 
 
-    <link rel="canonical" href="https://www.creative-tim.com/product/material-dashboard" />
+    <link rel="canonical" href="https://www.creative-tim.com/product/material-dashboard-pro" />
 
-    <meta name="keywords" content="creative tim, html dashboard, html css dashboard, web dashboard, bootstrap 5 dashboard, bootstrap 5, css3 dashboard, bootstrap 5 admin, Material Dashboard bootstrap 5 dashboard, frontend, responsive bootstrap 5 dashboard, free dashboard, free admin dashboard, free bootstrap 5 admin dashboard">
-    <meta name="description" content="Material Dashboard 2 is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful and organized. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you.">
+    <meta name="keywords" content="creative tim, html dashboard, html css dashboard, web dashboard, bootstrap 5 dashboard, bootstrap 5, css3 dashboard, bootstrap 5 admin, material dashboard bootstrap 5 dashboard, frontend, responsive bootstrap 5 dashboard, material design, material dashboard bootstrap 5 dashboard">
+    <meta name="description" content="Material Dashboard PRO is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you.">
 
     <meta name="twitter:card" content="product">
     <meta name="twitter:site" content="@creativetim">
-    <meta name="twitter:title" content="Material Dashboard 2 by Creative Tim">
-    <meta name="twitter:description" content="Material Dashboard 2 is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful and organized. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you.">
+    <meta name="twitter:title" content="Material Dashboard PRO by Creative Tim">
+    <meta name="twitter:description" content="Material Dashboard PRO is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you.">
     <meta name="twitter:creator" content="@creativetim">
-    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/450/original/material-dashboard.jpg">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/51/original/opt_mdp_bs5_thumbnail.jpg">
 
     <meta property="fb:app_id" content="655968634437471">
-    <meta property="og:title" content="Material Dashboard 2 by Creative Tim" />
+    <meta property="og:title" content="Material Dashboard PRO by Creative Tim" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://demos.creative-tim.com/material-dashboard/pages/dashboard.html" />
-    <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/450/original/material-dashboard.jpg" />
-    <meta property="og:description" content="Material Dashboard 2 is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful and organized. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you." />
+    <meta property="og:url" content="https://demos.creative-tim.com/material-dashboard-pro/pages/dashboards/default.html" />
+    <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/51/original/opt_mdp_bs5_thumbnail.jpg" />
+    <meta property="og:description" content="Material Dashboard PRO is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you." />
     <meta property="og:site_name" content="Creative Tim" />
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -40,7 +40,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
-    <link id="pagestyle" href="/assets/material/assets/css/material-dashboard.min.css?v=3.0.5" rel="stylesheet" />
+    <link id="pagestyle" href="/assets/material/assets/css/material-dashboard.min.css?v=3.0.6" rel="stylesheet" />
 
     <style>
         .async-hide {
@@ -116,43 +116,115 @@
         <div class="sidenav-header">
             <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard-pro/pages/dashboards/analytics.html " target="_blank">
-                <img src="/assets/material/assets/img/icon-telkom.png" class="navbar-brand-img h-100" alt="main_logo">
-                <span class="ms-1 font-weight-bold text-white">Si Mental</span>
+                <img src="/assets/material/assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
+                <span class="ms-1 font-weight-bold text-white">Material Dashboard 2 PRO</span>
             </a>
         </div>
         <hr class="horizontal light mt-0 mb-2">
         <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="/dashboard">
-                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">dashboard</i>
-                        <span class="nav-link-text ms-2 ps-1">Dashboard</span>
+                <li class="nav-item mb-2 mt-0">
+                    <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-white" aria-controls="ProfileNav" role="button" aria-expanded="false">
+                        <img src="/assets/material/assets/img/team-3.jpg" class="avatar">
+                        <span class="nav-link-text ms-2 ps-1">Brooklyn Alice</span>
                     </a>
+                    <div class="collapse" id="ProfileNav" style="">
+                        <ul class="nav ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="/assets/material/pages/pages/profile/overview.html">
+                                    <span class="sidenav-mini-icon"> MP </span>
+                                    <span class="sidenav-normal  ms-3  ps-1"> My Profile </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="/assets/material/pages/pages/account/settings.html">
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal  ms-3  ps-1"> Settings </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="/assets/material/pages/authentication/signin/basic.html">
+                                    <span class="sidenav-mini-icon"> L </span>
+                                    <span class="sidenav-normal  ms-3  ps-1"> Logout </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <hr class="horizontal light mt-0">
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link text-white active" aria-controls="dashboardsExamples" role="button" aria-expanded="false">
+                        <i class="material-icons-round opacity-10">dashboard</i>
+                        <span class="nav-link-text ms-2 ps-1">Dashboards</span>
+                    </a>
+                    <div class="collapse  show " id="dashboardsExamples">
+                        <ul class="nav ">
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/dashboards/analytics.html">
+                                    <span class="sidenav-mini-icon"> A </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Analytics </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/dashboards/discover.html">
+                                    <span class="sidenav-mini-icon"> D </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Discover </span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-white active" href="/assets/material/pages/dashboards/sales.html">
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Sales </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/dashboards/automotive.html">
+                                    <span class="sidenav-mini-icon"> A </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Automotive </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/dashboards/smart-home.html">
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Smart Home </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4  ms-2 text-uppercase text-xs font-weight-bolder text-white">PAGES</h6>
                 </li>
                 <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#pagesExamples" class="nav-link text-white " aria-controls="pagesExamples" role="button" aria-expanded="false">
-                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">people</i>
-                        <span class="nav-link-text ms-2 ps-1">Data Pelanggan</span>
+                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">image</i>
+                        <span class="nav-link-text ms-2 ps-1">Pages</span>
                     </a>
                     <div class="collapse " id="pagesExamples">
                         <ul class="nav ">
                             <li class="nav-item ">
                                 <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#profileExample">
-                                    <i class="material-icons">filter_1</i>
-                                    <span class="sidenav-normal  ms-2  ps-1"> Satu Bulan<b class="caret"></b></span>
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Profile <b class="caret"></b></span>
                                 </a>
                                 <div class="collapse " id="profileExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link text-white " href="/datapelanggan/caring/satubulan">
-                                                <i class="material-icons">touch_app</i>
-                                                <span class="sidenav-normal  ms-2  ps-1">Caring</span>
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/profile/overview.html">
+                                                <span class="sidenav-mini-icon"> P </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Profile Overview </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-white " href="/datapelanggan/visit/satubulan">
-                                                <i class="material-icons">transfer_within_a_station</i>
-                                                <span class="sidenav-normal  ms-2  ps-1"> Visit </span>
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/profile/projects.html">
+                                                <span class="sidenav-mini-icon"> A </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> All Projects </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/profile/messages.html">
+                                                <span class="sidenav-mini-icon"> M </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Messages </span>
                                             </a>
                                         </li>
                                     </ul>
@@ -160,48 +232,650 @@
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#usersExample">
-                                    <i class="material-icons">filter_2</i>
-                                    <span class="sidenav-normal  ms-2  ps-1">Dua bulan<b class="caret"></b></span>
+                                    <span class="sidenav-mini-icon"> U </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Users <b class="caret"></b></span>
                                 </a>
                                 <div class="collapse " id="usersExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link text-white " href="/datapelanggan/caring/duabulan">
-                                                <i class="material-icons">touch_app</i>
-                                                <span class="sidenav-normal  ms-2  ps-1">Caring </span>
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/users/reports.html">
+                                                <span class="sidenav-mini-icon"> R </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Reports </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-white " href="/datapelanggan/visit/duabulan">
-                                                <i class="material-icons">transfer_within_a_station</i>
-                                                <span class="sidenav-normal  ms-2  ps-1"> Visit </span>
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/users/new-user.html">
+                                                <span class="sidenav-mini-icon"> N </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> New User </span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
-
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#accountExample">
+                                    <span class="sidenav-mini-icon"> A </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Account <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="accountExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/account/settings.html">
+                                                <span class="sidenav-mini-icon"> S </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Settings </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/account/billing.html">
+                                                <span class="sidenav-mini-icon"> B </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Billing </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/account/invoice.html">
+                                                <span class="sidenav-mini-icon"> I </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Invoice </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/account/security.html">
+                                                <span class="sidenav-mini-icon"> S </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Security </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#projectsExample">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Projects <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="projectsExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/projects/general.html">
+                                                <span class="sidenav-mini-icon"> G </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> General </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/projects/timeline.html">
+                                                <span class="sidenav-mini-icon"> T </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Timeline </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/projects/new-project.html">
+                                                <span class="sidenav-mini-icon"> N </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> New Project </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#vrExamples">
+                                    <span class="sidenav-mini-icon"> V </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Virtual Reality <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="vrExamples">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/vr/vr-default.html">
+                                                <span class="sidenav-mini-icon"> V </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> VR Default </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/pages/vr/vr-info.html">
+                                                <span class="sidenav-mini-icon"> V </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> VR Info </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/pages/pricing-page.html">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Pricing Page </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/pages/rtl-page.html">
+                                    <span class="sidenav-mini-icon"> R </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> RTL </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/pages/widgets.html">
+                                    <span class="sidenav-mini-icon"> W </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Widgets </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/pages/charts.html">
+                                    <span class="sidenav-mini-icon"> C </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Charts </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/pages/sweet-alerts.html">
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Sweet Alerts </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/pages/notifications.html">
+                                    <span class="sidenav-mini-icon"> N </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Notifications </span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/dataagen">
-                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">receipt_long</i>
-                        <span class="nav-link-text ms-2 ps-1">Data Agen</span>
+                    <a data-bs-toggle="collapse" href="#applicationsExamples" class="nav-link text-white " aria-controls="applicationsExamples" role="button" aria-expanded="false">
+                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">apps</i>
+                        <span class="nav-link-text ms-2 ps-1">Applications</span>
                     </a>
+                    <div class="collapse " id="applicationsExamples">
+                        <ul class="nav ">
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/applications/crm.html">
+                                    <span class="sidenav-mini-icon"> C </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> CRM </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/applications/kanban.html">
+                                    <span class="sidenav-mini-icon"> K </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Kanban </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/applications/wizard.html">
+                                    <span class="sidenav-mini-icon"> W </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Wizard </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/applications/datatables.html">
+                                    <span class="sidenav-mini-icon"> D </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> DataTables </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/applications/calendar.html">
+                                    <span class="sidenav-mini-icon"> C </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Calendar </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/applications/stats.html">
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Stats </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/applications/validation.html">
+                                    <span class="sidenav-mini-icon"> V </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Validation </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-
-
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="/logout">
-                        <i class="material-icons">input</i>
-                        <span class="sidenav-normal  ms-3  ps-1"> Logout </span>
+                    <a data-bs-toggle="collapse" href="#ecommerceExamples" class="nav-link text-white " aria-controls="ecommerceExamples" role="button" aria-expanded="false">
+                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">shopping_basket</i>
+                        <span class="nav-link-text ms-2 ps-1">Ecommerce</span>
+                    </a>
+                    <div class="collapse " id="ecommerceExamples">
+                        <ul class="nav ">
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#productsExample">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Products <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="productsExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/ecommerce/products/new-product.html">
+                                                <span class="sidenav-mini-icon"> N </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> New Product </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/ecommerce/products/edit-product.html">
+                                                <span class="sidenav-mini-icon"> E </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Edit Product </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/ecommerce/products/product-page.html">
+                                                <span class="sidenav-mini-icon"> P </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Product Page </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/ecommerce/products/products-list.html">
+                                                <span class="sidenav-mini-icon"> P </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Products List </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#ordersExample">
+                                    <span class="sidenav-mini-icon"> O </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Orders <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="ordersExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/ecommerce/orders/list.html">
+                                                <span class="sidenav-mini-icon"> O </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Order List </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/ecommerce/orders/details.html">
+                                                <span class="sidenav-mini-icon"> O </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Order Details </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="/assets/material/pages/ecommerce/referral.html">
+                                    <span class="sidenav-mini-icon"> R </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Referral </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#authExamples" class="nav-link text-white " aria-controls="authExamples" role="button" aria-expanded="false">
+                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">content_paste</i>
+                        <span class="nav-link-text ms-2 ps-1">Authentication</span>
+                    </a>
+                    <div class="collapse " id="authExamples">
+                        <ul class="nav ">
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#signinExample">
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Sign In <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="signinExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/signin/basic.html">
+                                                <span class="sidenav-mini-icon"> B </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Basic </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/signin/cover.html">
+                                                <span class="sidenav-mini-icon"> C </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Cover </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/signin/illustration.html">
+                                                <span class="sidenav-mini-icon"> I </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Illustration </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#signupExample">
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Sign Up <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="signupExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/signup/basic.html">
+                                                <span class="sidenav-mini-icon"> B </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Basic </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/signup/cover.html">
+                                                <span class="sidenav-mini-icon"> C </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Cover </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/signup/illustration.html">
+                                                <span class="sidenav-mini-icon"> I </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Illustration </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#resetExample">
+                                    <span class="sidenav-mini-icon"> R </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Reset Password <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="resetExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/reset/basic.html">
+                                                <span class="sidenav-mini-icon"> B </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Basic </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/reset/cover.html">
+                                                <span class="sidenav-mini-icon"> C </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Cover </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/reset/illustration.html">
+                                                <span class="sidenav-mini-icon"> I </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Illustration </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#lockExample">
+                                    <span class="sidenav-mini-icon"> L </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Lock <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="lockExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/lock/basic.html">
+                                                <span class="sidenav-mini-icon"> B </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Basic </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/lock/cover.html">
+                                                <span class="sidenav-mini-icon"> C </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Cover </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/lock/illustration.html">
+                                                <span class="sidenav-mini-icon"> I </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Illustration </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#StepExample">
+                                    <span class="sidenav-mini-icon"> 2 </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> 2-Step Verification <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="StepExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/verification/basic.html">
+                                                <span class="sidenav-mini-icon"> B </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Basic </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/verification/cover.html">
+                                                <span class="sidenav-mini-icon"> C </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Cover </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/verification/illustration.html">
+                                                <span class="sidenav-mini-icon"> I </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Illustration </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#errorExample">
+                                    <span class="sidenav-mini-icon"> E </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Error <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="errorExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/error/404.html">
+                                                <span class="sidenav-mini-icon"> E </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Error 404 </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="/assets/material/pages/authentication/error/500.html">
+                                                <span class="sidenav-mini-icon"> E </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Error 500 </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <hr class="horizontal light" />
+                    <h6 class="ps-4  ms-2 text-uppercase text-xs font-weight-bolder text-white">DOCS</h6>
+                </li>
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#basicExamples" class="nav-link text-white " aria-controls="basicExamples" role="button" aria-expanded="false">
+                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">upcoming</i>
+                        <span class="nav-link-text ms-2 ps-1">Basic</span>
+                    </a>
+                    <div class="collapse " id="basicExamples">
+                        <ul class="nav ">
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#gettingStartedExample">
+                                    <span class="sidenav-mini-icon"> G </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Getting Started <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="gettingStartedExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/quick-start/material-dashboard" target="_blank">
+                                                <span class="sidenav-mini-icon"> Q </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Quick Start </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/license/material-dashboard" target="_blank">
+                                                <span class="sidenav-mini-icon"> L </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> License </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-dashboard" target="_blank">
+                                                <span class="sidenav-mini-icon"> C </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Contents </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/build-tools/material-dashboard" target="_blank">
+                                                <span class="sidenav-mini-icon"> B </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Build Tools </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#foundationExample">
+                                    <span class="sidenav-mini-icon"> F </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Foundation <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse " id="foundationExample">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/colors/material-dashboard" target="_blank">
+                                                <span class="sidenav-mini-icon"> C </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Colors </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/grid/material-dashboard" target="_blank">
+                                                <span class="sidenav-mini-icon"> G </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Grid </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/typography/material-dashboard" target="_blank">
+                                                <span class="sidenav-mini-icon"> T </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Typography </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/icons/material-dashboard" target="_blank">
+                                                <span class="sidenav-mini-icon"> I </span>
+                                                <span class="sidenav-normal  ms-2  ps-1"> Icons </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#componentsExamples" class="nav-link text-white " aria-controls="componentsExamples" role="button" aria-expanded="false">
+                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">view_in_ar</i>
+                        <span class="nav-link-text ms-2 ps-1">Components</span>
+                    </a>
+                    <div class="collapse " id="componentsExamples">
+                        <ul class="nav ">
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/alerts/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> A </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Alerts </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/badge/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> B </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Badge </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/buttons/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> B </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Buttons </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/cards/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> C </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Card </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/carousel/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> C </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Carousel </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/collapse/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> C </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Collapse </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/dropdowns/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> D </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Dropdowns </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/forms/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> F </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Forms </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/modal/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> M </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Modal </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/navs/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> N </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Navs </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/navbar/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> N </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Navbar </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/pagination/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Pagination </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/popovers/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Popovers </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/progress/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Progress </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/spinners/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Spinners </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/tables/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> T </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Tables </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="https://www.creative-tim.com/learning-lab/bootstrap/tooltips/material-dashboard" target="_blank">
+                                    <span class="sidenav-mini-icon"> T </span>
+                                    <span class="sidenav-normal  ms-2  ps-1"> Tooltips </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/creativetimofficial/ct-material-dashboard-pro/blob/master/CHANGELOG.md" target="_blank">
+                        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">receipt_long</i>
+                        <span class="nav-link-text ms-2 ps-1">Changelog</span>
                     </a>
                 </li>
             </ul>
         </div>
     </aside>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+
         <nav class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky" id="navbarBlur" data-scroll="true">
             <div class="container-fluid py-1 px-3">
                 <nav aria-label="breadcrumb">
@@ -223,17 +897,17 @@
                                 </svg>
                             </a>
                         </li>
-                        <!-- <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li> -->
-                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page"> ffffffjudul</li>
-
+                        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
+                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Sales</li>
                     </ol>
-                    <h6 class="font-weight-bolder mb-0"> ffffffjudul</h6>
+                    <h6 class="font-weight-bolder mb-0">Sales</h6>
                 </nav>
                 <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
                     <a href="javascript:;" class="nav-link text-body p-0">
-
-                        <div class="sidenav-toggler-inner" onclick="navbarMinimize(this)">
-                            <i class="material-icons">view_headline</i>
+                        <div class="sidenav-toggler-inner">
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
                         </div>
                     </a>
                 </div>
@@ -245,13 +919,7 @@
                         </div>
                     </div>
                     <ul class="navbar-nav  justify-content-end">
-                        <!-- dark mode -->
-                        <div class="nav-item  px-3">
-                            <div class="form-check form-switch ps-0 ms-auto my-auto">
-                                <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
-                            </div>
-                        </div>
-                        <li class="nav-item  px-3">
+                        <li class="nav-item">
                             <a href="/assets/material/pages/authentication/signin/illustration.html" class="nav-link text-body p-0 position-relative" target="_blank">
                                 <i class="material-icons me-sm-1">
                                     account_circle
@@ -274,7 +942,7 @@
                                 </i>
                             </a>
                         </li>
-                        <li class="nav-item dropdown px-3">
+                        <li class="nav-item dropdown pe-2">
                             <a href="javascript:;" class="nav-link text-body p-0 position-relative" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="material-icons cursor-pointer">
                                     notifications
@@ -329,69 +997,450 @@
         </nav>
 
         <div class="container-fluid py-4">
-            <div class="row mt-4">
-                <div class="col-lg-4 col-md-6 mt-4 mb-4">
-                    <div class="card z-index-2 ">
-                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                            <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                                <div class="chart">
-                                    <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body p-3 position-relative">
+                            <div class="row">
+                                <div class="col-7 text-start">
+                                    <p class="text-sm mb-1 text-capitalize font-weight-bold">Sales</p>
+                                    <h5 class="font-weight-bolder mb-0">
+                                        $230,220
+                                    </h5>
+                                    <span class="text-sm text-end text-success font-weight-bolder mt-auto mb-0">+55% <span class="font-weight-normal text-secondary">since last month</span></span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="mb-0 ">Jumlah Caring</h6>
-                            <p class="text-sm ">Last Campaign Performance</p>
-                            <hr class="dark horizontal">
-                            <div class="d-flex ">
-                                
-                                <p class="mb-0 text-sm"></p>
+                                <div class="col-5">
+                                    <div class="dropdown text-end">
+                                        <a href="javascript:;" class="cursor-pointer text-secondary" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="text-xs text-secondary">6 May - 7 May</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end px-2 py-3" aria-labelledby="dropdownUsers1">
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Last 7 days</a></li>
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Last week</a></li>
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Last 30 days</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mt-4 mb-4">
-                    <div class="card z-index-2  ">
-                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                            <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
-                                <div class="chart">
-                                    <canvas id="chart-line" class="chart-canvas" height="170"></canvas>
+                <div class="col-sm-4 mt-sm-0 mt-4">
+                    <div class="card">
+                        <div class="card-body p-3 position-relative">
+                            <div class="row">
+                                <div class="col-7 text-start">
+                                    <p class="text-sm mb-1 text-capitalize font-weight-bold">Customers</p>
+                                    <h5 class="font-weight-bolder mb-0">
+                                        3.200
+                                    </h5>
+                                    <span class="text-sm text-end text-success font-weight-bolder mt-auto mb-0">+12% <span class="font-weight-normal text-secondary">since last month</span></span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="mb-0 ">Jumlah Visit</h6>
-                            <p class="text-sm "> (<span class="font-weight-bolder">+15%</span>) increase in today sales. </p>
-                            <hr class="dark horizontal">
-                            <div class="d-flex ">
-                                
-                                <p class="mb-0 text-sm"></p>
+                                <div class="col-5">
+                                    <div class="dropdown text-end">
+                                        <a href="javascript:;" class="cursor-pointer text-secondary" id="dropdownUsers2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="text-xs text-secondary">6 May - 7 May</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end px-2 py-3" aria-labelledby="dropdownUsers2">
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Last 7 days</a></li>
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Last week</a></li>
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Last 30 days</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-4 mb-3">
-                    <div class="card z-index-2 ">
-                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                            <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
-                                <div class="chart">
-                                    <canvas id="chart-line-tasks" class="chart-canvas" height="170"></canvas>
+                <div class="col-sm-4 mt-sm-0 mt-4">
+                    <div class="card">
+                        <div class="card-body p-3 position-relative">
+                            <div class="row">
+                                <div class="col-7 text-start">
+                                    <p class="text-sm mb-1 text-capitalize font-weight-bold">Avg. Revenue</p>
+                                    <h5 class="font-weight-bolder mb-0">
+                                        $1.200
+                                    </h5>
+                                    <span class="font-weight-normal text-secondary text-sm"><span class="font-weight-bolder text-success">+$213</span> since last month</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="mb-0 ">Agen</h6>
-                            <p class="text-sm ">Last Campaign Performance</p>
-                            <hr class="dark horizontal">
-                            <div class="d-flex ">
-                                
-                                <p class="mb-0 text-sm"></p>
+                                <div class="col-5">
+                                    <div class="dropdown text-end">
+                                        <a href="javascript:;" class="cursor-pointer text-secondary" id="dropdownUsers3" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="text-xs text-secondary">6 May - 7 May</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end px-2 py-3" aria-labelledby="dropdownUsers3">
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Last 7 days</a></li>
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Last week</a></li>
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Last 30 days</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- ---------------------------------- -->
+            <div class="row mt-4">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card h-100">
+                        <div class="card-header pb-0 p-3">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Channels</h6>
+                                <button type="button" class="btn btn-icon-only btn-rounded btn-outline-secondary mb-0 ms-2 btn-sm d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="See traffic channels">
+                                    <i class="material-icons text-sm">priority_high</i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body pb-0 p-3 mt-4">
+                            <div class="row">
+                                <div class="col-7 text-start">
+                                    <div class="chart">
+                                        <canvas id="chart-pie" class="chart-canvas" height="200"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-5 my-auto">
+                                    <span class="badge badge-md badge-dot me-4 d-block text-start">
+                                        <i class="bg-info"></i>
+                                        <span class="text-dark text-xs">Facebook</span>
+                                    </span>
+                                    <span class="badge badge-md badge-dot me-4 d-block text-start">
+                                        <i class="bg-primary"></i>
+                                        <span class="text-dark text-xs">Direct</span>
+                                    </span>
+                                    <span class="badge badge-md badge-dot me-4 d-block text-start">
+                                        <i class="bg-dark"></i>
+                                        <span class="text-dark text-xs">Organic</span>
+                                    </span>
+                                    <span class="badge badge-md badge-dot me-4 d-block text-start">
+                                        <i class="bg-secondary"></i>
+                                        <span class="text-dark text-xs">Referral</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer pt-0 pb-0 p-3 d-flex align-items-center">
+                            <div class="w-60">
+                                <p class="text-sm">
+                                    More than <b>1,200,000</b> sales are made using referral marketing, and <b>700,000</b> are from social media.
+                                </p>
+                            </div>
+                            <div class="w-40 text-end">
+                                <a class="btn bg-light mb-0 text-end" href="javascript:;">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-6 mt-sm-0 mt-4">
+                    <div class="card">
+                        <div class="card-header pb-0 p-3">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Revenue</h6>
+                                <button type="button" class="btn btn-icon-only btn-rounded btn-outline-secondary mb-0 ms-2 btn-sm d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="See which ads perform better">
+                                    <i class="material-icons text-sm">priority_high</i>
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="badge badge-md badge-dot me-4">
+                                    <i class="bg-primary"></i>
+                                    <span class="text-dark text-xs">Facebook Ads</span>
+                                </span>
+                                <span class="badge badge-md badge-dot me-4">
+                                    <i class="bg-dark"></i>
+                                    <span class="text-dark text-xs">Google Ads</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="chart">
+                                <canvas id="chart-line" class="chart-canvas" height="300"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-8">
+                    <div class="card h-100">
+                        <div class="card-header pb-0 p-3">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Sales by Age</h6>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="chart">
+                                <canvas id="chart-bar" class="chart-canvas" height="340"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-lg-0 mt-4">
+                    <div class="card">
+                        <div class="card-header pb-0 p-3">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Sales by Country</h6>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <ul class="list-group list-group-flush list my--3">
+                                <li class="list-group-item px-0 border-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+
+                                            <img src="/assets/material/assets/img/icons/flags/US.png" alt="Country flag">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">United States</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">2500</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">29.9%</h6>
+                                        </div>
+                                    </div>
+                                    <hr class="horizontal dark mt-3 mb-1">
+                                </li>
+                                <li class="list-group-item px-0 border-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+
+                                            <img src="/assets/material/assets/img/icons/flags/DE.png" alt="Country flag">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">Germany</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">3.900</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">40.22%</h6>
+                                        </div>
+                                    </div>
+                                    <hr class="horizontal dark mt-3 mb-1">
+                                </li>
+                                <li class="list-group-item px-0 border-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+
+                                            <img src="/assets/material/assets/img/icons/flags/GB.png" alt="Country flag">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">Great Britain</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">1.400</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">23.44%</h6>
+                                        </div>
+                                    </div>
+                                    <hr class="horizontal dark mt-3 mb-1">
+                                </li>
+                                <li class="list-group-item px-0 border-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+
+                                            <img src="/assets/material/assets/img/icons/flags/BR.png" alt="Country flag">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">Brasil</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">562</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">32.14%</h6>
+                                        </div>
+                                    </div>
+                                    <hr class="horizontal dark mt-3 mb-1">
+                                </li>
+                                <li class="list-group-item px-0 border-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+
+                                            <img src="/assets/material/assets/img/icons/flags/AU.png" alt="Country flag">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">Australia</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">400</h6>
+                                        </div>
+                                        <div class="col text-center">
+                                            <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                            <h6 class="text-sm font-weight-normal mb-0">56.83%</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-header pb-0">
+                            <h6>Top Selling Products</h6>
+                        </div>
+                        <div class="card-body px-0 pt-0 pb-2">
+                            <div class="table-responsive p-0">
+                                <table class="table align-items-center mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Product</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Value</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Ads Spent</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Refunds</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-3 py-1">
+                                                    <div>
+                                                        <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/blue-shoe.jpg" class="avatar me-3" alt="image">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm">Nike v22 Running</h6>
+                                                        <p class="text-sm font-weight-normal text-secondary mb-0"><span class="text-success">8.232</span> orders</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-sm font-weight-normal mb-0">$130.992</p>
+                                            </td>
+                                            <td class="align-middle text-center text-sm">
+                                                <p class="text-sm font-weight-normal mb-0">$9.500</p>
+                                            </td>
+                                            <td class="align-middle text-end">
+                                                <div class="d-flex px-3 py-1 justify-content-center align-items-center">
+                                                    <p class="text-sm font-weight-normal mb-0">13</p>
+                                                    <i class="ni ni-bold-down text-sm ms-1 text-success"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-3 py-1">
+                                                    <div>
+                                                        <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/black-mug.jpg" class="avatar me-3" alt="image">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm">Business Kit (Mug + Notebook)</h6>
+                                                        <p class="text-sm font-weight-normal text-secondary mb-0"><span class="text-success">12.821</span> orders</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-sm font-weight-normal mb-0">$80.250</p>
+                                            </td>
+                                            <td class="align-middle text-center text-sm">
+                                                <p class="text-sm font-weight-normal mb-0">$4.200</p>
+                                            </td>
+                                            <td class="align-middle text-end">
+                                                <div class="d-flex px-3 py-1 justify-content-center align-items-center">
+                                                    <p class="text-sm font-weight-normal mb-0">40</p>
+                                                    <i class="ni ni-bold-down text-sm ms-1 text-success"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-3 py-1">
+                                                    <div>
+                                                        <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/black-chair.jpg" class="avatar me-3" alt="image">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm">Black Chair</h6>
+                                                        <p class="text-sm font-weight-normal text-secondary mb-0"><span class="text-success">2.421</span> orders</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-sm font-weight-normal mb-0">$40.600</p>
+                                            </td>
+                                            <td class="align-middle text-center text-sm">
+                                                <p class="text-sm font-weight-normal mb-0">$9.430</p>
+                                            </td>
+                                            <td class="align-middle text-end">
+                                                <div class="d-flex px-3 py-1 justify-content-center align-items-center">
+                                                    <p class="text-sm font-weight-normal mb-0">54</p>
+                                                    <i class="ni ni-bold-up text-sm ms-1 text-danger"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-3 py-1">
+                                                    <div>
+                                                        <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/bang-sound.jpg" class="avatar me-3" alt="image">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm">Wireless Charger</h6>
+                                                        <p class="text-sm font-weight-normal text-secondary mb-0"><span class="text-success">5.921</span> orders</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-sm font-weight-normal mb-0">$91.300</p>
+                                            </td>
+                                            <td class="align-middle text-center text-sm">
+                                                <p class="text-sm font-weight-normal mb-0">$7.364</p>
+                                            </td>
+                                            <td class="align-middle text-end">
+                                                <div class="d-flex px-3 py-1 justify-content-center align-items-center">
+                                                    <p class="text-sm font-weight-normal mb-0">5</p>
+                                                    <i class="ni ni-bold-down text-sm ms-1 text-success"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-3 py-1">
+                                                    <div>
+                                                        <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/photo-tools.jpg" class="avatar me-3" alt="image">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm">Mountain Trip Kit (Camera + Backpack)</h6>
+                                                        <p class="text-sm font-weight-normal text-secondary mb-0"><span class="text-success">921</span> orders</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-sm font-weight-normal mb-0">$140.925</p>
+                                            </td>
+                                            <td class="align-middle text-center text-sm">
+                                                <p class="text-sm font-weight-normal mb-0">$20.531</p>
+                                            </td>
+                                            <td class="align-middle text-end">
+                                                <div class="d-flex px-3 py-1 justify-content-center align-items-center">
+                                                    <p class="text-sm font-weight-normal mb-0">121</p>
+                                                    <i class="ni ni-bold-up text-sm ms-1 text-danger"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <footer class="footer py-4  ">
                 <div class="container-fluid">
                     <div class="row align-items-center justify-content-lg-between">
@@ -426,129 +1475,279 @@
             </footer>
         </div>
     </main>
+    <div class="fixed-plugin">
+        <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
+            <i class="material-icons py-2">settings</i>
+        </a>
+        <div class="card shadow-lg">
+            <div class="card-header pb-0 pt-3">
+                <div class="float-start">
+                    <h5 class="mt-3 mb-0">Material UI Configurator</h5>
+                    <p>See our dashboard options.</p>
+                </div>
+                <div class="float-end mt-4">
+                    <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
+                        <i class="material-icons">clear</i>
+                    </button>
+                </div>
 
+            </div>
+            <hr class="horizontal dark my-1">
+            <div class="card-body pt-sm-3 pt-0">
+
+                <div>
+                    <h6 class="mb-0">Sidebar Colors</h6>
+                </div>
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <div class="badge-colors my-2 text-start">
+                        <span class="badge filter bg-gradient-primary active" data-color="primary" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
+                    </div>
+                </a>
+
+                <div class="mt-3">
+                    <h6 class="mb-0">Sidenav Type</h6>
+                    <p class="text-sm">Choose between 2 different sidenav types.</p>
+                </div>
+                <div class="d-flex">
+                    <button class="btn bg-gradient-dark px-3 mb-2 active" data-class="bg-gradient-dark" onclick="sidebarType(this)">Dark</button>
+                    <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-transparent" onclick="sidebarType(this)">Transparent</button>
+                    <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-white" onclick="sidebarType(this)">White</button>
+                </div>
+                <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
+
+                <div class="mt-3 d-flex">
+                    <h6 class="mb-0">Navbar Fixed</h6>
+                    <div class="form-check form-switch ps-0 ms-auto my-auto">
+                        <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
+                    </div>
+                </div>
+                <hr class="horizontal dark my-3">
+                <div class="mt-2 d-flex">
+                    <h6 class="mb-0">Sidenav Mini</h6>
+                    <div class="form-check form-switch ps-0 ms-auto my-auto">
+                        <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarMinimize" onclick="navbarMinimize(this)">
+                    </div>
+                </div>
+                <hr class="horizontal dark my-3">
+                <div class="mt-2 d-flex">
+                    <h6 class="mb-0">Light / Dark</h6>
+                    <div class="form-check form-switch ps-0 ms-auto my-auto">
+                        <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
+                    </div>
+                </div>
+                <hr class="horizontal dark my-sm-4">
+                <a class="btn bg-gradient-primary w-100" href="https://www.creative-tim.com/product/material-dashboard-pro">Buy now</a>
+                <a class="btn bg-gradient-info w-100" href="https://www.creative-tim.com/product/material-dashboard">Free demo</a>
+                <a class="btn btn-outline-dark w-100" href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-dashboard">View documentation</a>
+                <div class="w-100 text-center">
+                    <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star creativetimofficial/material-dashboard on GitHub">Star</a>
+                    <h6 class="mt-3">Thank you for sharing!</h6>
+                    <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Dashboard%20PRO%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard-pro" class="btn btn-dark mb-0 me-2" target="_blank">
+                        <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-dashboard-pro" class="btn btn-dark mb-0 me-2" target="_blank">
+                        <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="/assets/material/assets/js/core/popper.min.js"></script>
     <script src="/assets/material/assets/js/core/bootstrap.min.js"></script>
     <script src="/assets/material/assets/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="/assets/material/assets/js/plugins/smooth-scrollbar.min.js"></script>
+
+    <script src="/assets/material/assets/js/plugins/dragula/dragula.min.js"></script>
+    <script src="/assets/material/assets/js/plugins/jkanban/jkanban.js"></script>
     <script src="/assets/material/assets/js/plugins/chartjs.min.js"></script>
     <script>
-        var ctx = document.getElementById("chart-bars").getContext("2d");
+        var ctx1 = document.getElementById("chart-line").getContext("2d");
+        var ctx2 = document.getElementById("chart-pie").getContext("2d");
+        var ctx3 = document.getElementById("chart-bar").getContext("2d");
 
-        new Chart(ctx, {
+        // Line chart
+        new Chart(ctx1, {
+            type: "line",
+            data: {
+                labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                        label: "Facebook Ads",
+                        tension: 0,
+                        pointRadius: 5,
+                        pointBackgroundColor: "#e91e63",
+                        pointBorderColor: "transparent",
+                        borderColor: "#e91e63",
+                        borderWidth: 4,
+                        backgroundColor: "transparent",
+                        fill: true,
+                        data: [50, 100, 200, 190, 400, 350, 500, 450, 700],
+                        maxBarThickness: 6
+                    },
+                    {
+                        label: "Google Ads",
+                        tension: 0,
+                        borderWidth: 0,
+                        pointRadius: 5,
+                        pointBackgroundColor: "#3A416F",
+                        pointBorderColor: "transparent",
+                        borderColor: "#3A416F",
+                        borderWidth: 4,
+                        backgroundColor: "transparent",
+                        fill: true,
+                        data: [10, 30, 40, 120, 150, 220, 280, 250, 280],
+                        maxBarThickness: 6
+                    }
+                ],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                interaction: {
+                    intersect: false,
+                    mode: 'index',
+                },
+                scales: {
+                    y: {
+                        grid: {
+                            drawBorder: false,
+                            display: true,
+                            drawOnChartArea: true,
+                            drawTicks: false,
+                            borderDash: [5, 5],
+                            color: '#c1c4ce5c'
+                        },
+                        ticks: {
+                            display: true,
+                            padding: 10,
+                            color: '#9ca2b7',
+                            font: {
+                                size: 14,
+                                weight: 300,
+                                family: "Roboto",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
+                        }
+                    },
+                    x: {
+                        grid: {
+                            drawBorder: false,
+                            display: true,
+                            drawOnChartArea: true,
+                            drawTicks: true,
+                            borderDash: [5, 5],
+                            color: '#c1c4ce5c'
+                        },
+                        ticks: {
+                            display: true,
+                            color: '#9ca2b7',
+                            padding: 10,
+                            font: {
+                                size: 14,
+                                weight: 300,
+                                family: "Roboto",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
+                        }
+                    },
+                },
+            },
+        });
+
+
+        // Pie chart
+        new Chart(ctx2, {
+            type: "pie",
+            data: {
+                labels: ['Facebook', 'Direct', 'Organic', 'Referral'],
+                datasets: [{
+                    label: "Projects",
+                    weight: 9,
+                    cutout: 0,
+                    tension: 0.9,
+                    pointRadius: 2,
+                    borderWidth: 1,
+                    backgroundColor: ['#17c1e8', '#e91e63', '#3A416F', '#a8b8d8'],
+                    data: [15, 20, 12, 60],
+                    fill: false
+                }],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                interaction: {
+                    intersect: false,
+                    mode: 'index',
+                },
+                scales: {
+                    y: {
+                        grid: {
+                            drawBorder: false,
+                            display: false,
+                            drawOnChartArea: false,
+                            drawTicks: false,
+                            color: '#c1c4ce5c'
+                        },
+                        ticks: {
+                            display: false
+                        }
+                    },
+                    x: {
+                        grid: {
+                            drawBorder: false,
+                            display: false,
+                            drawOnChartArea: false,
+                            drawTicks: false,
+                            color: '#c1c4ce5c'
+                        },
+                        ticks: {
+                            display: false,
+                        }
+                    },
+                },
+            },
+        });
+
+        // Bar chart
+        new Chart(ctx3, {
             type: "bar",
             data: {
-                labels: ["M", "T", "W", "T", "F", "S", "S"],
+                labels: ['16-20', '21-25', '26-30', '31-36', '36-42', '42-50', '50+'],
                 datasets: [{
-                    label: "Sales",
-                    tension: 0.4,
+                    label: "Sales by age",
+                    weight: 5,
                     borderWidth: 0,
                     borderRadius: 4,
-                    borderSkipped: false,
-                    backgroundColor: "rgba(255, 255, 255, .8)",
-                    data: [50, 20, 10, 22, 50, 10, 40],
-                    maxBarThickness: 6
-                }, ],
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false,
-                    }
-                },
-                interaction: {
-                    intersect: false,
-                    mode: 'index',
-                },
-                scales: {
-                    y: {
-                        grid: {
-                            drawBorder: false,
-                            display: true,
-                            drawOnChartArea: true,
-                            drawTicks: false,
-                            borderDash: [5, 5],
-                            color: 'rgba(255, 255, 255, .2)'
-                        },
-                        ticks: {
-                            suggestedMin: 0,
-                            suggestedMax: 500,
-                            beginAtZero: true,
-                            padding: 10,
-                            font: {
-                                size: 14,
-                                weight: 300,
-                                family: "Roboto",
-                                style: 'normal',
-                                lineHeight: 2
-                            },
-                            color: "#fff"
-                        },
-                    },
-                    x: {
-                        grid: {
-                            drawBorder: false,
-                            display: true,
-                            drawOnChartArea: true,
-                            drawTicks: false,
-                            borderDash: [5, 5],
-                            color: 'rgba(255, 255, 255, .2)'
-                        },
-                        ticks: {
-                            display: true,
-                            color: '#f8f9fa',
-                            padding: 10,
-                            font: {
-                                size: 14,
-                                weight: 300,
-                                family: "Roboto",
-                                style: 'normal',
-                                lineHeight: 2
-                            },
-                        }
-                    },
-                },
-            },
-        });
-
-
-        var ctx2 = document.getElementById("chart-line").getContext("2d");
-
-        new Chart(ctx2, {
-            type: "line",
-            data: {
-                labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                datasets: [{
-                    label: "Mobile apps",
-                    tension: 0,
-                    borderWidth: 0,
-                    pointRadius: 5,
-                    pointBackgroundColor: "rgba(255, 255, 255, .8)",
-                    pointBorderColor: "transparent",
-                    borderColor: "rgba(255, 255, 255, .8)",
-                    borderColor: "rgba(255, 255, 255, .8)",
-                    borderWidth: 4,
-                    backgroundColor: "transparent",
-                    fill: true,
-                    data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
-                    maxBarThickness: 6
-
+                    backgroundColor: '#3A416F',
+                    data: [15, 20, 12, 60, 20, 15, 25],
+                    fill: false
                 }],
             },
             options: {
+                indexAxis: 'y',
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         display: false,
                     }
-                },
-                interaction: {
-                    intersect: false,
-                    mode: 'index',
                 },
                 scales: {
                     y: {
@@ -558,12 +1757,12 @@
                             drawOnChartArea: true,
                             drawTicks: false,
                             borderDash: [5, 5],
-                            color: 'rgba(255, 255, 255, .2)'
+                            color: '#c1c4ce5c'
                         },
                         ticks: {
                             display: true,
-                            color: '#f8f9fa',
                             padding: 10,
+                            color: '#c1c4ce5c',
                             font: {
                                 size: 14,
                                 weight: 300,
@@ -577,95 +1776,13 @@
                         grid: {
                             drawBorder: false,
                             display: false,
-                            drawOnChartArea: false,
-                            drawTicks: false,
-                            borderDash: [5, 5]
-                        },
-                        ticks: {
-                            display: true,
-                            color: '#f8f9fa',
-                            padding: 10,
-                            font: {
-                                size: 14,
-                                weight: 300,
-                                family: "Roboto",
-                                style: 'normal',
-                                lineHeight: 2
-                            },
-                        }
-                    },
-                },
-            },
-        });
-
-        var ctx3 = document.getElementById("chart-line-tasks").getContext("2d");
-
-        new Chart(ctx3, {
-            type: "line",
-            data: {
-                labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                datasets: [{
-                    label: "Mobile apps",
-                    tension: 0,
-                    borderWidth: 0,
-                    pointRadius: 5,
-                    pointBackgroundColor: "rgba(255, 255, 255, .8)",
-                    pointBorderColor: "transparent",
-                    borderColor: "rgba(255, 255, 255, .8)",
-                    borderWidth: 4,
-                    backgroundColor: "transparent",
-                    fill: true,
-                    data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
-                    maxBarThickness: 6
-
-                }],
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false,
-                    }
-                },
-                interaction: {
-                    intersect: false,
-                    mode: 'index',
-                },
-                scales: {
-                    y: {
-                        grid: {
-                            drawBorder: false,
-                            display: true,
                             drawOnChartArea: true,
-                            drawTicks: false,
-                            borderDash: [5, 5],
-                            color: 'rgba(255, 255, 255, .2)'
+                            drawTicks: true,
+                            color: '#9ca2b7'
                         },
                         ticks: {
                             display: true,
-                            padding: 10,
-                            color: '#f8f9fa',
-                            font: {
-                                size: 14,
-                                weight: 300,
-                                family: "Roboto",
-                                style: 'normal',
-                                lineHeight: 2
-                            },
-                        }
-                    },
-                    x: {
-                        grid: {
-                            drawBorder: false,
-                            display: false,
-                            drawOnChartArea: false,
-                            drawTicks: false,
-                            borderDash: [5, 5]
-                        },
-                        ticks: {
-                            display: true,
-                            color: '#f8f9fa',
+                            color: '#9ca2b7',
                             padding: 10,
                             font: {
                                 size: 14,
@@ -692,8 +1809,8 @@
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <script src="/assets/material/assets/js/material-dashboard.min.js?v=3.0.5"></script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7931549a9da0564c","version":"2022.11.3","r":1,"token":"1b7cbb72744b40c580f8633c6b62637e","si":100}' crossorigin="anonymous"></script>
+    <script src="/assets/material/assets/js/material-dashboard.min.js?v=3.0.6"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"79698e5e5b2aa054","version":"2022.11.3","r":1,"token":"1b7cbb72744b40c580f8633c6b62637e","si":100}' crossorigin="anonymous"></script>
 </body>
 
 </html>
