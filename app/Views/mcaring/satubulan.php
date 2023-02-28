@@ -2,8 +2,6 @@
 <?= $this->section('content') ?>
 <link rel="stylesheet" href="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js">
 <link rel="stylesheet" href="//cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
-
-
 <div class="container-fluid py-4">
 
     <head>
@@ -26,7 +24,6 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
                             <p>Mohon upload dengan sesuai dengan template / format (format file xlsx)</p>
                             <button class="btn bg-gradient-warning"> <a href=" /datapelanggan/caring/edit/export">Download Template</a></button>
                             <div class="input-group input-group-dynamic mb-3">

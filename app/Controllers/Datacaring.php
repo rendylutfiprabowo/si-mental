@@ -15,8 +15,6 @@ use PhpOffice\PhpSpreadsheet\Reader\Xls;
 
 class Datacaring extends BaseController
 {
-
-
     public function satubulan()
     {
         $detailModel = new Caring1();

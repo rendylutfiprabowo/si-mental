@@ -2,7 +2,6 @@
 <?= $this->section('content') ?>
 <link rel="stylesheet" href="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js">
 <link rel="stylesheet" href="//cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
-
 <div class="container-fluid py-4">
 
     <head>
@@ -20,12 +19,13 @@
                 <div class="modal-dialog mt-lg-10">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="ModalLabel">Import CSV</h5>
+                            <h5 class="modal-title" id="ModalLabel">Import XLSX</h5>
                             <i class="material-icons ms-3">file_upload</i>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Cari File Kamu</p>
+                            <p>Mohon upload dengan sesuai dengan template / format (format file xlsx)</p>
+                            <button class="btn bg-gradient-warning"> <a href=" /datapelanggan/visit/edit/export">Download Template</a></button>
                             <div class="input-group input-group-dynamic mb-3">
                                 <form method="post" action="/datapelanggan/visit/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">

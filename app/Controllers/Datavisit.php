@@ -23,11 +23,11 @@ class Datavisit extends BaseController
         else return redirect()->to('login');
     }
 
-    public function detail()
+    public function detail($id)
     {
         $detailModel = new Visit1();
         // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
-        $ctb = $detailModel->findAll();
+        $ctb = $detailModel->find($id);
         // dd($ctb);
         $data = [
             'title' => 'Data Visit',
