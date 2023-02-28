@@ -36,11 +36,14 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Dashboard::index');
-$routes->get('/login', 'Home::login');
-$routes->post('/login/process', 'Login::process');
-$routes->get('/logout', 'Home::logout');
-
 $routes->get('/dashboard', 'Dashboard::index');
+
+$routes->get('/login', 'Home::login');
+$routes->get('/logout', 'Home::logout');
+$routes->get('/eror', 'Home::eror');
+
+$routes->post('/login/process', 'Login::process');
+
 $routes->get('/datapelanggan/caring/satubulan', 'Datacaring::satubulan');
 $routes->get('/datapelanggan/caring/detail/(:num)', 'Datacaring::detail/$1');
 $routes->get('/datapelanggan/caring/delete/(:num)', 'Datacaring::delete/$1');
@@ -57,10 +60,8 @@ $routes->get('/datapelanggan/caring2/delete/(:num)', 'Datacaring2::delete/$1');
 $routes->post('/datapelanggan/caring2/edit/import', 'Datacaring2::import');
 $routes->get('/datapelanggan/caring2/edit/export', 'Datacaring2::export');
 $routes->get('/datapelanggan/caring2/clearall', 'Datacaring2::clearall');
-$routes->get('/datapelanggan/caring2/edit', 'Datacaring::edit');
 $routes->get('/datapelanggan/caring2/edit/(:num)', 'Datacaring2::edit/$1');
 $routes->post('/caring2/update/(:num)', 'Datacaring2::update/$1');
-
 
 $routes->get('/datapelanggan/visit/satubulan', 'Datavisit::satubulan');
 $routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
@@ -68,10 +69,8 @@ $routes->get('/datapelanggan/visit/delete/(:num)', 'Datavisit::delete/$1');
 $routes->post('/datapelanggan/visit/edit/import', 'Datavisit::import');
 $routes->get('/datapelanggan/visit/edit/export', 'Datavisit::export');
 $routes->get('/datapelanggan/visit/clearall', 'Datavisit::clearall');
-$routes->get('/datapelanggan/visit/edit', 'Datavisit::edit');
 $routes->get('/datapelanggan/visit/edit/(:num)', 'Datavisit::edit/$1');
 $routes->post('/visit/update/(:num)', 'Datavisit::update/$1');
-
 
 $routes->get('/datapelanggan/visit/duabulan', 'Datavisit2::duabulan');
 $routes->get('/datapelanggan/visit2/detail/(:num)', 'Datavisit2::detail/$1');
@@ -83,27 +82,12 @@ $routes->get('/datapelanggan/visit2/edit', 'Datavisit::edit');
 $routes->get('/datapelanggan/visit2/edit/(:num)', 'Datavisit2::edit/$1');
 $routes->post('/visit2/update/(:num)', 'Datavisit2::update/$1');
 
-
 $routes->get('/dataagen', 'Dataagen::listdata');
 $routes->get('/dataagen/detail', 'Dataagen::detail');
 $routes->get('/dataagen', 'Dataagen::listdata');
 $routes->get('/dataagen/tambahdata', 'Dataagen::tambahdata');
 $routes->get('/dataagen/hapusdata/(:num)', 'Dataagen::delete/$1');
 $routes->get('/dataagen/editdata', 'Dataagen::editdata');
-
-
-
-$routes->get('/template', 'Home::template');
-$routes->get('/documentation', 'Home::documentation');
-$routes->get('/documentation1', 'Home::documentation1');
-$routes->get('/documentation2', 'Home::documentation2');
-$routes->get('/documentation3', 'Home::documentation3');
-$routes->get('/tabel', 'Home::tabel');
-$routes->get('/eror', 'Home::eror');
-
-// coba-coba
-
-
 
 /*
  * --------------------------------------------------------------------

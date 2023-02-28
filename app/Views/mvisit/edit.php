@@ -86,16 +86,15 @@
                         </td>
                     </tr>
                     <tr>
-                    <td>
+                        <td colspan="2">
                             <div class="form-group mb-3">
-                                <label for="hasil_visit">Hasil Visit</label>
-                                <select name="hasil_visit" class="form-select" aria-label="Default select example">
-                                    <option selected><?= $ctb['hasil_visit'] ?></option>
-                                    <?php foreach ($hvisit as $hvs1) : ?>
-                                            <option value="<?= $hvs1->hasil_visit ?>"><?= $hvs1->hasil_visit ?></option>
-                                    <?php endforeach; ?>
-                                </select>
+                                <label for="hasil_caring">Hasil Visit</label>
+                                <div>
+                                    <textarea style="height: 150px;" name="hasil_visit" class="form-control"><?= $ctb['hasil_visit'] ?></textarea>
+                                </div>
                             </div>
+
+                            <button type="submit" class="btn btn-primary mt-2 ms-2" value="submit">Simpan Data</button>
                         </td>
                     </tr>
                 </form>
