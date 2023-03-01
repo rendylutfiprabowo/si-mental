@@ -11,7 +11,9 @@
 <div class="container-fluid py-4">
     <div class="ms-auto my-auto mt-lg-0 mt-4">
         <div class="ms-auto my-auto">
+            <a href="/datapelanggan/caring/satubulan" style="margin-right: 8px;" class="btn bg-gradient-warning  mb-0"> <i class="material-icons">arrow_back</i></a>
             <a href="/datapelanggan/caring/edit/<?= $detpel['id_pelanggan'] ?>" class="btn bg-gradient-primary  mb-0"> <i class="material-icons">edit</i> Edit </a>
+
 
             <table class="mt-5">
                 <tr class="row">
@@ -19,8 +21,8 @@
                         <div class="card">
                             <div class="card-header py-2" style="height :350px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
-                                    <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                    <i class="material-icons opacity-10">
+                                        person_pin
                                     </i>
                                 </div>
                                 <div class="mt-5">
@@ -29,7 +31,7 @@
                                     <p class="text-sm mb-0 text-capitalize">Nama Pelanggan</p>
                                     <span class="text-success text-sm font-weight-bolder"><?= $detpel['nama'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Kontak Telepon Pelanggan</p>
-                                    <span class="text-success text-sm font-weight-bolder">0<?= $detpel['contact'] ?></span>
+                                    <span class="text-success text-sm font-weight-bolder"><?= $detpel['contact'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Agen Pengelola</p>
                                     <span class="text-success text-sm font-weight-bolder"><?= $detpel['agen_pengelola'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Produk Pelanggan</p>
@@ -45,8 +47,8 @@
                         <div class="card">
                             <div class="card-header py-2 " style="height :350px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
-                                    <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                    <i class="material-icons opacity-10">
+                                        place
                                     </i>
                                 </div>
                                 <div class="mt-5">
@@ -70,8 +72,8 @@
                         <div class="card">
                             <div class="card-header py-2" style="height :350px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
-                                    <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                    <i class="material-icons opacity-10">
+                                        call
                                     </i>
                                 </div>
                                 <div class="mt-5">
@@ -97,8 +99,8 @@
                         <div class="card">
                             <div class="card-header py-2" style="height :230px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
-                                    <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                    <i class="material-icons opacity-10">
+                                        speaker_notes
                                     </i>
                                 </div>
                                 <div class="mt-5">

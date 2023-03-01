@@ -12,7 +12,7 @@
 
     <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
         <div class="ms-auto my-auto">
-            <button style="margin-right: 8px;" type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import">
+            <button style="margin-right: 8px;" type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import"><i class="material-icons">file_upload</i>
                 Import
             </button>
             <div class="modal fade" id="import" tabindex="-1" aria-hidden="true">
@@ -41,8 +41,8 @@
                     </div>
                 </div>
             </div>
-            <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/caring2/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
-            <a href="/datapelanggan/caring2/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Clear Data</a>
+            <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/caring2/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">file_download</i>        Export</a>
+            <a href="/datapelanggan/caring2/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">delete_sweep</i>         Clear Data</a>
         </div>
     </div>
 

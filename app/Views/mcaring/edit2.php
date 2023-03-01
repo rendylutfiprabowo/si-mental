@@ -94,7 +94,7 @@
                                 <select name="reasoncall" class="form-select" aria-label="Default select example">
                                     <option selected><?= $detpel['reasoncall'] ?></option>
                                     <?php foreach ($Reascall2 as $rsc2) : ?>
-                                            <option value="<?= $rsc2->reasoncall ?>"><?= $rsc2->reasoncall ?></option>
+                                        <option value="<?= $rsc2->reasoncall ?>"><?= $rsc2->reasoncall ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
@@ -154,12 +154,17 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary mt-2 ms-2" value="submit">Simpan Data</button>
+                            <a href="/datapelanggan/caring/duabulan"><button type="button" class="btn bg-gradient-secondary mt-2 ms-2">Batal</button></a>
                         </td>
                     </tr>
+                    
                 </form>
             </div>
         </div>
     </tbody>
 </table>
 </div>
+
+
+
 <?= $this->endSection() ?>

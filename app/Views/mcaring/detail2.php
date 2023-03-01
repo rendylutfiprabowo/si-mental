@@ -11,6 +11,7 @@
 <div class="container-fluid py-4">
     <div class="ms-auto my-auto mt-lg-0 mt-4">
         <div class="ms-auto my-auto">
+            <a href="/datapelanggan/caring/duabulan" style="margin-right: 8px;" class="btn bg-gradient-warning  mb-0"> <i class="material-icons">arrow_back</i></a>
             <a href="/datapelanggan/caring2/edit/<?= $detpel['id_pelanggan'] ?>" class="btn bg-gradient-primary  mb-0"> <i class="material-icons">edit</i> Edit </a>
 
             <table class="mt-5">
@@ -20,7 +21,7 @@
                             <div class="card-header py-2" style="height :350px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
                                     <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                        person_pin
                                     </i>
                                 </div>
                                 <div class="mt-5">
@@ -46,7 +47,7 @@
                             <div class="card-header py-2 " style="height :350px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
                                     <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                        place
                                     </i>
                                 </div>
                                 <div class="mt-5">
@@ -71,7 +72,7 @@
                             <div class="card-header py-2" style="height :350px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
                                     <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                        call
                                     </i>
                                 </div>
                                 <div class="mt-5">
@@ -98,7 +99,7 @@
                             <div class="card-header py-2" style="height :230px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
                                     <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                        speaker_notes
                                     </i>
                                 </div>
                                 <div class="mt-5">
