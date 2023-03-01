@@ -12,7 +12,7 @@
 
     <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
         <div class="ms-auto my-auto">
-            <button style="margin-right: 8px;" type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import">
+            <button style="margin-right: 8px;" type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import"><i class="material-icons">file_upload</i>
                 Import
             </button>
             <div class="modal fade" id="import" tabindex="-1" aria-hidden="true">
@@ -29,11 +29,12 @@
                             <div class="input-group input-group-dynamic mb-3">
                                 <form method="post" action="/datapelanggan/visit2/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
+                                        <label for="fileexcel">Pilih File Disini</label><br>
+                                        <input type="file" name="fileexcel" class="btn bg-gradient-secondary " id="file" required accept=".xls, .Xlsx" />
                                     </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn bg-gradient-secondary " data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn bg-gradient-secondary " data-bs-dismiss="modal">Batal</button>
                                 <button type="submit" class="btn bg-gradient-primary ">Upload</button>
                             </div>
                             </form>
@@ -41,10 +42,11 @@
                     </div>
                 </div>
             </div>
-            <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/visit2/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
-            <a href="/datapelanggan/visit2/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Clear Data</a>
+            <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/visit2/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">file_download</i> Export</a>
+            <a href="/datapelanggan/visit2/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">delete_sweep</i> Clear Data</a>
         </div>
     </div>
+
 
     <div class="row">
         <div class="col-12">

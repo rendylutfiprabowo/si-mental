@@ -12,7 +12,7 @@
 
     <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
         <div class="ms-auto my-auto">
-            <button style="margin-right: 8px;" type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import">
+            <button style="margin-right: 8px;" type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import"><i class="material-icons">file_upload</i>
                 Import
             </button>
             <div class="modal fade" id="import" tabindex="-1" aria-hidden="true">
@@ -29,11 +29,12 @@
                             <div class="input-group input-group-dynamic mb-3">
                                 <form method="post" action="/datapelanggan/visit/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
+                                        <label for="fileexcel">Pilih File Disini</label><br>
+                                        <input type="file" name="fileexcel" class="btn bg-gradient-secondary" id="file" required accept=".xls, .Xlsx" />
                                     </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn bg-gradient-secondary " data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn bg-gradient-secondary " data-bs-dismiss="modal">Batal</button>
                                 <button type="submit" class="btn bg-gradient-primary ">Upload</button>
                             </div>
                             </form>
@@ -41,10 +42,11 @@
                     </div>
                 </div>
             </div>
-            <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/visit/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Export</a>
-            <a href="/datapelanggan/visit/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button">Clear Data</a>
+            <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/visit/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">file_download</i> Export</a>
+            <a href="/datapelanggan/visit/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">delete_sweep</i> Clear Data</a>
         </div>
     </div>
+
 
     <div class="row">
         <div class="col-12">
@@ -58,7 +60,7 @@
                     <div class="card-header m-0">
                         <div class="table-responsive p-0">
                             <table id="example1" class="table table-hover align-items-center mb-0">
-                                <thead>
+                                <thead class="thead-light">
                                     <tr>
                                         <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama CTB</th>
                                         <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
@@ -66,53 +68,54 @@
                                         <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <?php
-                                    foreach ($ctb as $ctbvisit) {
-                                    ?>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="/assets/material/assets/img/user.png" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm"><?php echo $ctbvisit['nama_agen']; ?></h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h6 style="margin-left: 15px;" class="mb-0 text-sm"><?php echo $ctbvisit['nama']; ?></h6>
-                                            </td>
-
-                                            <td class="align-middle text-center">
-                                                <h6 class="mb-0 text-sm"><?php echo $ctbvisit['hasil_visit']; ?></h6>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <a href="/datapelanggan/visit/detail/<?= $ctbvisit['id_visit'] ?>">
-                                                    <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">info</i></span>
-                                                </a>
-                                                <a href="/datapelanggan/visit/delete/<?= $ctbvisit['id_visit'] ?>">
-                                                    <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    <?php
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
                         </div>
+                        <tbody>
+                            <?php
+                            foreach ($ctb as $ctbvisit) {
+                            ?>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex px-2 py-1">
+                                            <div>
+                                                <img src="/assets/material/assets/img/user.png" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="mb-0 text-sm"><?php echo $ctbvisit['nama_agen']; ?></h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6 style="margin-left: 15px;" class="mb-0 text-sm"><?php echo $ctbvisit['nama']; ?></h6>
+                                    </td>
+
+                                    <td class="align-middle text-center">
+                                        <h6 class="mb-0 text-sm"><?php echo $ctbvisit['hasil_visit']; ?></h6>
+                                    </td>
+                                    <td class="align-middle text-center">
+                                        <a href="/datapelanggan/visit/detail/<?= $ctbvisit['id_visit'] ?>">
+                                            <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">info</i></span>
+                                        </a>
+                                        <a href="/datapelanggan/visit/delete/<?= $ctbvisit['id_visit'] ?>">
+                                            <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
+                        </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#example1').DataTable({});
-        });
-    </script>
-    <?= $this->endSection() ?>
+</div>
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#example1').DataTable({});
+    });
+</script>
+<?= $this->endSection() ?>

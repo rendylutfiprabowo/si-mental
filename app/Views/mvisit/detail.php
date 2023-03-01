@@ -11,6 +11,7 @@
 <div class="container-fluid py-4">
     <div class="ms-auto my-auto mt-lg-0 mt-4">
         <div class="ms-auto my-auto">
+            <a href="/datapelanggan/visit/satubulan" style="margin-right: 8px;" class="btn bg-gradient-warning  mb-0"> <i class="material-icons">arrow_back</i></a>
             <a href="/datapelanggan/visit/edit/<?= $ctb['id_visit'] ?>" class="btn bg-gradient-primary  mb-0"> <i class="material-icons">edit</i> Edit </a>
 
 
@@ -21,7 +22,7 @@
                             <div class="card-header py-2" style="height :350px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
                                     <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                        person_pin
                                     </i>
                                 </div>
                                 <div class="mt-5">
@@ -47,7 +48,7 @@
                             <div class="card-header py-2 " style="height :350px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
                                     <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                        place
                                     </i>
                                 </div>
                                 <div class="mt-5">
@@ -59,8 +60,7 @@
                                     <span class="text-success text-sm font-weight-bolder "><?= $ctb['STO'] ?></span>
                                     <p class="text-sm mb-0 text-capitalize">Daerah Witel</p>
                                     <span class="text-success text-sm font-weight-bolder "><?= $ctb['datel'] ?></span>
-                                    <p class="text-sm mb-0 text-capitalize">Hasil Visit</p>
-                                    <span class="text-success text-sm font-weight-bolder"><?= $ctb['hasil_visit'] ?></span><br>
+
                                 </div>
                             </div>
                             <div class="card-footer p-3">
@@ -72,10 +72,12 @@
                             <div class="card-header py-2" style="height :350px">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
                                     <i class="material-icons text-white opacity-10">
-                                        account_circle
+                                        speaker_notes
                                     </i>
                                 </div>
                                 <div class="mt-5">
+                                    <p class="text-sm mb-0 text-capitalize">Hasil Visit</p>
+                                    <span class="text-success text-sm font-weight-bolder"><?= $ctb['hasil_visit'] ?></span><br>
                                     <p class="text-sm mb-0 text-capitalize">Keterangan Visit</p>
                                     <span class="text-success text-sm font-weight-bolder"><?= $ctb['ket_visit'] ?></span><br>
                                 </div>

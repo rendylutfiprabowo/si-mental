@@ -29,11 +29,12 @@
                             <div class="input-group input-group-dynamic mb-3">
                                 <form method="post" action="/datapelanggan/caring2/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
+                                        <label for="fileexcel">Pilih File Disini</label><br>
+                                        <input type="file" name="fileexcel" class="btn bg-gradient-secondary" id="file" required accept=".xls, .Xlsx" />
                                     </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn bg-gradient-secondary " data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn bg-gradient-secondary " data-bs-dismiss="modal">Batal</button>
                                 <button type="submit" class="btn bg-gradient-primary ">Upload</button>
                             </div>
                             </form>
@@ -41,8 +42,8 @@
                     </div>
                 </div>
             </div>
-            <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/caring2/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">file_download</i>        Export</a>
-            <a href="/datapelanggan/caring2/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">delete_sweep</i>         Clear Data</a>
+            <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/caring2/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">file_download</i> Export</a>
+            <a href="/datapelanggan/caring2/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">delete_sweep</i> Clear Data</a>
         </div>
     </div>
 

@@ -10,7 +10,7 @@
 
 <div class="container-fluid py-4">
     <div class="ms-auto my-auto mt-lg-0 mt-4">
-        <div class="ms-auto my-auto">
+        <div class="ms-auto my-auto">.<a href="/datapelanggan/visit/duabulan" style="margin-right: 8px;" class="btn bg-gradient-warning  mb-0"> <i class="material-icons">arrow_back</i></a>
             <a href="/datapelanggan/visit2/edit/<?= $ctb['id_visit'] ?>" class="btn bg-gradient-primary  mb-0"> <i class="material-icons">edit</i> Edit </a>
         </div>
     </div>

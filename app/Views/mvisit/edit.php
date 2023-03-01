@@ -95,6 +95,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-primary mt-2 ms-2" value="submit">Simpan Data</button>
+                            <a href="/datapelanggan/visit/detail/<?= $ctb['id_visit'] ?>"><button type="button" class="btn bg-gradient-secondary mt-2 ms-2">Batal</button></a>
                         </td>
                     </tr>
                 </form>
