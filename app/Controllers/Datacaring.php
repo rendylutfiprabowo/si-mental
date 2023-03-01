@@ -56,10 +56,10 @@ class Datacaring extends BaseController
                 'title' => 'Data Caring',
                 'detpel' => $detpel,
                 // 'dropdown' => $dropdown->findAll(),
-                'statuscall'=> $statuscall->findAll(),
-                'reasoncall'=> $reasoncall->findAll(),
-                'profil_kesepakatan'=> $profilkesepakatan->findAll(),
-                'hub_ybs'=> $hub_ybs->findAll(),
+                'statuscall' => $statuscall->findAll(),
+                'reasoncall' => $reasoncall->findAll(),
+                'profil_kesepakatan' => $profilkesepakatan->findAll(),
+                'hub_ybs' => $hub_ybs->findAll(),
                 'Reascall' => $Reascall,
             ];
             // dd($data);
@@ -263,5 +263,11 @@ class Datacaring extends BaseController
 
         $detailModel->insertBatch($data);
         return redirect()->to('/datapelanggan/caring/satubulan');
+    }
+
+    public function download()
+    {
+        $path = 'uploads/template_caring.Xlsx'; 
+        return $this->response->download($path, null);        
     }
 }

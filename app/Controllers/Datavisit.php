@@ -214,4 +214,11 @@ class Datavisit extends BaseController
         $detailModel->insertBatch($data);
         return redirect()->to('/datapelanggan/visit/satubulan');
     }
+
+    public function download()
+    {
+        $path = 'uploads/template_visit.Xlsx'; 
+        return $this->response->download($path, null);        
+    }
 }
+

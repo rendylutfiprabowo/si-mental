@@ -25,7 +25,7 @@
                         </div>
                         <div class="modal-body">
                             <p>Mohon upload dengan sesuai dengan template / format (format file xlsx)</p>
-                            <button class="btn bg-gradient-warning"> <a href=" /datapelanggan/visit/edit/export">Download Template</a></button>
+                            <a href="/visit/downloadtemplate"><button class="btn bg-gradient-warning">Download Template</button></a>
                             <div class="input-group input-group-dynamic mb-3">
                                 <form method="post" action="/datapelanggan/visit2/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">

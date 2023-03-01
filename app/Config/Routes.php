@@ -53,6 +53,7 @@ $routes->get('/datapelanggan/caring/clearall', 'Datacaring::clearall');
 $routes->get('/datapelanggan/caring/edit', 'Datacaring::edit');
 $routes->get('/datapelanggan/caring/edit/(:num)', 'Datacaring::edit/$1');
 $routes->post('/caring/update/(:num)', 'Datacaring::update/$1');
+$routes->get('/caring/downloadtemplate', 'Datacaring::download');
 
 $routes->get('/datapelanggan/caring/duabulan', 'Datacaring2::duabulan');
 $routes->get('/datapelanggan/caring2/detail/(:num)', 'Datacaring2::detail/$1');
@@ -62,6 +63,7 @@ $routes->get('/datapelanggan/caring2/edit/export', 'Datacaring2::export');
 $routes->get('/datapelanggan/caring2/clearall', 'Datacaring2::clearall');
 $routes->get('/datapelanggan/caring2/edit/(:num)', 'Datacaring2::edit/$1');
 $routes->post('/caring2/update/(:num)', 'Datacaring2::update/$1');
+$routes->get('/caring2/downloadtemplate', 'Datacaring::download');
 
 $routes->get('/datapelanggan/visit/satubulan', 'Datavisit::satubulan');
 $routes->get('/datapelanggan/visit/detail/(:num)', 'Datavisit::detail/$1');
@@ -71,6 +73,7 @@ $routes->get('/datapelanggan/visit/edit/export', 'Datavisit::export');
 $routes->get('/datapelanggan/visit/clearall', 'Datavisit::clearall');
 $routes->get('/datapelanggan/visit/edit/(:num)', 'Datavisit::edit/$1');
 $routes->post('/visit/update/(:num)', 'Datavisit::update/$1');
+$routes->get('/visit/downloadtemplate', 'Datacaring::download');
 
 $routes->get('/datapelanggan/visit/duabulan', 'Datavisit2::duabulan');
 $routes->get('/datapelanggan/visit2/detail/(:num)', 'Datavisit2::detail/$1');
@@ -81,6 +84,7 @@ $routes->get('/datapelanggan/visit2/clearall', 'Datavisit2::clearall');
 $routes->get('/datapelanggan/visit2/edit', 'Datavisit::edit');
 $routes->get('/datapelanggan/visit2/edit/(:num)', 'Datavisit2::edit/$1');
 $routes->post('/visit2/update/(:num)', 'Datavisit2::update/$1');
+$routes->get('/visit/downloadtemplate', 'Datacaring::download');
 
 $routes->get('/dataagen', 'Dataagen::listdata');
 $routes->get('/dataagen/detail', 'Dataagen::detail');
