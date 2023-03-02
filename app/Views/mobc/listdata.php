@@ -1,6 +1,7 @@
 <?= $this->extend('template') ?>
 <?= $this->section('content') ?>
-
+<link rel="stylesheet" href="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js">
+<link rel="stylesheet" href="//cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
 
 <div class="container-fluid py-4 ">
     <div class="ms-auto my-auto mt-lg-0 ">
@@ -43,7 +44,7 @@
                         </div>
                     </div>
                     <div class="card-body px-0 pb-2">
-                        <div class="card-header m-0">
+                        
                             <div class="table-responsive p-0">
                                 <table id="example1" class="table table-hover align-items-center mb-0">
                                     <thead class="thead-light">
@@ -86,13 +87,13 @@
                 <div class="card my-4">
                     <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                         <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                            <h6 class="text-white text-capitalize ps-3">Data Agen Outbound Call</h6>
+                            <h6 class="text-white text-capitalize ps-3">DATA AGEN OUTBOUND CALL</h6>
                         </div>
                     </div>
                     <div class="card-body px-0 pb-2">
-                        <div class="table-responsive p-0">
-                            <table class="table align-items-center justify-content-center mb-0">
-                                <thead>
+                            <div class="table-responsive p-0">
+                                <table id="example1" class="table table-hover align-items-center mb-0">
+                                    <thead class="thead-light">
                                     <tr>
                                         <th class="text-center text-uppercase text-xxs font-weight-bolder">
                                             <p><b>Nama Agen</b></p>
@@ -121,12 +122,9 @@
                                                 <td class="align-middle text-center text-sm">
                                                     <h6 class="mb-0 text-sm"><?php echo $row2->total ?></h6>
                                                 </td>
-
                                             </tr>
-                                    <?php
-                                            // work if use break; -> hasilnya agennya beda
-                                        } // work if use break; -> hasilnya contactednya beda
-
+                                    <?php                                            
+                                        } 
                                     }
                                     ?>
                                 </tbody>
