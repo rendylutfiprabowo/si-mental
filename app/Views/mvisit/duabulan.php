@@ -46,7 +46,7 @@
                                 <form method="post" action="/datapelanggan/visit2/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="fileexcel">Pilih File Disini</label><br>
-                                        <input type="file" name="fileexcel" class="btn bg-gradient-secondary " id="file" required accept=".xls, .Xlsx" />
+                                        <input type="file" name="fileexcel" class="btn bg-gradient-secondary " id="file" required accept=".xls, .Xlsx" required />
                                     </div>
                             </div>
                             <div class="modal-footer">
@@ -76,60 +76,69 @@
                     <div class="card-header m-0">
                         <div class="table-responsive p-0">
                             <table id="example1" class="table table-hover align-items-center mb-0">
-                                <thead>
+                                <thead class="thead-light">
                                     <tr>
-                                        <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama CTB</th>
-                                        <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
-                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Hasil Visit</th>
-                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
+                                        <th class="text-center text-uppercase text-xxs font-weight-bolder">
+                                            <p><b>Nama CTB</b></p>
+                                        </th>
+                                        <th class="text-center text-uppercase text-xxs font-weight-bolder">
+                                            <p><b>Nama Pelanggan</b></p>
+                                        </th>
+                                        <th class="text-center text-uppercase text-xxs font-weight-bolder">
+                                            <p><b>Hasil Visit</b></p>
+                                        </th>
+                                        <th class="text-center text-uppercase text-xxs font-weight-bolder">
+                                            <p><b>Detail</b></p>
+                                        </th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <?php
-                                    foreach ($ctb as $ctbvisit) {
-                                    ?>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="/assets/material/assets/img/user.png" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm"><?php echo $ctbvisit['nama_agen']; ?></h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h6 style="margin-left: 15px;" class="mb-0 text-sm"><?php echo $ctbvisit['nama']; ?></h6>
-                                            </td>
-
-                                            <td class="align-middle text-center">
-                                                <h6 class="mb-0 text-sm"><?php echo $ctbvisit['hasil_visit']; ?></h6>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <a href="/datapelanggan/visit2/detail/<?= $ctbvisit['id_visit'] ?>">
-                                                    <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">info</i></span>
-                                                </a>
-                                                <a href="/datapelanggan/visit2/delete/<?= $ctbvisit['id_visit'] ?>">
-                                                    <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    <?php
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
                         </div>
+                        <tbody>
+                            <?php
+                            foreach ($ctb as $ctbvisit) {
+                            ?>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex px-2 py-1">
+                                            <div>
+                                                <img src="/assets/material/assets/img/user.png" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="mb-0 text-sm"><?php echo $ctbvisit['nama_agen']; ?></h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6 style="margin-left: 15px;" class="mb-0 text-sm"><?php echo $ctbvisit['nama']; ?></h6>
+                                    </td>
+
+                                    <td class="align-middle text-center">
+                                        <h6 class="mb-0 text-sm"><?php echo $ctbvisit['hasil_visit']; ?></h6>
+                                    </td>
+                                    <td class="align-middle text-center">
+                                        <a href="/datapelanggan/visit2/detail/<?= $ctbvisit['id_visit'] ?>">
+                                            <span style="justify-content: center;" class="badge badge-sm bg-gradient-info"><i class="material-icons">info</i></span>
+                                        </a>
+                                        <a href="/datapelanggan/visit2/delete/<?= $ctbvisit['id_visit'] ?>">
+                                            <span style="justify-content: center;" class="badge badge-sm bg-gradient-warning"><i class="material-icons">delete</i></span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
+                        </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('#example1').DataTable({});
-            });
-        </script>
-        <?= $this->endSection() ?>
+    </div>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example1').DataTable({});
+        });
+    </script>
+    <?= $this->endSection() ?>

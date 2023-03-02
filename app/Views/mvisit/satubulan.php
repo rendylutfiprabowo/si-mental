@@ -45,7 +45,7 @@
                                 <form method="post" action="/datapelanggan/visit/edit/import" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="fileexcel">Pilih File Disini</label><br>
-                                        <input type="file" name="fileexcel" class="btn bg-gradient-secondary" id="file" required accept=".xls, .Xlsx" />
+                                        <input type="file" name="fileexcel" class="btn bg-gradient-secondary " id="file" required accept=".xls, .Xlsx" required />
                                     </div>
                             </div>
                             <div class="modal-footer">
@@ -77,10 +77,18 @@
                             <table id="example1" class="table table-hover align-items-center mb-0">
                                 <thead class="thead-light">
                                     <tr>
-                                        <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama CTB</th>
-                                        <th class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pelanggan</th>
-                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Hasil Visit</th>
-                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Detail</th>
+                                        <th class="text-center text-uppercase text-xxs font-weight-bolder">
+                                            <p><b>Nama CTB</b></p>
+                                        </th>
+                                        <th class="text-center text-uppercase text-xxs font-weight-bolder">
+                                            <p><b>Nama Pelanggan</b></p>
+                                        </th>
+                                        <th class="text-center text-uppercase text-xxs font-weight-bolder">
+                                            <p><b>Hasil Visit</b></p>
+                                        </th>
+                                        <th class="text-center text-uppercase text-xxs font-weight-bolder">
+                                            <p><b>Detail</b></p>
+                                        </th>
                                     </tr>
                                 </thead>
                         </div>

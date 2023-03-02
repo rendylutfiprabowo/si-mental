@@ -101,14 +101,3 @@ class Dashboard extends BaseController
         else return redirect()->to('login');
     }
 }
-// if (session()->logged_in) {
-//     return view('dashboard/dashboard', $data);
-
-//     if (empty($data)) {
-//         echo "Database Kosong"; // Tampilkan pesan jika data kosong
-//     }
-// }
-// // if ($data == null) return view('eror');
-// else {
-//     return redirect()->to('login');
-// }
