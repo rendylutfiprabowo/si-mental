@@ -11,6 +11,22 @@
 <div class="container-fluid py-4">
     <div class="ms-auto my-auto mt-lg-0 mt-4">
         <div class="ms-auto my-auto">
+
+            <?php if (session()->get('message')) : ?>
+                <div class="alert alert-success alert-dismissible text-white fade show" role="alert">
+                    <span class="alert-icon align-middle">
+                        <span class="material-icons text-md">
+                            thumb_up_off_alt
+                        </span>
+                    </span>
+                    <span class="alert-text">Data Berhasil <strong><?= session()->getFlashdata('message'); ?>!</strong></span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php endif;   ?>
+
+
             <a href="/datapelanggan/caring/satubulan" style="margin-right: 8px;" class="btn bg-gradient-warning  mb-0"> <i class="material-icons">arrow_back</i></a>
             <a href="/datapelanggan/caring/edit/<?= $detpel['id_pelanggan'] ?>" class="btn bg-gradient-primary  mb-0"> <i class="material-icons">edit</i> Edit </a>
 

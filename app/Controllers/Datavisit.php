@@ -84,6 +84,7 @@ class Datavisit extends BaseController
 
         $result =  $userModel->update($id, $data);
         if ($result) {
+            session()->setFlashdata('message', 'Di Update');
             return $this->detail($id);
         } else {
             return $this->detail($id);
@@ -93,19 +94,22 @@ class Datavisit extends BaseController
     public function delete($id)
     {
         $satuVisit = new Visit1();
-        $satuVisit->delete($id);
+        $delvisit = $satuVisit->delete($id);
 
-        return redirect()->to('/datapelanggan/visit/satubulan');
+        if ($delvisit) {
+            session()->setFlashdata('message', 'Di Hapus');
+            return redirect()->to('/datapelanggan/visit/satubulan');
+        }
     }
 
     public function clearall()
     {
         $satuModel = new Visit1();
         $satuModel->truncate();
-
+        session()->setFlashdata('message', 'Di Hapus Semua');
         return redirect()->to('/datapelanggan/visit/satubulan');
     }
-    
+
 
     public function export()
     {
@@ -211,14 +215,17 @@ class Datavisit extends BaseController
             $v++;
         }
 
-        $detailModel->insertBatch($data);
-        return redirect()->to('/datapelanggan/visit/satubulan');
+        $import = $detailModel->insertBatch($data);
+        if ($import) {
+            session()->setFlashdata('message', 'Di Import');
+            return redirect()->to('/datapelanggan/visit/satubulan');
+        }
     }
+
 
     public function download()
     {
-        $path = 'uploads/template_visit.Xlsx'; 
-        return $this->response->download($path, null);        
+        $path = 'uploads/template_visit.Xlsx';
+        return $this->response->download($path, null);
     }
 }
-

@@ -12,6 +12,22 @@
 
     <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
         <div class="ms-auto my-auto">
+
+            <?php if (session()->get('message')) : ?>
+                <div class="alert alert-success alert-dismissible text-white fade show" role="alert">
+                    <span class="alert-icon align-middle">
+                        <span class="material-icons text-md">
+                            thumb_up_off_alt
+                        </span>
+                    </span>
+                    <span class="alert-text">Data Berhasil <strong><?= session()->getFlashdata('message'); ?>!</strong></span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php endif;   ?>
+
+
             <button style="margin-right: 8px;" type="button" class="btn btn-outline-primary  mb-0" data-bs-toggle="modal" data-bs-target="#import"><i class="material-icons">file_upload</i>
                 Import
             </button>

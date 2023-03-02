@@ -3,10 +3,12 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\DetPel;
 use App\Models\Caring2;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
+
+
 
 class Datacaring2 extends BaseController
 {
@@ -96,6 +98,7 @@ class Datacaring2 extends BaseController
 
         $result =  $userModel->update($id, $data);
         if ($result) {
+            session()->setFlashdata('message', 'Di Update');
             return $this->detail($id);
         } else {
             return $this->detail($id);
@@ -106,15 +109,17 @@ class Datacaring2 extends BaseController
     {
         $duaModel = new Caring2();
         $duaModel->delete($id);
-
-        return redirect()->to('/datapelanggan/caring/duabulan');
+        if ($duaModel) {
+            session()->setFlashdata('message', 'Di Hapus');
+            return redirect()->to('/datapelanggan/caring/duabulan');
+        }
     }
 
     public function clearall()
     {
         $satuModel = new Caring2();
         $satuModel->truncate();
-
+        session()->setFlashdata('message', 'Di Hapus Semua');
         return redirect()->to('/datapelanggan/caring/duabulan');
     }
 
@@ -208,7 +213,7 @@ class Datacaring2 extends BaseController
         $writer->save('php://output');
         exit();
     }
-   
+
     public function import()
     {
         $detailModel = new Caring2();
@@ -246,13 +251,16 @@ class Datacaring2 extends BaseController
             $i++;
         }
 
-        $detailModel->insertBatch($data);
-        return redirect()->to('/datapelanggan/caring/duabulan');
+        $import = $detailModel->insertBatch($data);
+        if ($import) {
+            session()->setFlashdata('message', 'Di Import');
+            return redirect()->to('/datapelanggan/caring/duabulan');
+        }
     }
 
     public function download()
     {
-        $path = 'uploads/template_caring.Xlsx'; 
-        return $this->response->download($path, null);        
+        $path = 'uploads/template_caring.Xlsx';
+        return $this->response->download($path, null);
     }
 }

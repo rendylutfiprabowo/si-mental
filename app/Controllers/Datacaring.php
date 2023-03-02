@@ -3,15 +3,12 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\DetPel;
 use App\Models\Caring1;
 use App\Models\HubYbs;
 use App\Models\Profilkesepakatan;
-use App\Models\Reasoncall;
 use App\Models\Statuscall;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
-use PhpOffice\PhpSpreadsheet\Reader\Xls;
 
 class Datacaring extends BaseController
 {
@@ -111,6 +108,7 @@ class Datacaring extends BaseController
 
         $result =  $userModel->update($id, $data);
         if ($result) {
+            session()->setFlashdata('message', 'Di Update');
             return $this->detail($id);
         } else {
             return $this->detail($id);
@@ -122,14 +120,17 @@ class Datacaring extends BaseController
         $satuModel = new Caring1();
         $satuModel->delete($id);
 
-        return redirect()->to('/datapelanggan/caring/satubulan');
+        if ($satuModel) {
+            session()->setFlashdata('message', 'Di Hapus');
+            return redirect()->to('/datapelanggan/caring/satubulan');
+        }
     }
 
     public function clearall()
     {
         $satuModel = new Caring1();
         $satuModel->truncate();
-
+        session()->setFlashdata('message', 'Di Hapus Semua');
         return redirect()->to('/datapelanggan/caring/satubulan');
     }
 
@@ -222,6 +223,7 @@ class Datacaring extends BaseController
         header('Cache-Control: max-age=0');
         $writer->save('php://output');
         exit();
+        
     }
 
     public function import()
@@ -261,13 +263,16 @@ class Datacaring extends BaseController
             $i++;
         }
 
-        $detailModel->insertBatch($data);
-        return redirect()->to('/datapelanggan/caring/satubulan');
+        $import = $detailModel->insertBatch($data);
+        if ($import) {
+            session()->setFlashdata('message', 'Di Import');
+            return redirect()->to('/datapelanggan/caring/satubulan');
+        }
     }
 
     public function download()
     {
-        $path = 'uploads/template_caring.Xlsx'; 
-        return $this->response->download($path, null);        
+        $path = 'uploads/template_caring.Xlsx';
+        return $this->response->download($path, null);
     }
 }
