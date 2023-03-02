@@ -300,6 +300,12 @@
               <div class="card z-index-2 ">
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                   <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
+                    <?php
+                    if ($hvisit2 == null) {
+                      $hasilvisit2 = 0;
+                      $totalhvs2 = 0;
+                    }
+                    ?>
                     <div class="chart">
                       <h1 style="text-align: center;"><?= $sumJumlahDataCaring ?></h1 style="align-items: center;">
                     </div>
@@ -341,6 +347,22 @@
                   </div>
                 </div>
                 <div class="card-body pb-0 p-3 mt-4">
+                  <?php
+                  if ($profk == null) {
+                    $profil1 = 0;
+                    $totalpk1 = 0;
+                  ?>
+                    <div class="alert alert-warning text-white" role="alert">
+                      <span class="alert-icon align-middle">
+                        <span class="material-icons text-md">
+                          warning
+                        </span>
+                      </span>
+                      <span class="alert-text"><strong>Mohon Import Data Lebih Dahulu!</strong> Karena data masih kosong</span>
+                    </div>
+                  <?php
+                  }
+                  ?>
                   <div class="row">
                     <div class="col-7 text-start">
                       <div class="chart">
@@ -378,8 +400,24 @@
                   </div>
                 </div>
                 <div class="card-body pb-0 p-3 mt-4">
+                  <?php
+                  if ($profk2 == null) {
+                    $profil2 = 0;
+                    $totalpk2 = 0;
+                  ?>
+                    <div class="alert alert-warning text-white" role="alert">
+                      <span class="alert-icon align-middle">
+                        <span class="material-icons text-md">
+                          warning
+                        </span>
+                      </span>
+                      <span class="alert-text"><strong>Mohon Import Data Lebih Dahulu!</strong> Karena data masih kosong</span>
+                    </div>
+                  <?php
+                  }
+                  ?>
                   <div class="row">
-                    <div class="col-7 text-start">
+                    <div class="col-7 text-start" style="align-content: center;">
                       <div class="chart">
                         <canvas id="chart-pie2" class="chart-canvas" width="500" height="200"></canvas>
                       </div>
@@ -417,6 +455,22 @@
                   </div>
                 </div>
                 <div class="card-body pb-0 p-3 mt-4">
+                  <?php
+                  if ($hvisit == null) {
+                    $hasilvisit1 = 0;
+                    $totalhvs1 = 0;
+                  ?>
+                    <div class="alert alert-warning text-white" role="alert">
+                      <span class="alert-icon align-middle">
+                        <span class="material-icons text-md">
+                          warning
+                        </span>
+                      </span>
+                      <span class="alert-text"><strong>Mohon Import Data Lebih Dahulu!</strong> Karena data masih kosong</span>
+                    </div>
+                  <?php
+                  }
+                  ?>
                   <div class="row">
                     <div class="col-7 text-start">
                       <div class="chart">
@@ -454,6 +508,22 @@
                   </div>
                 </div>
                 <div class="card-body pb-0 p-3 mt-4">
+                  <?php
+                  if ($hvisit2 == null) {
+                    $hasilvisit = 0;
+                    $totalhvs2 = 0;
+                  ?>
+                    <div class="alert alert-warning text-white" role="alert">
+                      <span class="alert-icon align-middle">
+                        <span class="material-icons text-md">
+                          warning
+                        </span>
+                      </span>
+                      <span class="alert-text"><strong>Mohon Import Data Lebih Dahulu!</strong> Karena data masih kosong</span>
+                    </div>
+                  <?php
+                  }
+                  ?>
                   <div class="row">
                     <div class="col-7 text-start">
                       <div class="chart">
@@ -476,7 +546,7 @@
                 <div class="card-footer pt-0 pb-0 p-3 d-flex align-items-center">
                   <div class="w-60">
                     <p class="text-sm mt-4">
-                    Jadi, total untuk Data Visit 2 Bulan berjumlah <b><?= $jumlahdatavisit2; ?></b>.
+                      Jadi, total untuk Data Visit 2 Bulan berjumlah <b><?= $jumlahdatavisit2; ?></b>.
                     </p>
                   </div>
                 </div>
@@ -764,4 +834,4 @@
 
   <script src="/assets/material/assets/js/material-dashboard.min.js?v=3.0.6"></script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"79dce2022c384a9b","version":"2023.2.0","r":1,"token":"1b7cbb72744b40c580f8633c6b62637e","si":100}' crossorigin="anonymous"></script>
-t>
+  t>

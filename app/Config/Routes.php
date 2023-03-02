@@ -41,6 +41,8 @@ $routes->get('/dashboard', 'Dashboard::index');
 $routes->get('/login', 'Home::login');
 $routes->get('/logout', 'Home::logout');
 $routes->get('/eror', 'Home::eror');
+$routes->get('/alert', 'Home::alert');
+
 
 $routes->post('/login/process', 'Login::process');
 

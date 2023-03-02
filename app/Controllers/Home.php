@@ -26,4 +26,9 @@ class Home extends BaseController
     {
         return view('eror');
     }
+
+    public function alert()
+    {
+        return view('alert');
+    }
 }
