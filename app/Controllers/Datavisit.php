@@ -26,9 +26,7 @@ class Datavisit extends BaseController
     public function detail($id)
     {
         $detailModel = new Visit1();
-        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
         $ctb = $detailModel->find($id);
-        // dd($ctb);
         $data = [
             'title' => 'Data Visit',
             'ctb' => $ctb

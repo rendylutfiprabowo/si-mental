@@ -44,7 +44,6 @@ class Login extends BaseController
 
                 session()->setFlashdata('error', 'Username & Password Salah');
                 return redirect()->back();
-                // return view('dashboard/dashboard');
             }
         } else {
 

@@ -249,7 +249,6 @@
                 </svg>
               </a>
             </li>
-            <!-- <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li> -->
             <li class="breadcrumb-item text-sm text-dark active" aria-current="page"> <?= $title; ?></li>
 
           </ol>

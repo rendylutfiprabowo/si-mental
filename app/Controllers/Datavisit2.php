@@ -21,7 +21,6 @@ class Datavisit2 extends BaseController
             'title' => 'Data Visit',
             'ctb' => $ctb
         ];
-        // return view('mvisit/duabulan');
         if (session()->logged_in)  return view('mvisit/duabulan', $data);
         else return redirect()->to('login');
     }
@@ -29,9 +28,7 @@ class Datavisit2 extends BaseController
     public function detail($id)
     {
         $detailModel = new Visit2();
-        // $array = ['MONTH(tanggal)>' => 'MONTH(now())'];
         $ctb = $detailModel->find($id);
-        // dd($ctb);
         $data = [
             'title' => 'Data Visit',
             'ctb' => $ctb
