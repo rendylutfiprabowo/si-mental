@@ -2,7 +2,6 @@
 <?= $this->section('content') ?>
 <link rel="stylesheet" href="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js">
 <link rel="stylesheet" href="//cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
-<div class="container-fluid py-4">
 
     <head>
         <meta charset="UTF-8">
@@ -10,9 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-
+<div class="container-fluid py-4">
     <div class="ms-auto my-auto mt-lg-0 mt-4 mb-4">
         <div class="ms-auto my-auto">
+
             <?php if (session()->get('message')) : ?>
                 <div class="alert alert-success alert-dismissible text-white fade show" role="alert">
                     <span class="alert-icon align-middle">
@@ -56,6 +56,7 @@
                     </div>
                 </div>
             </div>
+
             <a style="margin-right: 8px;" href="<?= site_url('/datapelanggan/caring/edit/export') ?>" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">file_download</i> Export</a>
             <a href="/datapelanggan/caring/clearall" class="btn btn-outline-primary  export mb-0 mt-sm-0 mt-1" data-type=".xlsx" type="button" name="button"><i class="material-icons">delete_sweep</i> Clear Data</a>
 
