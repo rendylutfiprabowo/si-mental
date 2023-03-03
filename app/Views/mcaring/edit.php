@@ -9,7 +9,6 @@
 
 <form action="/caring/update/<?= $detpel['id_pelanggan'] ?>" method="POST" enctype="multipart/form-data">
     <div class="container-fluid py-4">
-
         <div class="card my-4 mx-3">
             <div class="card-header py-0">
                 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n4 position-absolute">
@@ -75,7 +74,6 @@
                                     <?php endforeach; ?>
                                 </select>
                             </div>
-
                         </div>
                         <div class="col-lg-6 col-md-6 my2">
                             <div class="form-group my-2">
@@ -151,7 +149,6 @@
                                 <label for="alamat">Alamat Lengkap Pelanggan</label>
                                 <textarea style="text" name="alamat" class="form-control"><?= $detpel['alamat'] ?></textarea>
                             </div>
-
                         </div>
                         <!-- <div class="col-lg-6 col-md-6 my2">
 
@@ -179,15 +176,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary mt-2" value="submit">Simpan Data</button>
-                    <a href="/datapelanggan/caring/detail/<?= $detpel['id_pelanggan'] ?>"><button type="button" class="btn bg-gradient-secondary mt-2 ms-2">Batal</button></a>
-                    <!-- <div class="row mt-3">
-                        <div class="col-lg-6 col-md-6 my2">
-                            xxxx
-                        </div>
-                        <div class="col-lg-6 col-md-6 my2">
-                            xxxx
-                        </div>
-                    </div> -->
+                    <a href="/datapelanggan/caring/detail/<?= $detpel['id_pelanggan'] ?>"><button type="button" class="btn bg-gradient-secondary mt-2 ms-2">Batal</button></a>                  
                 </div>
             </div>
         </div>

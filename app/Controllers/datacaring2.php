@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\Caring2;
+use App\Models\HubYbs;
+use App\Models\Profilkesepakatan;
+use App\Models\Statuscall;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
@@ -42,12 +45,22 @@ class Datacaring2 extends BaseController
     {
 
         if (session()->logged_in) {
+            $statuscall = new Statuscall();
+            $reasoncall = new Caring2();
+            $profilkesepakatan = new Profilkesepakatan();
+            $hub_ybs = new HubYbs();
+            // $dropdown = new DropdownModel();
             $detailModel = new Caring2();
             $detpel = $detailModel->find($id);
-            $Reascall2 = $detailModel->getReascall();
+            $Reascall2 = $reasoncall->getReascall();             
             $data = [
                 'title' => 'Data Caring',
                 'detpel' => $detpel,
+                // 'dropdown' => $dropdown->findAll(),
+                'statuscall' => $statuscall->findAll(),
+                'reasoncall' => $reasoncall->findAll(),
+                'profil_kesepakatan' => $profilkesepakatan->findAll(),
+                'hub_ybs' => $hub_ybs->findAll(),
                 'Reascall2' => $Reascall2,
             ];
             return view('mcaring/edit2', $data);
