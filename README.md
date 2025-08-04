@@ -1,4 +1,4 @@
-# SI-MENTAL (Telkom Access Monitoring Information System)
+# SI-MENTAL (Payament Collection Monitoring Information System)
 
 A web-based information system designed to monitor **caring** and **visit** data of Telkom customers. This application is built using the **CodeIgniter 4** framework and supports Excel file data import and role-based data management. It assists the finance manager in monitoring data managed by the Payment Collection team in WITEL LAMPUNG.
 
@@ -118,3 +118,4 @@ GitHub: [@rendylutfiprabowo](https://github.com/rendylutfiprabowo)
 This project is licensed under the **MIT License** — feel free to use and modify it as needed.
 
  
+
