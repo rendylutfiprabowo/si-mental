@@ -9,7 +9,6 @@ A web-based information system designed to monitor **caring** and **visit** data
 - Customer data CRUD functionality
 - Auto seeder from Excel files
 - Modular structure supported by CodeIgniter 4
-- 
 
 ---
 
@@ -118,5 +117,6 @@ GitHub: [@rendylutfiprabowo](https://github.com/rendylutfiprabowo)
 This project is licensed under the **MIT License** — feel free to use and modify it as needed.
 
  
+
 
 
